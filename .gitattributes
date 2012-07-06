@@ -1,0 +1,11 @@
+core.eol=lf
+core.autocrlf=input
+
+*.m text
+*.h text
+*.gitattributes binary
+*.gitignore binary
+*.pbxproj binary
+*.png binary
+*.xib binary
+*.sqlite3 binary
