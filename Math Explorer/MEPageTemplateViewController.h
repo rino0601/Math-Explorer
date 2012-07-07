@@ -29,6 +29,5 @@ typedef NSUInteger MEButtonType;
 -(void)nextButtonAction:(id)sender;
 
 -(void)setButton:(MEButtonType)aButton hidden:(BOOL)hidden;
--(void)setHomeButtonTitle:(NSString *)aTitle;
 
 @end

@@ -25,6 +25,16 @@
 		6322AE0715A5C32E0068EC3D /* MELangSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322AE0515A5C32E0068EC3D /* MELangSelectViewController.m */; };
 		6322AE0815A5C32E0068EC3D /* MELangSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6322AE0615A5C32E0068EC3D /* MELangSelectViewController.xib */; };
 		6322AE0E15A5F33D0068EC3D /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6322AE0D15A5F33D0068EC3D /* Background@2x.png */; };
+		6370F44815A7379500988BC6 /* MELearningGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370F44615A7379500988BC6 /* MELearningGoalViewController.m */; };
+		6370F44915A7379500988BC6 /* MELearningGoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6370F44715A7379500988BC6 /* MELearningGoalViewController.xib */; };
+		6370F45415A755D400988BC6 /* me.learning.goal.detail.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45315A755D400988BC6 /* me.learning.goal.detail.m4a */; };
+		6370F45615A75ECE00988BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370F45515A75ECE00988BC6 /* AVFoundation.framework */; };
+		6370F45915A772D800988BC6 /* UtilSay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45715A772D800988BC6 /* UtilSay@2x.png */; };
+		6370F45A15A772D800988BC6 /* UtilSay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45815A772D800988BC6 /* UtilSay.png */; };
+		6370F45F15A7751C00988BC6 /* MEReadingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370F45D15A7751C00988BC6 /* MEReadingTitleViewController.m */; };
+		6370F46015A7751C00988BC6 /* MEReadingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45E15A7751C00988BC6 /* MEReadingTitleViewController.xib */; };
+		6370F46515A77B2600988BC6 /* MEReadingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370F46315A77B2600988BC6 /* MEReadingDoViewController.m */; };
+		6370F46615A77B2600988BC6 /* MEReadingDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6370F46415A77B2600988BC6 /* MEReadingDoViewController.xib */; };
 		63B81AF915A63A1800A583F9 /* METitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B81AF815A63A1800A583F9 /* METitleViewController.xib */; };
 		63B81B0915A6C2D900A583F9 /* MEDatabase.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 63B81B0815A6C2D900A583F9 /* MEDatabase.sqlite3 */; };
 		63B81B0B15A6C31600A583F9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B81B0A15A6C31600A583F9 /* libsqlite3.dylib */; };
@@ -60,6 +70,19 @@
 		6322AE0515A5C32E0068EC3D /* MELangSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELangSelectViewController.m; sourceTree = "<group>"; };
 		6322AE0615A5C32E0068EC3D /* MELangSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELangSelectViewController.xib; sourceTree = "<group>"; };
 		6322AE0D15A5F33D0068EC3D /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		6370F44515A7379500988BC6 /* MELearningGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELearningGoalViewController.h; sourceTree = "<group>"; };
+		6370F44615A7379500988BC6 /* MELearningGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELearningGoalViewController.m; sourceTree = "<group>"; };
+		6370F44715A7379500988BC6 /* MELearningGoalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELearningGoalViewController.xib; sourceTree = "<group>"; };
+		6370F45315A755D400988BC6 /* me.learning.goal.detail.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.m4a; path = narrations/general/me.learning.goal.detail.m4a; sourceTree = "<group>"; };
+		6370F45515A75ECE00988BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6370F45715A772D800988BC6 /* UtilSay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UtilSay@2x.png"; sourceTree = "<group>"; };
+		6370F45815A772D800988BC6 /* UtilSay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UtilSay.png; sourceTree = "<group>"; };
+		6370F45C15A7751C00988BC6 /* MEReadingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEReadingTitleViewController.h; sourceTree = "<group>"; };
+		6370F45D15A7751C00988BC6 /* MEReadingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEReadingTitleViewController.m; sourceTree = "<group>"; };
+		6370F45E15A7751C00988BC6 /* MEReadingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEReadingTitleViewController.xib; sourceTree = "<group>"; };
+		6370F46215A77B2600988BC6 /* MEReadingDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEReadingDoViewController.h; sourceTree = "<group>"; };
+		6370F46315A77B2600988BC6 /* MEReadingDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEReadingDoViewController.m; sourceTree = "<group>"; };
+		6370F46415A77B2600988BC6 /* MEReadingDoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEReadingDoViewController.xib; sourceTree = "<group>"; };
 		63B81AF815A63A1800A583F9 /* METitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = METitleViewController.xib; sourceTree = "<group>"; };
 		63B81B0815A6C2D900A583F9 /* MEDatabase.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MEDatabase.sqlite3; sourceTree = "<group>"; };
 		63B81B0A15A6C31600A583F9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -74,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6370F45615A75ECE00988BC6 /* AVFoundation.framework in Frameworks */,
 				63B81B0B15A6C31600A583F9 /* libsqlite3.dylib in Frameworks */,
 				6322ADCD15A473BF0068EC3D /* UIKit.framework in Frameworks */,
 				6322ADCF15A473BF0068EC3D /* Foundation.framework in Frameworks */,
@@ -125,6 +149,7 @@
 		6322ADCB15A473BF0068EC3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6370F45515A75ECE00988BC6 /* AVFoundation.framework */,
 				6322ADD015A473BF0068EC3D /* CoreGraphics.framework */,
 				6322ADCE15A473BF0068EC3D /* Foundation.framework */,
 				63B81B0A15A6C31600A583F9 /* libsqlite3.dylib */,
@@ -159,6 +184,7 @@
 		6322ADE615A585BC0068EC3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6370F44E15A7550300988BC6 /* Audios */,
 				630A0CD915A623E400557C19 /* App Icons & Launch Images */,
 				63B81B0615A6C1D200A583F9 /* Core Resources */,
 				6322ADE715A585C20068EC3D /* Images */,
@@ -178,6 +204,8 @@
 				6322ADED15A585F20068EC3D /* NavNext@2x.png */,
 				6322ADEE15A585F20068EC3D /* NavPrev.png */,
 				6322ADEF15A585F20068EC3D /* NavPrev@2x.png */,
+				6370F45815A772D800988BC6 /* UtilSay.png */,
+				6370F45715A772D800988BC6 /* UtilSay@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -203,6 +231,8 @@
 		6322ADFC15A58DE30068EC3D /* Step 1: Reading */ = {
 			isa = PBXGroup;
 			children = (
+				6370F45B15A774FB00988BC6 /* Stage 0: Title */,
+				6370F46115A77B0A00988BC6 /* Stage 1: Do Activity */,
 			);
 			name = "Step 1: Reading";
 			sourceTree = "<group>";
@@ -212,6 +242,7 @@
 			children = (
 				6322AE0315A5B9810068EC3D /* Stage 0: Language Selection */,
 				630A0CE415A631F900557C19 /* Stage 1: Title */,
+				6370F44315A7377700988BC6 /* Stage 2: Learning Goal */,
 			);
 			name = "Step 0: Intro";
 			sourceTree = "<group>";
@@ -224,6 +255,60 @@
 				6322AE0615A5C32E0068EC3D /* MELangSelectViewController.xib */,
 			);
 			name = "Stage 0: Language Selection";
+			sourceTree = "<group>";
+		};
+		6370F44315A7377700988BC6 /* Stage 2: Learning Goal */ = {
+			isa = PBXGroup;
+			children = (
+				6370F44515A7379500988BC6 /* MELearningGoalViewController.h */,
+				6370F44615A7379500988BC6 /* MELearningGoalViewController.m */,
+				6370F44715A7379500988BC6 /* MELearningGoalViewController.xib */,
+			);
+			name = "Stage 2: Learning Goal";
+			sourceTree = "<group>";
+		};
+		6370F44E15A7550300988BC6 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				6370F45015A7553300988BC6 /* General Texts */,
+				6370F44F15A7552800988BC6 /* Questions */,
+			);
+			name = Audios;
+			sourceTree = "<group>";
+		};
+		6370F44F15A7552800988BC6 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		6370F45015A7553300988BC6 /* General Texts */ = {
+			isa = PBXGroup;
+			children = (
+				6370F45315A755D400988BC6 /* me.learning.goal.detail.m4a */,
+			);
+			name = "General Texts";
+			sourceTree = "<group>";
+		};
+		6370F45B15A774FB00988BC6 /* Stage 0: Title */ = {
+			isa = PBXGroup;
+			children = (
+				6370F45C15A7751C00988BC6 /* MEReadingTitleViewController.h */,
+				6370F45D15A7751C00988BC6 /* MEReadingTitleViewController.m */,
+				6370F45E15A7751C00988BC6 /* MEReadingTitleViewController.xib */,
+			);
+			name = "Stage 0: Title";
+			sourceTree = "<group>";
+		};
+		6370F46115A77B0A00988BC6 /* Stage 1: Do Activity */ = {
+			isa = PBXGroup;
+			children = (
+				6370F46215A77B2600988BC6 /* MEReadingDoViewController.h */,
+				6370F46315A77B2600988BC6 /* MEReadingDoViewController.m */,
+				6370F46415A77B2600988BC6 /* MEReadingDoViewController.xib */,
+			);
+			name = "Stage 1: Do Activity";
 			sourceTree = "<group>";
 		};
 		63B81B0615A6C1D200A583F9 /* Core Resources */ = {
@@ -302,6 +387,12 @@
 				63B81B2215A6D21C00A583F9 /* Default-Landscape~ipad.png in Resources */,
 				63B81B2315A6D21C00A583F9 /* MEAI.png in Resources */,
 				63B81B2415A6D21C00A583F9 /* MEAI@2x.png in Resources */,
+				6370F44915A7379500988BC6 /* MELearningGoalViewController.xib in Resources */,
+				6370F45415A755D400988BC6 /* me.learning.goal.detail.m4a in Resources */,
+				6370F45915A772D800988BC6 /* UtilSay@2x.png in Resources */,
+				6370F45A15A772D800988BC6 /* UtilSay.png in Resources */,
+				6370F46015A7751C00988BC6 /* MEReadingTitleViewController.xib in Resources */,
+				6370F46615A77B2600988BC6 /* MEReadingDoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +408,9 @@
 				6322ADE515A5638E0068EC3D /* MEPageTemplateViewController.m in Sources */,
 				6322AE0715A5C32E0068EC3D /* MELangSelectViewController.m in Sources */,
 				630A0CE815A6329200557C19 /* METitleViewController.m in Sources */,
+				6370F44815A7379500988BC6 /* MELearningGoalViewController.m in Sources */,
+				6370F45F15A7751C00988BC6 /* MEReadingTitleViewController.m in Sources */,
+				6370F46515A77B2600988BC6 /* MEReadingDoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

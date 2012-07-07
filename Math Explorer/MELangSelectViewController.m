@@ -25,6 +25,7 @@
 	MEAppDelegate *d=(MEAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	[d setLangCode:[sender tag]];
+	
 	[[self navigationController] pushViewController:[[METitleViewController alloc] initWithNibName:@"METitleViewController" bundle:nil] animated:YES];
 }
 

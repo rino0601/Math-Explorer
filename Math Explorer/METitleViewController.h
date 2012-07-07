@@ -10,7 +10,7 @@
 
 
 @interface METitleViewController:MEPageTemplateViewController {
-	IBOutlet UILabel *titleLabel, *subtitleLabel;
+	IBOutlet UILabel *meTitle, *meSubtitle;
 }
 
 @end

@@ -18,6 +18,8 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
+	[[[self navigationController] navigationBar] setBarStyle:UIBarStyleBlackTranslucent];
+	
 	// Background
 	UIImageView *backgroundImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
 	[backgroundImage setImage:[UIImage imageNamed:@"Background.png"]];
@@ -27,7 +29,7 @@
 	// Say button
 	utilSay=[UIButton buttonWithType:UIButtonTypeCustom];
 	[utilSay setFrame:CGRectMake(468, 600, 128, 128)];
-	[utilSay setBackgroundImage:[UIImage imageNamed:@"NavPrev.png"] forState:UIControlStateNormal];
+	[utilSay setBackgroundImage:[UIImage imageNamed:@"UtilSay.png"] forState:UIControlStateNormal];
 	[utilSay addTarget:self action:@selector(sayButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[utilSay setHidden:YES];
 	[[self view] addSubview:utilSay];
@@ -36,8 +38,6 @@
 	navHome=[[UIButton alloc] initWithFrame:CGRectMake(604, 600, 128, 128)];
 	[navHome setBackgroundImage:[UIImage imageNamed:@"NavHome.png"] forState:UIControlStateNormal];
 	[navHome addTarget:self action:@selector(homeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[[navHome titleLabel] setFont:[UIFont boldSystemFontOfSize:32.0f]];
-	[navHome setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal]; // changable
 	[[self view] addSubview:navHome];
 	
 	// Prev button
@@ -88,12 +88,6 @@
 	}
 	dispatch_async(dispatch_get_main_queue(), ^{
 		[target setHidden:hidden];
-	});
-}
-
--(void)setHomeButtonTitle:(NSString *)aTitle {
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[navHome setTitle:aTitle forState:UIControlStateNormal];
 	});
 }
 

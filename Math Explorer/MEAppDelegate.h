@@ -13,11 +13,11 @@
 @interface MEAppDelegate:UIResponder <UIApplicationDelegate> {
 @private
 	UINavigationController *navController;
-	sqlite3 *dbo;
 }
 
+@property(strong, readonly, nonatomic) NSMutableArray *vcBackups;
 @property(nonatomic) NSUInteger langCode;
-@property(strong, nonatomic) UIWindow *mainWindow;
 @property(nonatomic, readonly) sqlite3 *dbo;
+@property(strong, nonatomic) UIWindow *mainWindow;
 
 @end
