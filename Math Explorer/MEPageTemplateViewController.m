@@ -26,6 +26,14 @@
 	[[self view] addSubview:backgroundImage];
 	[[self view] sendSubviewToBack:backgroundImage];
 	
+	// Dictionary button
+	utilDict=[UIButton buttonWithType:UIButtonTypeCustom];
+	[utilDict setFrame:CGRectMake(332, 600, 128, 128)];
+	[utilDict setTitle:@"Dict" forState:UIControlStateNormal];
+	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+	[utilDict setHidden:YES];
+	[[self view] addSubview:utilDict];
+	
 	// Say button
 	utilSay=[UIButton buttonWithType:UIButtonTypeCustom];
 	[utilSay setFrame:CGRectMake(468, 600, 128, 128)];
@@ -35,22 +43,29 @@
 	[[self view] addSubview:utilSay];
 	
 	// Home button
-	navHome=[[UIButton alloc] initWithFrame:CGRectMake(604, 600, 128, 128)];
+	navHome=[UIButton buttonWithType:UIButtonTypeCustom];
+	[navHome setFrame:CGRectMake(604, 600, 128, 128)];
 	[navHome setBackgroundImage:[UIImage imageNamed:@"NavHome.png"] forState:UIControlStateNormal];
 	[navHome addTarget:self action:@selector(homeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:navHome];
 	
 	// Prev button
-	navPrev=[[UIButton alloc] initWithFrame:CGRectMake(740, 600, 128, 128)];
+	navPrev=[UIButton buttonWithType:UIButtonTypeCustom];
+	[navPrev setFrame:CGRectMake(740, 600, 128, 128)];
 	[navPrev setBackgroundImage:[UIImage imageNamed:@"NavPrev.png"] forState:UIControlStateNormal];
 	[navPrev addTarget:self action:@selector(prevButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:navPrev];
 	
 	// Next button
-	navNext=[[UIButton alloc] initWithFrame:CGRectMake(876, 600, 128, 128)];
+	navNext=[UIButton buttonWithType:UIButtonTypeCustom];
+	[navNext setFrame:CGRectMake(876, 600, 128, 128)];
 	[navNext setBackgroundImage:[UIImage imageNamed:@"NavNext.png"] forState:UIControlStateNormal];
 	[navNext addTarget:self action:@selector(nextButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:navNext];
+}
+
+-(void)dictButtonAction:(id)sender {
+	@throw [NSException exceptionWithName:@"ButtonActionNotImplementedException" reason:@"Dictionary button's action is not implemented yet." userInfo:nil];
 }
 
 -(void)sayButtonAction:(id)sender {
@@ -73,6 +88,9 @@
 	UIButton *target=nil;
 	
 	switch(aButton) {
+		case MEButtonDict:
+			target=utilDict;
+			break;
 		case MEButtonSay:
 			target=utilSay;
 			break;

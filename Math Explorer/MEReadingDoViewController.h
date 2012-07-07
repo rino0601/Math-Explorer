@@ -9,6 +9,8 @@
 #import "MEPageTemplateViewController.h"
 
 
-@interface MEReadingDoViewController:MEPageTemplateViewController
+@interface MEReadingDoViewController:MEPageTemplateViewController {
+	IBOutlet UILabel *meReadingDoInstruction;
+}
 
 @end

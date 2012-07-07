@@ -42,6 +42,9 @@
 		63B81B2215A6D21C00A583F9 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B81B1E15A6D21C00A583F9 /* Default-Landscape~ipad.png */; };
 		63B81B2315A6D21C00A583F9 /* MEAI.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B81B1F15A6D21C00A583F9 /* MEAI.png */; };
 		63B81B2415A6D21C00A583F9 /* MEAI@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B81B2015A6D21C00A583F9 /* MEAI@2x.png */; };
+		EA21051B15A81BBE001D7405 /* MEAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21051915A81BBE001D7405 /* MEAskViewController.m */; };
+		EA21051C15A81BBE001D7405 /* MEAskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA21051A15A81BBE001D7405 /* MEAskViewController.xib */; };
+		EA21052E15A82D17001D7405 /* MEDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21052D15A82D17001D7405 /* MEDictionaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +93,11 @@
 		63B81B1E15A6D21C00A583F9 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		63B81B1F15A6D21C00A583F9 /* MEAI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEAI.png; sourceTree = "<group>"; };
 		63B81B2015A6D21C00A583F9 /* MEAI@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MEAI@2x.png"; sourceTree = "<group>"; };
+		EA21051815A81BBE001D7405 /* MEAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAskViewController.h; sourceTree = "<group>"; };
+		EA21051915A81BBE001D7405 /* MEAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAskViewController.m; sourceTree = "<group>"; };
+		EA21051A15A81BBE001D7405 /* MEAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEAskViewController.xib; sourceTree = "<group>"; };
+		EA21052C15A82D17001D7405 /* MEDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDictionaryViewController.h; sourceTree = "<group>"; };
+		EA21052D15A82D17001D7405 /* MEDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDictionaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +230,7 @@
 		6322ADFB15A58DD30068EC3D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EA21051615A81B5C001D7405 /* Auxiliaries */,
 				6322AE0215A5B9710068EC3D /* Step 0: Intro */,
 				6322ADFC15A58DE30068EC3D /* Step 1: Reading */,
 			);
@@ -304,6 +313,7 @@
 		6370F46115A77B0A00988BC6 /* Stage 1: Do Activity */ = {
 			isa = PBXGroup;
 			children = (
+				EA21051415A8183F001D7405 /* Sub-modals: Asks */,
 				6370F46215A77B2600988BC6 /* MEReadingDoViewController.h */,
 				6370F46315A77B2600988BC6 /* MEReadingDoViewController.m */,
 				6370F46415A77B2600988BC6 /* MEReadingDoViewController.xib */,
@@ -317,6 +327,41 @@
 				63B81B0815A6C2D900A583F9 /* MEDatabase.sqlite3 */,
 			);
 			name = "Core Resources";
+			sourceTree = "<group>";
+		};
+		EA21051415A8183F001D7405 /* Sub-modals: Asks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Sub-modals: Asks";
+			sourceTree = "<group>";
+		};
+		EA21051615A81B5C001D7405 /* Auxiliaries */ = {
+			isa = PBXGroup;
+			children = (
+				EA21051715A81B8A001D7405 /* Ask */,
+				EA21052115A82A0E001D7405 /* Dictionary */,
+			);
+			name = Auxiliaries;
+			sourceTree = "<group>";
+		};
+		EA21051715A81B8A001D7405 /* Ask */ = {
+			isa = PBXGroup;
+			children = (
+				EA21051815A81BBE001D7405 /* MEAskViewController.h */,
+				EA21051915A81BBE001D7405 /* MEAskViewController.m */,
+				EA21051A15A81BBE001D7405 /* MEAskViewController.xib */,
+			);
+			name = Ask;
+			sourceTree = "<group>";
+		};
+		EA21052115A82A0E001D7405 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				EA21052C15A82D17001D7405 /* MEDictionaryViewController.h */,
+				EA21052D15A82D17001D7405 /* MEDictionaryViewController.m */,
+			);
+			name = Dictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +438,7 @@
 				6370F45A15A772D800988BC6 /* UtilSay.png in Resources */,
 				6370F46015A7751C00988BC6 /* MEReadingTitleViewController.xib in Resources */,
 				6370F46615A77B2600988BC6 /* MEReadingDoViewController.xib in Resources */,
+				EA21051C15A81BBE001D7405 /* MEAskViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +457,8 @@
 				6370F44815A7379500988BC6 /* MELearningGoalViewController.m in Sources */,
 				6370F45F15A7751C00988BC6 /* MEReadingTitleViewController.m in Sources */,
 				6370F46515A77B2600988BC6 /* MEReadingDoViewController.m in Sources */,
+				EA21051B15A81BBE001D7405 /* MEAskViewController.m in Sources */,
+				EA21052E15A82D17001D7405 /* MEDictionaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
