@@ -9,7 +9,16 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MEAskViewController:UIViewController
+@interface MEAskViewController:UIViewController{
+	NSString *string[9];
+	int nextString[9];
+	int current;
+}
+@property(strong,nonatomic) IBOutlet UITextView *context;
+@property(strong,nonatomic) IBOutlet UIButton *sound;
+@property(strong,nonatomic) IBOutlet UIButton *no;
+@property(strong,nonatomic) IBOutlet UIButton *yes;
+@property(strong,nonatomic) IBOutlet UIButton *confirm;
 
 -(IBAction)soundButtonAction:(id)sender;
 -(IBAction)noButtonAction:(id)sender;

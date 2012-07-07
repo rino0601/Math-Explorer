@@ -19,6 +19,7 @@
 	
 	[self setButton:MEButtonDict hidden:NO];
 	[self setButton:MEButtonSay hidden:NO];
+	modal=[[MEAskViewController alloc] initWithNibName:@"MEAskViewController" bundle:nil];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
@@ -66,9 +67,16 @@
 }
 
 -(void)nextButtonAction:(id)sender {
-	MEAskViewController *modal=[[MEAskViewController alloc] initWithNibName:@"MEAskViewController" bundle:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotoNext:) name:@"allowed" object:modal];
 	[modal setModalPresentationStyle:UIModalPresentationFormSheet];
 	[self presentModalViewController:modal animated:YES];
+}
+-(void)gotoNext:(NSNotification *)notif{
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"allowed" object:modal];
+//	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
+//	[[self navigationController] setNavigationBarHidden:NO animated:NO];
+	[super nextButtonAction:self];
+//	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingDoViewController alloc] initWithNibName:@"MEReadingDoViewController" bundle:nil]] animated:YES];
 }
 
 @end
