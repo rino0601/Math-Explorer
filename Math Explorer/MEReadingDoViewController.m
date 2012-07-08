@@ -17,9 +17,15 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	[self setButton:MEButtonDict hidden:NO];
+	[[self navigationController] setNavigationBarHidden:NO animated:YES];
+	
+	// Dictionary button
+	UIButton *utilDict=[UIButton buttonWithType:UIButtonTypeCustom];
+	[utilDict setFrame:CGRectMake(332, 600, 128, 128)];
+	[utilDict setTitle:@"Dict" forState:UIControlStateNormal];//@
+	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+	[[self view] addSubview:utilDict];
 	[self setButton:MEButtonSay hidden:NO];
-	modal=[[MEAskViewController alloc] initWithNibName:@"MEAskViewController" bundle:nil];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
@@ -67,15 +73,19 @@
 }
 
 -(void)nextButtonAction:(id)sender {
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotoNext:) name:@"allowed" object:modal];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEReadingAskActivityConfirmed object:nil];
+	
+	MEAskViewController *modal=[[MEAskViewController alloc] initWithNibName:@"MEAskViewController" bundle:nil];
 	[modal setModalPresentationStyle:UIModalPresentationFormSheet];
 	[self presentModalViewController:modal animated:YES];
 }
--(void)gotoNext:(NSNotification *)notif{
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:@"allowed" object:modal];
+
+-(void)readyToContinue:(NSNotification *)notif {
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEReadingAskActivityConfirmed object:nil];
+	
 //	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
 //	[[self navigationController] setNavigationBarHidden:NO animated:NO];
-	[super nextButtonAction:self];
+//	[super nextButtonAction:self];
 //	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingDoViewController alloc] initWithNibName:@"MEReadingDoViewController" bundle:nil]] animated:YES];
 }
 

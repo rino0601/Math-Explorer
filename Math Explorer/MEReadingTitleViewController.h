@@ -10,6 +10,7 @@
 
 
 @interface MEReadingTitleViewController:MEPageTemplateViewController {
+	@private
 	IBOutlet UILabel *meReadingTitle;
 }
 

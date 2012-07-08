@@ -2,27 +2,28 @@
 //  MEAskViewController.h
 //  Math Explorer
 //
-//  Created by Hanjong Ko on 12. 7. 7..
-//  Copyright (c) 2012년 SI Cyrusian. All rights reserved.
+//  Created by Hanjong Ko on 7/7/12.
+//  Copyright (c) 2012 SI Cyrusian. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
-@interface MEAskViewController:UIViewController{
-	NSString *string[9];
-	int nextString[9];
-	int current;
-}
-@property(strong,nonatomic) IBOutlet UITextView *context;
-@property(strong,nonatomic) IBOutlet UIButton *sound;
-@property(strong,nonatomic) IBOutlet UIButton *no;
-@property(strong,nonatomic) IBOutlet UIButton *yes;
-@property(strong,nonatomic) IBOutlet UIButton *confirm;
+extern NSString *const MEReadingAskActivityConfirmed;
 
--(IBAction)soundButtonAction:(id)sender;
+@interface MEAskViewController:UIViewController{
+	@private
+	NSString *string[9];
+	NSUInteger nextString[9];
+	NSUInteger current;
+	IBOutlet UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
+}
+
+@property(strong,nonatomic) IBOutlet UITextView *context;
+
+-(IBAction)sayButtonAction:(id)sender;
 -(IBAction)noButtonAction:(id)sender;
 -(IBAction)yesButtonAction:(id)sender;
--(IBAction)confirmButtonAction:(id)sender;
+-(IBAction)ApproveButtonAction:(id)sender;
 
 @end

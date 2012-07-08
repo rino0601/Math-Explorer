@@ -26,14 +26,6 @@
 	[[self view] addSubview:backgroundImage];
 	[[self view] sendSubviewToBack:backgroundImage];
 	
-	// Dictionary button
-	utilDict=[UIButton buttonWithType:UIButtonTypeCustom];
-	[utilDict setFrame:CGRectMake(332, 600, 128, 128)];
-	[utilDict setTitle:@"Dict" forState:UIControlStateNormal];
-	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[utilDict setHidden:YES];
-	[[self view] addSubview:utilDict];
-	
 	// Say button
 	utilSay=[UIButton buttonWithType:UIButtonTypeCustom];
 	[utilSay setFrame:CGRectMake(468, 600, 128, 128)];
@@ -64,10 +56,6 @@
 	[[self view] addSubview:navNext];
 }
 
--(void)dictButtonAction:(id)sender {
-	@throw [NSException exceptionWithName:@"ButtonActionNotImplementedException" reason:@"Dictionary button's action is not implemented yet." userInfo:nil];
-}
-
 -(void)sayButtonAction:(id)sender {
 	@throw [NSException exceptionWithName:@"ButtonActionNotImplementedException" reason:@"Say button's action is not implemented yet." userInfo:nil];
 }
@@ -88,9 +76,6 @@
 	UIButton *target=nil;
 	
 	switch(aButton) {
-		case MEButtonDict:
-			target=utilDict;
-			break;
 		case MEButtonSay:
 			target=utilSay;
 			break;

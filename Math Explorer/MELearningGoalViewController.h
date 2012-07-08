@@ -11,6 +11,7 @@
 
 
 @interface MELearningGoalViewController:MEPageTemplateViewController {
+	@private
 	AVAudioPlayer *avp;
 	IBOutlet UILabel *meLearningGoalTitle;
 	IBOutlet UIWebView *meLearningGoalDetail;

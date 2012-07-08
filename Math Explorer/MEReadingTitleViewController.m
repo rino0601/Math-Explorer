@@ -32,8 +32,6 @@
 
 -(void)nextButtonAction:(id)sender {
 	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
-	[[self navigationController] setNavigationBarHidden:NO animated:NO];
-	
 	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingDoViewController alloc] initWithNibName:@"MEReadingDoViewController" bundle:nil]] animated:YES];
 }
 

@@ -7,11 +7,11 @@
 //
 
 #import "MEPageTemplateViewController.h"
-#import "MEAskViewController.h"
+
 
 @interface MEReadingDoViewController:MEPageTemplateViewController {
+	@private
 	IBOutlet UILabel *meReadingDoInstruction;
-	MEAskViewController *modal;
 }
 
 @end

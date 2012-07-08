@@ -9,22 +9,18 @@
 #import <UIKit/UIKit.h>
 
 
-enum {
-	MEButtonDict=0,
+typedef enum {
 	MEButtonSay=1,
 	MEButtonHome=2,
 	MEButtonPrev=4,
 	MEButtonNext=8
-};
-typedef NSUInteger MEButtonType;
-
+} MEButtonType;
 
 @interface MEPageTemplateViewController:UIViewController {
-@protected
-	UIButton *utilDict, *utilSay, *navHome, *navPrev, *navNext;
+	@protected
+	UIButton *utilSay, *navHome, *navPrev, *navNext;
 }
 
--(void)dictButtonAction:(id)sender;
 -(void)sayButtonAction:(id)sender;
 -(void)homeButtonAction:(id)sender;
 -(void)prevButtonAction:(id)sender;

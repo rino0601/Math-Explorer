@@ -11,7 +11,7 @@
 
 
 @interface MEAppDelegate:UIResponder <UIApplicationDelegate> {
-@private
+	@private
 	UINavigationController *navController;
 }
 
