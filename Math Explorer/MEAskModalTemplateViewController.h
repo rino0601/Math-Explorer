@@ -1,5 +1,5 @@
 //
-//  MEAskViewController.h
+//  MEAskModalTemplateViewController.h
 //  Math Explorer
 //
 //  Created by Hanjong Ko on 7/7/12.
@@ -9,21 +9,18 @@
 #import <UIKit/UIKit.h>
 
 
-extern NSString *const MEReadingAskActivityConfirmed;
+extern NSString *const MEAskActivityConfirmed;
 
-@interface MEAskViewController:UIViewController{
+@interface MEAskModalTemplateViewController:UIViewController {
 	@private
-	NSString *string[9];
-	NSUInteger nextString[9];
-	NSUInteger current;
-	IBOutlet UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
+	UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
+	@protected
+	NSUInteger noCount;
 }
 
-@property(strong,nonatomic) IBOutlet UITextView *context;
-
--(IBAction)sayButtonAction:(id)sender;
--(IBAction)noButtonAction:(id)sender;
--(IBAction)yesButtonAction:(id)sender;
--(IBAction)ApproveButtonAction:(id)sender;
+-(void)sayButtonAction:(id)sender;
+-(void)noButtonAction:(id)sender;
+-(void)yesButtonAction:(id)sender;
+-(void)approveButtonAction:(id)sender;
 
 @end

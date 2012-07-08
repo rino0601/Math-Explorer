@@ -8,8 +8,8 @@
 
 #import "MEReadingDoViewController.h"
 #import "MEAppDelegate.h"
-#import "MEAskViewController.h"
 #import "MEDictionaryViewController.h"
+#import "MEReadingAskViewController.h"
 
 
 @implementation MEReadingDoViewController
@@ -18,6 +18,7 @@
 	[super viewDidLayoutSubviews];
 	
 	[[self navigationController] setNavigationBarHidden:NO animated:YES];
+	meReadingAskActivity=[[MEReadingAskViewController alloc] initWithNibName:@"MEReadingAskViewController" bundle:nil];
 	
 	// Dictionary button
 	UIButton *utilDict=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -73,16 +74,13 @@
 }
 
 -(void)nextButtonAction:(id)sender {
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEReadingAskActivityConfirmed object:nil];
-	
-	MEAskViewController *modal=[[MEAskViewController alloc] initWithNibName:@"MEAskViewController" bundle:nil];
-	[modal setModalPresentationStyle:UIModalPresentationFormSheet];
-	[self presentModalViewController:modal animated:YES];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
+	[meReadingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
+	[self presentModalViewController:meReadingAskActivity animated:YES];
 }
 
 -(void)readyToContinue:(NSNotification *)notif {
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEReadingAskActivityConfirmed object:nil];
-	
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
 //	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
 //	[[self navigationController] setNavigationBarHidden:NO animated:NO];
 //	[super nextButtonAction:self];

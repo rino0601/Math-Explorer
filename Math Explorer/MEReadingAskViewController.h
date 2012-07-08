@@ -6,8 +6,11 @@
 //  Copyright (c) 2012 SI Cyrusian. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MEAskModalTemplateViewController.h"
 
-@interface MEReadingAskViewController : UIViewController
+@interface MEReadingAskViewController:MEAskModalTemplateViewController {
+	@private
+	IBOutlet UITextView *meReadingAsk;
+}
 
 @end

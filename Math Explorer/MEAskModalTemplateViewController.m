@@ -6,43 +6,22 @@
 //  Copyright (c) 2012 SI Cyrusian. All rights reserved.
 //
 
-#import "MEAskViewController.h"
+#import "MEAskModalTemplateViewController.h"
+#import "MEAppDelegate.h"
 
 
-NSString *const MEReadingAskActivityConfirmed=@"Nothing interesting here.";
+NSString *const MEAskActivityConfirmed=@"Nothing interesting here.";
 
-@implementation MEAskViewController
+@implementation MEAskModalTemplateViewController
 
-@synthesize context;
-
-//@dbg
--(void)viewDidLoad {
-	[super viewDidLoad];
-	
-	string[0]=@"Have I read and understood the problem?";
-	string[1]=@"Read each sentence.\nThen read all the problem.";
-	string[2]=@"Click sound button to hear the problem.";
-	string[3]=@"Click any word If you don't know its meaning.";
-	string[4]=@"Ask my teacher to help me read the problem.";
-	string[5]=@"";
-	string[6]=@"You tried very hard!\nKeep trying!\nYou can get it next time!";
-	string[7]=@"I understand the problem.\nI read the problem again.";
-	string[8]=@"Good work!\nYou really know this!";
-	nextString[0]=1;
-	nextString[1]=9;
-	nextString[2]=9;
-	nextString[3]=9;
-	nextString[4]=6;
-	nextString[5]=9;
-	nextString[6]=7;
-	nextString[7]=9;
-	nextString[8]=7;
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+	return (toInterfaceOrientation==UIInterfaceOrientationLandscapeLeft);
 }
 
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	// load
+	noCount=0;
 	
 	// Background
 	UIImageView *backgroundImage=[[UIImageView alloc] initWithFrame:CGRectMake(0-(1024-540)/2, 0-(768-620)/2, 1024, 768)];
@@ -50,55 +29,72 @@ NSString *const MEReadingAskActivityConfirmed=@"Nothing interesting here.";
 	[[self view] addSubview:backgroundImage];
 	[[self view] sendSubviewToBack:backgroundImage];
 	
-	[context setText:string[0]];
-}
-
--(void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
+	// Say button
+	utilSay=[UIButton buttonWithType:UIButtonTypeCustom];
+	[utilSay setFrame:CGRectMake(39, 472, 128, 128)];
+	[utilSay setBackgroundImage:[UIImage imageNamed:@"UtilSay.png"] forState:UIControlStateNormal];
+	[utilSay addTarget:self action:@selector(sayButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+	[utilSay setHidden:YES];
+	[[self view] addSubview:utilSay];
 	
+	// No button
+	chkNo=[UIButton buttonWithType:UIButtonTypeCustom];
+	[chkNo setFrame:CGRectMake(206, 472, 128, 128)];
+	[[chkNo titleLabel] setFont:[UIFont boldSystemFontOfSize:48.0]];
+	[chkNo setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[chkNo addTarget:self action:@selector(noButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+	[[self view] addSubview:chkNo];
+	
+	// Yes button
+	chkYes=[UIButton buttonWithType:UIButtonTypeCustom];
+	[chkYes setFrame:CGRectMake(373, 472, 128, 128)];
+	[[chkYes titleLabel] setFont:[UIFont boldSystemFontOfSize:48.0]];
+	[chkYes setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[chkYes addTarget:self action:@selector(yesButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+	[[self view] addSubview:chkYes];
+	
+	// Approve button
+	chkAprv=[UIButton buttonWithType:UIButtonTypeCustom];
+	[chkAprv setFrame:CGRectMake(373, 472, 128, 128)];
+	[chkAprv setBackgroundImage:[UIImage imageNamed:@"ChkAprv.png"] forState:UIControlStateNormal];
+	[chkAprv addTarget:self action:@selector(approveButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[chkAprv setHidden:YES];
-	[chkYes setHidden:NO];
-	[chkNo setHidden:NO];
-	[context setText:string[0]];
-}
-
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-	return (toInterfaceOrientation==UIInterfaceOrientationLandscapeLeft);
-}
-
--(IBAction)sayButtonAction:(id)sender {
-	//
-}
-
--(IBAction)noButtonAction:(id)sender {
-	[chkAprv setHidden:NO];
-	[chkYes setHidden:YES];
-	[chkNo setHidden:YES];
+	[[self view] addSubview:chkAprv];
 	
-	[context setText:string[nextString[0]]];
-	current=nextString[0];
-	if(nextString[0]<4)
-		nextString[0]++;
-}
-
--(IBAction)yesButtonAction:(id)sender {
-	[chkAprv setHidden:NO];
-	[chkYes setHidden:YES];
-	[chkNo setHidden:YES];
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
+	sqlite3_stmt *localizer=NULL;
 	
-	[context setText:string[8]];
-	current=8;
+	sqlite3_prepare_v2(dbo, [@"SELECT value FROM general_strings WHERE key=:keystring AND lang=:langcode" UTF8String], -1, &localizer, NULL);
+	sqlite3_bind_text(localizer, 1, [@"me.ask.button.no" UTF8String], -1, NULL);
+	sqlite3_bind_int(localizer, 2, langCode);
+	sqlite3_step(localizer);
+	[chkNo setTitle:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)] forState:UIControlStateNormal];
+	sqlite3_reset(localizer);
+	
+	sqlite3_bind_text(localizer, 1, [@"me.ask.button.yes" UTF8String], -1, NULL);
+	sqlite3_step(localizer);
+	[chkYes setTitle:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)] forState:UIControlStateNormal];
+	sqlite3_finalize(localizer);
+	
+	localizer=NULL;
 }
 
--(IBAction)ApproveButtonAction:(id)sender {
-	if(nextString[current]!=9) {
-		[context setText:string[nextString[current]]];
-		current=nextString[current];
-	} else {
-		if(current==7)
-			[[NSNotificationCenter defaultCenter] postNotificationName:MEReadingAskActivityConfirmed object:self];
-		[self dismissModalViewControllerAnimated:YES];
-	}
+-(void)sayButtonAction:(id)sender {
+	@throw [NSException exceptionWithName:@"ButtonActionNotImplementedException" reason:@"Say button's action is not implemented yet." userInfo:nil];
+}
+
+-(void)noButtonAction:(id)sender {
+	++noCount;
+}
+
+-(void)yesButtonAction:(id)sender {
+	@throw [NSException exceptionWithName:@"ButtonActionNotImplementedException" reason:@"Yes button's action is not implemented yet." userInfo:nil];
+}
+
+-(void)approveButtonAction:(id)sender {
+	[[NSNotificationCenter defaultCenter] postNotificationName:MEAskActivityConfirmed object:self userInfo:nil];
+	[[self presentingViewController] dismissModalViewControllerAnimated:YES];
 }
 
 @end

@@ -9,8 +9,11 @@
 #import "MEPageTemplateViewController.h"
 
 
+@class MEReadingAskViewController;
+
 @interface MEReadingDoViewController:MEPageTemplateViewController {
 	@private
+	MEReadingAskViewController *meReadingAskActivity;
 	IBOutlet UILabel *meReadingDoInstruction;
 }
 
