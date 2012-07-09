@@ -15,7 +15,7 @@
 	UINavigationController *navController;
 }
 
-@property(strong, readonly, nonatomic) NSMutableArray *vcBackups;
+@property(strong, nonatomic) NSMutableArray *homeBackup;
 @property(nonatomic) NSUInteger langCode;
 @property(nonatomic, readonly) sqlite3 *dbo;
 @property(strong, nonatomic) UIWindow *mainWindow;

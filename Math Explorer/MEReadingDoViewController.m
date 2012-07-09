@@ -59,32 +59,27 @@
 }
 
 -(void)homeButtonAction:(id)sender {
-	[[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] lastObject] removeObjectsInRange:NSMakeRange(2, 2)];
-	
-	[self prevButtonAction:sender];
-}
-
--(void)prevButtonAction:(id)sender {
-	NSMutableArray *backups=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups];
-	NSMutableArray *restoring=[backups lastObject];
-	[backups removeLastObject];
+	NSMutableArray *restoring=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] homeBackup];
+	[restoring removeLastObject];
 	[restoring addObject:self];
 	[[self navigationController] setViewControllers:restoring animated:NO];
 	[[self navigationController] setNavigationBarHidden:YES animated:NO];
 	[[self navigationController] popViewControllerAnimated:YES];
 }
 
+-(void)prevButtonAction:(id)sender {
+	[[self navigationController] popViewControllerAnimated:YES];
+}
+
 -(void)nextButtonAction:(id)sender {
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
 	[meReadingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
+	
 	[self presentModalViewController:meReadingAskActivity animated:YES];
 }
 
 -(void)readyToContinue:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
-	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
-	[[self navigationController] setNavigationBarHidden:NO animated:NO];
-//	[super nextButtonAction:self];
 	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
 }
 

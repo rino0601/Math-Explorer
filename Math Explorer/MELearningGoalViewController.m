@@ -52,7 +52,8 @@
 }
 
 -(void)nextButtonAction:(id)sender {
-	[[self navigationController] pushViewController:[[MEReadingTitleViewController alloc] initWithNibName:@"MEReadingTitleViewController" bundle:nil] animated:YES];
+	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setHomeBackup:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
+	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingTitleViewController alloc] initWithNibName:@"MEReadingTitleViewController" bundle:nil]] animated:YES];
 }
 
 @end
