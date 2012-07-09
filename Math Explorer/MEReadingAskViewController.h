@@ -8,12 +8,12 @@
 
 #import "MEAskModalTemplateViewController.h"
 
+
 @interface MEReadingAskViewController:MEAskModalTemplateViewController {
 	@private
-	IBOutlet UITextView *meReadingAsk;
+	NSInteger next[8];
 	NSString *string[8];
-	int next[8];
-	int current;
+	IBOutlet UITextView *meReadingAsk;
 }
 
 @end

@@ -30,7 +30,11 @@
 
 -(void)nextButtonAction:(id)sender {
 	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
+<<<<<<< HEAD
 	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingDoViewController alloc] initWithNibName:@"MEFindingDoViewController" bundle:nil]] animated:YES];
+=======
+	//[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingDoViewController alloc] initWithNibName:@"MEReadingDoViewController" bundle:nil]] animated:YES];
+>>>>>>> qwrfef
 }
 
 @end
