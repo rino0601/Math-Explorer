@@ -8,6 +8,12 @@
 
 #import "MEPageTemplateViewController.h"
 
-@interface MEFindingDoViewController : MEPageTemplateViewController
+@class MEFindingAskViewController;
+
+@interface MEFindingDoViewController : MEPageTemplateViewController {
+	@private
+	MEFindingAskViewController *meFindingAskActivity;
+	IBOutlet UILabel *meReadingDoInstruction;
+}
 
 @end

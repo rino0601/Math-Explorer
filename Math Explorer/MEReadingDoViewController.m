@@ -27,6 +27,8 @@
 	[utilDict setTitle:@"Dict" forState:UIControlStateNormal];//@
 	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:utilDict];
+	
+	// Say button unhidden
 	[self setButton:MEButtonSay hidden:NO];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
@@ -68,6 +70,7 @@
 }
 
 -(void)prevButtonAction:(id)sender {
+	[[self navigationController] setNavigationBarHidden:YES animated:YES];
 	[[self navigationController] popViewControllerAnimated:YES];
 }
 
