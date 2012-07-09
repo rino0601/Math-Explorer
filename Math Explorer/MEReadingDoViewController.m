@@ -18,7 +18,6 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	[[self navigationController] setNavigationBarHidden:NO animated:YES];
 	meReadingAskActivity=[[MEReadingAskViewController alloc] initWithNibName:@"MEReadingAskViewController" bundle:nil];
 	
 	// Dictionary button
@@ -28,7 +27,6 @@
 	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:utilDict];
 	
-	// Say button unhidden
 	[self setButton:MEButtonSay hidden:NO];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
@@ -66,11 +64,6 @@
 	[restoring addObject:self];
 	[[self navigationController] setViewControllers:restoring animated:NO];
 	[[self navigationController] setNavigationBarHidden:YES animated:NO];
-	[[self navigationController] popViewControllerAnimated:YES];
-}
-
--(void)prevButtonAction:(id)sender {
-	[[self navigationController] setNavigationBarHidden:YES animated:YES];
 	[[self navigationController] popViewControllerAnimated:YES];
 }
 

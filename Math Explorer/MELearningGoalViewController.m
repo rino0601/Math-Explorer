@@ -16,6 +16,7 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
+	[self setButton:MEButtonHome hidden:YES];
 	[self setButton:MEButtonSay hidden:NO];
 	
 	NSError *err=nil;

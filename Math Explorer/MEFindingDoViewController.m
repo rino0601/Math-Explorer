@@ -11,18 +11,17 @@
 #import "MEFindingAskViewController.h"
 //#import "next View controller"
 
+
 @implementation MEFindingDoViewController
 
--(void) viewDidLayoutSubviews {
+-(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	[[self navigationController] setNavigationBarHidden:NO animated:YES];
 	meFindingAskActivity=[[MEFindingAskViewController alloc] initWithNibName:@"MEFindingAskViewController" bundle:nil];
 	
-	// Say button unhidden
+	// ?
+	
 	[self setButton:MEButtonSay hidden:NO];
-	
-	
 }
 
 -(void)sayButtonAction:(id)sender {
@@ -38,11 +37,6 @@
 	[[self navigationController] popViewControllerAnimated:YES];
 }
 
--(void)prevButtonAction:(id)sender {
-	[[self navigationController] setNavigationBarHidden:YES animated:YES];
-	[[self navigationController] popViewControllerAnimated:YES];
-}
-
 -(void)nextButtonAction:(id)sender {
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
 	[meFindingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
@@ -52,7 +46,7 @@
 
 -(void)readyToContinue:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
-//	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
+	//[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
 }
 
 

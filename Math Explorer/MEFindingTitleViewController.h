@@ -8,7 +8,8 @@
 
 #import "MEPageTemplateViewController.h"
 
-@interface MEFindingTitleViewController : MEPageTemplateViewController{
+
+@interface MEFindingTitleViewController:MEPageTemplateViewController{
 	@private
 	IBOutlet UILabel *meFindingTitle;
 }
