@@ -50,6 +50,10 @@
 		EA21052E15A82D17001D7405 /* MEDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21052D15A82D17001D7405 /* MEDictionaryViewController.m */; };
 		EA755CA515AAB12A00BBEA72 /* MEFindingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */; };
 		EA755CA615AAB12A00BBEA72 /* MEFindingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */; };
+		EA755CAF15AAB6A300BBEA72 /* MEFindingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CAD15AAB6A300BBEA72 /* MEFindingDoViewController.m */; };
+		EA755CB015AAB6A300BBEA72 /* MEFindingDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CAE15AAB6A300BBEA72 /* MEFindingDoViewController.xib */; };
+		EA755CB615AAB91D00BBEA72 /* MEFindingAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */; };
+		EA755CB715AAB91D00BBEA72 /* MEFindingAskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +114,12 @@
 		EA755CA215AAB12A00BBEA72 /* MEFindingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingTitleViewController.h; sourceTree = "<group>"; };
 		EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingTitleViewController.m; sourceTree = "<group>"; };
 		EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingTitleViewController.xib; sourceTree = "<group>"; };
+		EA755CAC15AAB6A300BBEA72 /* MEFindingDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingDoViewController.h; sourceTree = "<group>"; };
+		EA755CAD15AAB6A300BBEA72 /* MEFindingDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingDoViewController.m; sourceTree = "<group>"; };
+		EA755CAE15AAB6A300BBEA72 /* MEFindingDoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingDoViewController.xib; sourceTree = "<group>"; };
+		EA755CB315AAB91D00BBEA72 /* MEFindingAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingAskViewController.h; sourceTree = "<group>"; };
+		EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingAskViewController.m; sourceTree = "<group>"; };
+		EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingAskViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,8 +386,9 @@
 		EA755C9F15AAB08100BBEA72 /* Step 2: Finding */ = {
 			isa = PBXGroup;
 			children = (
-				EA755CA715AAB32600BBEA72 /* Stage 1: Do Activity */,
 				EA755CA115AAB09600BBEA72 /* Stage 0: Title */,
+				EA755CA715AAB32600BBEA72 /* Stage 1: Do Activity */,
+				EA755CB215AAB6AD00BBEA72 /* Stage 2: Ask Activity */,
 			);
 			name = "Step 2: Finding";
 			sourceTree = "<group>";
@@ -395,8 +406,21 @@
 		EA755CA715AAB32600BBEA72 /* Stage 1: Do Activity */ = {
 			isa = PBXGroup;
 			children = (
+				EA755CAC15AAB6A300BBEA72 /* MEFindingDoViewController.h */,
+				EA755CAD15AAB6A300BBEA72 /* MEFindingDoViewController.m */,
+				EA755CAE15AAB6A300BBEA72 /* MEFindingDoViewController.xib */,
 			);
 			name = "Stage 1: Do Activity";
+			sourceTree = "<group>";
+		};
+		EA755CB215AAB6AD00BBEA72 /* Stage 2: Ask Activity */ = {
+			isa = PBXGroup;
+			children = (
+				EA755CB315AAB91D00BBEA72 /* MEFindingAskViewController.h */,
+				EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */,
+				EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */,
+			);
+			name = "Stage 2: Ask Activity";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +501,8 @@
 				6370F47315A962CB00988BC6 /* ChkAprv@2x.png in Resources */,
 				63FD5E9115A9AF6A00486875 /* MEReadingAskViewController.xib in Resources */,
 				EA755CA615AAB12A00BBEA72 /* MEFindingTitleViewController.xib in Resources */,
+				EA755CB015AAB6A300BBEA72 /* MEFindingDoViewController.xib in Resources */,
+				EA755CB715AAB91D00BBEA72 /* MEFindingAskViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +525,8 @@
 				EA21052E15A82D17001D7405 /* MEDictionaryViewController.m in Sources */,
 				63FD5E9015A9AF6A00486875 /* MEReadingAskViewController.m in Sources */,
 				EA755CA515AAB12A00BBEA72 /* MEFindingTitleViewController.m in Sources */,
+				EA755CAF15AAB6A300BBEA72 /* MEFindingDoViewController.m in Sources */,
+				EA755CB615AAB91D00BBEA72 /* MEFindingAskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
