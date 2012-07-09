@@ -27,7 +27,7 @@
 	sqlite3_bind_int(localizer, 2, langCode);
 	sqlite3_step(localizer);
 	[meReadingTitle setText:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)]];
-	[[self navigationController] setTitle:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)]];
+	[self setTitle:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)]];
 	sqlite3_finalize(localizer);
 	
 	localizer=NULL;
