@@ -10,6 +10,7 @@
 #import "MEAppDelegate.h"
 #import "MEDictionaryViewController.h"
 #import "MEReadingAskViewController.h"
+#import "MEFindingTitleViewController.h"
 
 
 @implementation MEReadingDoViewController
@@ -81,10 +82,10 @@
 
 -(void)readyToContinue:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
-//	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
-//	[[self navigationController] setNavigationBarHidden:NO animated:NO];
+	[[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] vcBackups] addObject:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
+	[[self navigationController] setNavigationBarHidden:NO animated:NO];
 //	[super nextButtonAction:self];
-//	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingDoViewController alloc] initWithNibName:@"MEReadingDoViewController" bundle:nil]] animated:YES];
+	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
 }
 
 @end

@@ -13,6 +13,7 @@
 	@private
 	NSInteger next[8];
 	NSString *string[8];
+	NSUInteger current;
 	IBOutlet UITextView *meReadingAsk;
 }
 

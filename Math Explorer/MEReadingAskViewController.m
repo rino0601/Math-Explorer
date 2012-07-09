@@ -18,6 +18,7 @@
 	NSInteger tn[8]={-1, -1, -1, 4, 7, -1, 7, -1};
 	for(NSUInteger i=0; i<8; ++i)
 		next[i]=tn[i];
+	current=5;
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
@@ -56,36 +57,37 @@
 
 -(void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	
 	[meReadingAsk setText:string[5]];
+	current=5;
 	[chkNo setHidden:NO];
 	[chkYes setHidden:NO];
 	[chkAprv setHidden:YES];
 }
 
 -(void)noButtonAction:(id)sender {
-	if(noCount<4)
-		[super noButtonAction:sender];
 	[chkAprv setHidden:NO];
 	[chkNo setHidden:YES];
 	[chkYes setHidden:YES];
 	[meReadingAsk setText:string[noCount]];
+	current=noCount;
+	if(noCount<4)
+		[super noButtonAction:sender];
 }
 
 -(void)yesButtonAction:(id)sender {
-	noCount=6;
 	[chkAprv setHidden:NO];
 	[chkNo setHidden:YES];
 	[chkYes setHidden:YES];
-	[meReadingAsk setText:string[noCount]];
+	[meReadingAsk setText:string[6]];
+	current=6;
 }
 
 -(void)approveButtonAction:(id)sender {
-	if(next[noCount]<0)
+	if(next[current]<0)
 		[super approveButtonAction:sender];
 	else {
-		[meReadingAsk setText:string[next[noCount]]];
-		noCount=next[noCount];
+		[meReadingAsk setText:string[next[current]]];
+		current=next[current];
 	}
 }
 
