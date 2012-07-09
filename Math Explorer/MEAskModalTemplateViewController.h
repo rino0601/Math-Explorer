@@ -12,10 +12,9 @@
 extern NSString *const MEAskActivityConfirmed;
 
 @interface MEAskModalTemplateViewController:UIViewController {
-	@private
-	UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
 	@protected
 	NSUInteger noCount;
+	UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
 }
 
 -(void)sayButtonAction:(id)sender;

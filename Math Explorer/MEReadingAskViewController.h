@@ -11,6 +11,9 @@
 @interface MEReadingAskViewController:MEAskModalTemplateViewController {
 	@private
 	IBOutlet UITextView *meReadingAsk;
+	NSString *string[8];
+	int next[8];
+	int current;
 }
 
 @end
