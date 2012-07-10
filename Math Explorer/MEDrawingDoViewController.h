@@ -8,6 +8,12 @@
 
 #import "MEPageTemplateViewController.h"
 
-@interface MEDrawingDoViewController : MEPageTemplateViewController
+@class MEDrawingAskViewController;
+
+@interface MEDrawingDoViewController : MEPageTemplateViewController {
+@private
+	MEDrawingAskViewController *meDrawingAskActivity;
+	IBOutlet UILabel *meDrawingDoInstruction;
+}
 
 @end

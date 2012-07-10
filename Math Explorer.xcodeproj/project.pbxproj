@@ -66,6 +66,9 @@
 		EAFB05D415AC9F54002A4868 /* MEComputingDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFB05D215AC9F54002A4868 /* MEComputingDoViewController.xib */; };
 		EAFB05D815AC9F71002A4868 /* MEComputingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05D615AC9F71002A4868 /* MEComputingViewController.m */; };
 		EAFB05D915AC9F71002A4868 /* MEComputingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFB05D715AC9F71002A4868 /* MEComputingViewController.xib */; };
+		EAFB05E415ACAE8F002A4868 /* CIHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05DF15ACAE8F002A4868 /* CIHAppDelegate.m */; };
+		EAFB05E515ACAE8F002A4868 /* CIHCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05E115ACAE8F002A4868 /* CIHCanvasView.m */; };
+		EAFB05E615ACAE8F002A4868 /* CIHDraggableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05E315ACAE8F002A4868 /* CIHDraggableImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +153,12 @@
 		EAFB05D515AC9F71002A4868 /* MEComputingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEComputingViewController.h; sourceTree = "<group>"; };
 		EAFB05D615AC9F71002A4868 /* MEComputingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEComputingViewController.m; sourceTree = "<group>"; };
 		EAFB05D715AC9F71002A4868 /* MEComputingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEComputingViewController.xib; sourceTree = "<group>"; };
+		EAFB05DE15ACAE8F002A4868 /* CIHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIHAppDelegate.h; sourceTree = "<group>"; };
+		EAFB05DF15ACAE8F002A4868 /* CIHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIHAppDelegate.m; sourceTree = "<group>"; };
+		EAFB05E015ACAE8F002A4868 /* CIHCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIHCanvasView.h; sourceTree = "<group>"; };
+		EAFB05E115ACAE8F002A4868 /* CIHCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIHCanvasView.m; sourceTree = "<group>"; };
+		EAFB05E215ACAE8F002A4868 /* CIHDraggableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIHDraggableImageView.h; sourceTree = "<group>"; };
+		EAFB05E315ACAE8F002A4868 /* CIHDraggableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIHDraggableImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +255,7 @@
 		6322ADE615A585BC0068EC3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EAFB05E715ACB60B002A4868 /* DrawingTool */,
 				6370F44E15A7550300988BC6 /* Audios */,
 				630A0CD915A623E400557C19 /* App Icons & Background Images */,
 				63B81B0615A6C1D200A583F9 /* Core Resources */,
@@ -535,6 +545,19 @@
 			name = "Stage 0: Title";
 			sourceTree = "<group>";
 		};
+		EAFB05E715ACB60B002A4868 /* DrawingTool */ = {
+			isa = PBXGroup;
+			children = (
+				EAFB05DE15ACAE8F002A4868 /* CIHAppDelegate.h */,
+				EAFB05DF15ACAE8F002A4868 /* CIHAppDelegate.m */,
+				EAFB05E015ACAE8F002A4868 /* CIHCanvasView.h */,
+				EAFB05E115ACAE8F002A4868 /* CIHCanvasView.m */,
+				EAFB05E215ACAE8F002A4868 /* CIHDraggableImageView.h */,
+				EAFB05E315ACAE8F002A4868 /* CIHDraggableImageView.m */,
+			);
+			name = DrawingTool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -651,6 +674,9 @@
 				EAFB05CE15AC9F40002A4868 /* MEComputingTitleViewController.m in Sources */,
 				EAFB05D315AC9F54002A4868 /* MEComputingDoViewController.m in Sources */,
 				EAFB05D815AC9F71002A4868 /* MEComputingViewController.m in Sources */,
+				EAFB05E415ACAE8F002A4868 /* CIHAppDelegate.m in Sources */,
+				EAFB05E515ACAE8F002A4868 /* CIHCanvasView.m in Sources */,
+				EAFB05E615ACAE8F002A4868 /* CIHDraggableImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

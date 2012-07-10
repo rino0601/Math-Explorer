@@ -8,6 +8,12 @@
 
 #import "MEAskModalTemplateViewController.h"
 
-@interface MEDrawingAskViewController : MEAskModalTemplateViewController
+@interface MEDrawingAskViewController : MEAskModalTemplateViewController {
+	@private
+	NSInteger next[10];
+	NSString *string[10];
+	NSUInteger current;
+	IBOutlet UITextView *meDrawingAsk;
+}
 
 @end
