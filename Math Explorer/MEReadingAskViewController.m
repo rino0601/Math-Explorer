@@ -83,8 +83,12 @@
 }
 
 -(void)approveButtonAction:(id)sender {
-	if(next[current]<0)
-		[super approveButtonAction:sender];
+	if(next[current]<0) {
+		if(current==7)
+			[super approveButtonAction:sender];
+		else
+		 	[[self presentingViewController] dismissModalViewControllerAnimated:YES];
+	}
 	else {
 		[meReadingAsk setText:string[next[current]]];
 		current=next[current];
