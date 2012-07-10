@@ -12,10 +12,11 @@
 
 @implementation MEAppDelegate
 
-@synthesize homeBackup, langCode, dbo=_dbo, mainWindow=_mainWindow;
+@synthesize homeBackup, langCode, problemID=_problemID, dbo=_dbo, mainWindow=_mainWindow;
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	sqlite3_open_v2([[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"MEDatabase.sqlite3"] UTF8String], &_dbo, SQLITE_OPEN_READONLY, NULL);
+	_problemID=1;
 	
 	MELangSelectViewController *startViewController=[[MELangSelectViewController alloc] initWithNibName:@"MELangSelectViewController" bundle:nil];
 	navController=[[UINavigationController alloc] initWithRootViewController:startViewController];

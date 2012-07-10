@@ -16,7 +16,7 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	meDrawingAskActivity=[[MEDrawingAskViewController alloc] initWithNibName:@"MEdrawingAskViewController" bundle:nil];
+	meDrawingAskActivity=[[MEDrawingAskViewController alloc] initWithNibName:@"MEDrawingAskViewController" bundle:nil];
 	
 	/*// Dictionary button
 	UIButton *utilDict=[UIButton buttonWithType:UIButtonTypeCustom];

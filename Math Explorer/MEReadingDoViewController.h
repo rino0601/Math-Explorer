@@ -7,14 +7,18 @@
 //
 
 #import "MEPageTemplateViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 @class MEReadingAskViewController;
 
 @interface MEReadingDoViewController:MEPageTemplateViewController {
 	@private
+	AVAudioPlayer *avp;
+	BOOL isGoodToContinue;
 	MEReadingAskViewController *meReadingAskActivity;
 	IBOutlet UILabel *meReadingDoInstruction;
+	IBOutlet UITextView *meReadingDoProblem;
 }
 
 @end

@@ -14,22 +14,10 @@
 
 @implementation METitleViewController
 
--(void)debugButtonAction:(id)sender {
-	[[self navigationController] pushViewController:[[MEFindingDoViewController alloc] initWithNibName:@"MEFindingDoViewController" bundle:nil] animated:YES];
-}
-
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
 	[self setButton:MEButtonHome hidden:YES];
-	
-	// Dictionary button
-	UIButton *utilDebug=[UIButton buttonWithType:UIButtonTypeCustom];
-	[utilDebug setFrame:CGRectMake(332, 600, 128, 128)];
-	[utilDebug setTitle:@"DEBUG" forState:UIControlStateNormal];//@
-	[[utilDebug titleLabel] setFont:[UIFont boldSystemFontOfSize:24.0]];
-	[utilDebug addTarget:self action:@selector(debugButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[[self view] addSubview:utilDebug];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
