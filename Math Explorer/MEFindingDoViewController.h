@@ -14,7 +14,7 @@
 @interface MEFindingDoViewController:MEPageTemplateViewController {
 	@private
 	MEFindingAskViewController *meFindingAskActivity;
-	IBOutlet UILabel *meReadingDoInstruction;
+	IBOutlet UILabel *mefindingDoInstruction;
 	
 }
 

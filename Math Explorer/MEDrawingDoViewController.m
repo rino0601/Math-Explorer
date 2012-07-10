@@ -12,6 +12,7 @@
 #import "MEComputingTitleViewController.h"
 
 @implementation MEDrawingDoViewController
+
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
@@ -59,7 +60,7 @@
 }
 
 -(void)nextButtonAction:(id)sender {
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(drawyToContinue:) name:MEAskActivityConfirmed object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
 	[meDrawingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
 	
 	[self presentModalViewController:meDrawingAskActivity animated:YES];
@@ -67,7 +68,7 @@
 
 -(void)readyToContinue:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
-	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEComputingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
+	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEComputingTitleViewController alloc] initWithNibName:@"MEComputingTitleViewController" bundle:nil]] animated:YES];
 }
 
 @end

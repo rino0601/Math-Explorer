@@ -9,7 +9,7 @@
 #import "MEFindingDoViewController.h"
 #import "MEAppDelegate.h"
 #import "MEFindingAskViewController.h"
-//#import "next View controller"
+#import "MEDrawingTitleViewController.h"
 
 
 @implementation MEFindingDoViewController
@@ -46,6 +46,16 @@
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
 	sqlite3_stmt *localizer=NULL;
 	
+	sqlite3_prepare_v2(dbo, [@"SELECT value FROM general_strings WHERE key=:keystring AND lang=:langcode" UTF8String], -1, &localizer, NULL);
+	sqlite3_bind_text(localizer, 1, [@"me.finding.do.title" UTF8String], -1, NULL);
+	sqlite3_bind_int(localizer, 2, langCode);
+	sqlite3_step(localizer);
+	[self setTitle:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)]];
+	sqlite3_reset(localizer);
+	
+	sqlite3_bind_text(localizer, 1, [@"me.finding.do.instruction" UTF8String], -1, NULL);
+	sqlite3_step(localizer);
+	[mefindingDoInstruction setText:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)]];
 	sqlite3_finalize(localizer);
 	
 	localizer=NULL;
@@ -74,7 +84,7 @@
 
 -(void)readyToContinue:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
-	//[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
+	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEDrawingTitleViewController alloc] initWithNibName:@"MEDrawingTitleViewController" bundle:nil]] animated:YES];
 }
 
 @end

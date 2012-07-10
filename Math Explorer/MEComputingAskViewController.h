@@ -1,5 +1,5 @@
 //
-//  MEComputingViewController.h
+//  MEComputingAskViewController.h
 //  Math Explorer
 //
 //  Created by Hanjong Ko on 12. 7. 11..
@@ -8,10 +8,10 @@
 
 #import "MEAskModalTemplateViewController.h"
 
-@interface MEComputingViewController : MEAskModalTemplateViewController {
+@interface MEComputingAskViewController : MEAskModalTemplateViewController {
 	@private
-	NSInteger next[10];
-	NSString *string[10];
+	NSInteger next[11];
+	NSString *string[11];
 	NSUInteger current;
 	IBOutlet UITextView *meComputingAsk;
 }

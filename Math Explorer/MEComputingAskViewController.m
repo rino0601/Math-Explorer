@@ -1,20 +1,21 @@
 //
-//  MEComputingViewController.m
+//  MEComputingAskViewController.m
 //  Math Explorer
 //
 //  Created by Hanjong Ko on 12. 7. 11..
 //  Copyright (c) 2012년 SI Cyrusian. All rights reserved.
 //
 
-#import "MEComputingViewController.h"
+#import "MEComputingAskViewController.h"
 #import "MEAppDelegate.h"
 
-@implementation MEComputingViewController
+@implementation MEComputingAskViewController
+
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	NSInteger tn[10]={-1, -1, -1, 8, 7, -1, 7, -1, 4, 6};
-	for(NSUInteger i=0; i<10; ++i)
+	NSInteger tn[11]={-1, -1, -1, 8, 7, -1, 7, 10, 4, 6,-1};
+	for(NSUInteger i=0; i<11; ++i)
 		next[i]=tn[i];
 	current=5;
 	
@@ -52,6 +53,11 @@
 	sqlite3_step(localizer);
 	string[8]=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
 	string[9]=string[8];
+	sqlite3_reset(localizer);
+	
+	sqlite3_bind_text(localizer, 1, [@"me.computing.ask.answer.computed" UTF8String], -1, NULL);
+	sqlite3_step(localizer);
+	string[10]=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
 	sqlite3_finalize(localizer);
 	
 	
@@ -89,7 +95,7 @@
 
 -(void)approveButtonAction:(id)sender {
 	if(next[current]<0) {
-		if(current==7)
+		if(current==10)
 			[super approveButtonAction:sender];
 		else
 			[[self presentingViewController] dismissModalViewControllerAnimated:YES];

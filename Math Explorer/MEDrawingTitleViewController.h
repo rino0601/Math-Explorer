@@ -8,6 +8,9 @@
 
 #import "MEPageTemplateViewController.h"
 
-@interface MEDrawingTitleViewController : MEPageTemplateViewController
+@interface MEDrawingTitleViewController : MEPageTemplateViewController {
+	@private
+	IBOutlet UILabel *meDrawingTitle;
+}
 
 @end

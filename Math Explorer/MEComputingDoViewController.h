@@ -8,6 +8,12 @@
 
 #import "MEPageTemplateViewController.h"
 
-@interface MEComputingDoViewController : MEPageTemplateViewController
+@class MEComputingAskViewController;
+
+@interface MEComputingDoViewController : MEPageTemplateViewController {
+	@private
+	MEComputingAskViewController *meComputingAskActivity;
+	IBOutlet UILabel *meComputingDoInstruction;
+}
 
 @end

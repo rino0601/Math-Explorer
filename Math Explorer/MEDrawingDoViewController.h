@@ -11,7 +11,7 @@
 @class MEDrawingAskViewController;
 
 @interface MEDrawingDoViewController : MEPageTemplateViewController {
-@private
+	@private
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
 }
