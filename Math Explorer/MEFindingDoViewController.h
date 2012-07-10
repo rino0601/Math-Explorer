@@ -13,6 +13,7 @@
 
 @interface MEFindingDoViewController:MEPageTemplateViewController {
 	@private
+	BOOL isGoodToContinue;
 	MEFindingAskViewController *meFindingAskActivity;
 	IBOutlet UILabel *mefindingDoInstruction;
 	

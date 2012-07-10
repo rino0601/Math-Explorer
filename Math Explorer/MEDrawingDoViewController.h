@@ -12,6 +12,7 @@
 
 @interface MEDrawingDoViewController : MEPageTemplateViewController {
 	@private
+	BOOL isGoodToContinue;
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
 }

@@ -16,6 +16,7 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
+	isGoodToContinue=NO;
 	meDrawingAskActivity=[[MEDrawingAskViewController alloc] initWithNibName:@"MEDrawingAskViewController" bundle:nil];
 	
 	/*// Dictionary button
@@ -60,15 +61,19 @@
 }
 
 -(void)nextButtonAction:(id)sender {
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
-	[meDrawingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
-	
-	[self presentModalViewController:meDrawingAskActivity animated:YES];
+	if(isGoodToContinue==NO) {
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
+		[meDrawingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
+		
+		[self presentModalViewController:meDrawingAskActivity animated:YES];
+	} else {
+		[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEComputingTitleViewController alloc] initWithNibName:@"MEComputingTitleViewController" bundle:nil]] animated:YES];
+	}
 }
 
 -(void)readyToContinue:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
-	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEComputingTitleViewController alloc] initWithNibName:@"MEComputingTitleViewController" bundle:nil]] animated:YES];
+	isGoodToContinue=YES;
 }
 
 @end

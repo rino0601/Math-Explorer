@@ -96,8 +96,9 @@
 		[meReadingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
 		
 		[self presentModalViewController:meReadingAskActivity animated:YES];
-	} else
+	} else {
 		[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEFindingTitleViewController alloc] initWithNibName:@"MEFindingTitleViewController" bundle:nil]] animated:YES];
+	}
 }
 
 -(void)readyToContinue:(NSNotification *)notif {
