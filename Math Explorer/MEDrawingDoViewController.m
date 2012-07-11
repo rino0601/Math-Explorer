@@ -7,25 +7,25 @@
 //
 
 #import "MEDrawingDoViewController.h"
+#import "CIHCanvasView.h"
 #import "MEAppDelegate.h"
 #import "MEDrawingAskViewController.h"
 #import "MEComputingTitleViewController.h"
+
 
 @implementation MEDrawingDoViewController
 
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
+	CIHCanvasView *canvas=[[CIHCanvasView alloc] initWithFrame:CGRectMake(20, 300, 984, 280)];
+	[canvas setAlpha:0.5];
+	[canvas changeColor:[UIColor blueColor]];
+	[[self view] addSubview:canvas];
+	
+	
 	isGoodToContinue=NO;
 	meDrawingAskActivity=[[MEDrawingAskViewController alloc] initWithNibName:@"MEDrawingAskViewController" bundle:nil];
-	
-	/*// Dictionary button
-	UIButton *utilDict=[UIButton buttonWithType:UIButtonTypeCustom];
-	[utilDict setFrame:CGRectMake(332, 600, 128, 128)];
-	[utilDict setTitle:@"Dict" forState:UIControlStateNormal];//@
-	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[[self view] addSubview:utilDict];
-	//*/
 	[self setButton:MEButtonSay hidden:NO];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
@@ -49,15 +49,6 @@
 
 -(void)sayButtonAction:(id)sender {
 	//
-}
-
--(void)homeButtonAction:(id)sender {
-	NSMutableArray *restoring=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] homeBackup];
-	[restoring removeLastObject];
-	[restoring addObject:self];
-	[[self navigationController] setViewControllers:restoring animated:NO];
-	[[self navigationController] setNavigationBarHidden:YES animated:NO];
-	[[self navigationController] popViewControllerAnimated:YES];
 }
 
 -(void)nextButtonAction:(id)sender {

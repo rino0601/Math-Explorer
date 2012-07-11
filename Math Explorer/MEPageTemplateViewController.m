@@ -7,6 +7,7 @@
 //
 
 #import "MEPageTemplateViewController.h"
+#import "MEAppDelegate.h"
 
 
 @implementation MEPageTemplateViewController
@@ -61,7 +62,12 @@
 }
 
 -(void)homeButtonAction:(id)sender {
-	[[self navigationController] popToViewController:[[[self navigationController] viewControllers] objectAtIndex:1] animated:YES];
+	NSMutableArray *restoring=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] homeBackup];
+	[restoring removeLastObject];
+	[restoring addObject:self];
+	[[self navigationController] setViewControllers:restoring animated:NO];
+	[[self navigationController] setNavigationBarHidden:YES animated:NO];
+	[[self navigationController] popViewControllerAnimated:YES];
 }
 
 -(void)prevButtonAction:(id)sender {

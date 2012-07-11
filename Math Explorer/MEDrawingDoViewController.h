@@ -8,9 +8,10 @@
 
 #import "MEPageTemplateViewController.h"
 
+
 @class MEDrawingAskViewController;
 
-@interface MEDrawingDoViewController : MEPageTemplateViewController {
+@interface MEDrawingDoViewController:MEPageTemplateViewController {
 	@private
 	BOOL isGoodToContinue;
 	MEDrawingAskViewController *meDrawingAskActivity;

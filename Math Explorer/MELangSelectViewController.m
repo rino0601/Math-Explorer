@@ -26,6 +26,9 @@
 	
 	[d setLangCode:[sender tag]];
 	
+	if([d langCode]==2)
+		[d setProblemID:[d problemID]+288];
+	
 	[[self navigationController] pushViewController:[[METitleViewController alloc] initWithNibName:@"METitleViewController" bundle:nil] animated:YES];
 }
 

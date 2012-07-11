@@ -11,6 +11,7 @@
 #import "MEDrawingDoViewController.h"
 #import "MEFindingTitleViewController.h"
 
+
 @implementation MEDrawingTitleViewController
 
 -(void)viewDidLayoutSubviews {
@@ -29,15 +30,6 @@
 	sqlite3_finalize(localizer);
 	
 	localizer=NULL;
-}
-
--(void)homeButtonAction:(id)sender {
-	NSMutableArray *restoring=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] homeBackup];
-	[restoring removeLastObject];
-	[restoring addObject:self];
-	[[self navigationController] setViewControllers:restoring animated:NO];
-	[[self navigationController] setNavigationBarHidden:YES animated:NO];
-	[[self navigationController] popViewControllerAnimated:YES];
 }
 
 -(void)prevButtonAction:(id)sender {
