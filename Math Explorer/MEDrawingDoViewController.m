@@ -8,6 +8,7 @@
 
 #import "MEDrawingDoViewController.h"
 #import "CIHCanvasView.h"
+#import "CIHDraggableImageView.h"
 #import "MEAppDelegate.h"
 #import "MEDrawingAskViewController.h"
 #import "MEComputingTitleViewController.h"
@@ -18,7 +19,7 @@
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
 	
-	CIHCanvasView *canvas=[[CIHCanvasView alloc] initWithFrame:CGRectMake(20, 300, 984, 280)];
+	canvas=[[CIHCanvasView alloc] initWithFrame:CGRectMake(20, 300, 984, 280)];
 	[canvas setAlpha:0.5];
 	[canvas changeColor:[UIColor blueColor]];
 	[[self view] addSubview:canvas];
@@ -26,6 +27,21 @@
 	
 	isGoodToContinue=NO;
 	meDrawingAskActivity=[[MEDrawingAskViewController alloc] initWithNibName:@"MEDrawingAskViewController" bundle:nil];
+
+	UIButton *utilEraser=[UIButton buttonWithType:UIButtonTypeCustom];
+	[utilEraser setFrame:CGRectMake(332, 600, 128, 128)];
+	[utilEraser setTitle:@"지우개" forState:UIControlStateNormal];//@
+	[utilEraser addTarget:self action:@selector(clearSketchView:) forControlEvents:UIControlEventTouchUpInside];
+	[[self view] addSubview:utilEraser];
+
+	UIButton *utilDrag=[UIButton buttonWithType:UIButtonTypeCustom];
+	[utilDrag setFrame:CGRectMake(196, 600, 128, 128)];
+	[utilDrag setTitle:@"Dict" forState:UIControlStateNormal];//@
+	[utilDrag addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+	[[self view] addSubview:utilDrag];
+	[utilDrag setHidden:YES];
+
+	
 	[self setButton:MEButtonSay hidden:NO];
 	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode],problemID = langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
@@ -75,5 +91,42 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityConfirmed object:nil];
 	isGoodToContinue=YES;
 }
+
+-(void)clearSketchView:(id)sender {
+	[canvas clearView];
+}
+-(void)lineColorChanged:(id)sender {
+	/*/
+	switch([sender selectedSegmentIndex]) {
+		case 0:
+		default:
+			[sketchView changeColor:[UIColor blackColor]];
+			break;
+		case 1:
+			[sketchView changeColor:[UIColor redColor]];
+			break;
+		case 2:
+			[sketchView changeColor:[UIColor blueColor]];
+			break;
+	}
+	//*/
+}
+-(void)lineWidthChanged:(id)sender {
+	/*//
+	switch([sender selectedSegmentIndex]) {
+		case 0:
+		default:
+			[sketchView changeWidth:LINE_THICKNESS_THICK];
+			break;
+		case 1:
+			[sketchView changeWidth:LINE_THICKNESS_NORMAL];
+			break;
+		case 2:
+			[sketchView changeWidth:LINE_THICKNESS_THIN];
+			break;
+	}
+	 //*/
+}
+
 
 @end

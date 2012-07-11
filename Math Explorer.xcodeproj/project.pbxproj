@@ -632,6 +632,54 @@
 		EA755CBC15AAC3DF00BBEA72 /* MEFindingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */; };
 		EA9DB2AB15ACFBC2000ADA87 /* MEBTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */; };
 		EA9DB2AC15ACFBC2000ADA87 /* MEBTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */; };
+		EA9DB2E315AD18C2000ADA87 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B315AD18C2000ADA87 /* apple.png */; };
+		EA9DB2E415AD18C2000ADA87 /* apple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B415AD18C2000ADA87 /* apple@2x.png */; };
+		EA9DB2E515AD18C2000ADA87 /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B515AD18C2000ADA87 /* balloon.png */; };
+		EA9DB2E615AD18C2000ADA87 /* balloon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B615AD18C2000ADA87 /* balloon@2x.png */; };
+		EA9DB2E715AD18C2000ADA87 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B715AD18C2000ADA87 /* banana.png */; };
+		EA9DB2E815AD18C2000ADA87 /* banana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B815AD18C2000ADA87 /* banana@2x.png */; };
+		EA9DB2E915AD18C2000ADA87 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B915AD18C2000ADA87 /* bird.png */; };
+		EA9DB2EA15AD18C2000ADA87 /* bird@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2BA15AD18C2000ADA87 /* bird@2x.png */; };
+		EA9DB2EB15AD18C2000ADA87 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2BB15AD18C2000ADA87 /* book.png */; };
+		EA9DB2EC15AD18C2000ADA87 /* book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2BC15AD18C2000ADA87 /* book@2x.png */; };
+		EA9DB2ED15AD18C2000ADA87 /* can.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2BD15AD18C2000ADA87 /* can.png */; };
+		EA9DB2EE15AD18C2000ADA87 /* can@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2BE15AD18C2000ADA87 /* can@2x.png */; };
+		EA9DB2EF15AD18C2000ADA87 /* candy.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2BF15AD18C2000ADA87 /* candy.png */; };
+		EA9DB2F015AD18C2000ADA87 /* candy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C015AD18C2000ADA87 /* candy@2x.png */; };
+		EA9DB2F115AD18C2000ADA87 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C115AD18C2000ADA87 /* cat.png */; };
+		EA9DB2F215AD18C2000ADA87 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C215AD18C2000ADA87 /* cat@2x.png */; };
+		EA9DB2F315AD18C2000ADA87 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C315AD18C2000ADA87 /* coin.png */; };
+		EA9DB2F415AD18C2000ADA87 /* coin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C415AD18C2000ADA87 /* coin@2x.png */; };
+		EA9DB2F515AD18C2000ADA87 /* cookie.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C515AD18C2000ADA87 /* cookie.png */; };
+		EA9DB2F615AD18C2000ADA87 /* cookie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C615AD18C2000ADA87 /* cookie@2x.png */; };
+		EA9DB2F715AD18C2000ADA87 /* cow.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C715AD18C2000ADA87 /* cow.png */; };
+		EA9DB2F815AD18C2000ADA87 /* cow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C815AD18C2000ADA87 /* cow@2x.png */; };
+		EA9DB2F915AD18C2000ADA87 /* crayon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2C915AD18C2000ADA87 /* crayon.png */; };
+		EA9DB2FA15AD18C2000ADA87 /* crayon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2CA15AD18C2000ADA87 /* crayon@2x.png */; };
+		EA9DB2FB15AD18C2000ADA87 /* dish.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2CB15AD18C2000ADA87 /* dish.png */; };
+		EA9DB2FC15AD18C2000ADA87 /* dish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2CC15AD18C2000ADA87 /* dish@2x.png */; };
+		EA9DB2FD15AD18C2000ADA87 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2CD15AD18C2000ADA87 /* dog.png */; };
+		EA9DB2FE15AD18C2000ADA87 /* dog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2CE15AD18C2000ADA87 /* dog@2x.png */; };
+		EA9DB2FF15AD18C2000ADA87 /* duck.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2CF15AD18C2000ADA87 /* duck.png */; };
+		EA9DB30015AD18C2000ADA87 /* duck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D015AD18C2000ADA87 /* duck@2x.png */; };
+		EA9DB30115AD18C2000ADA87 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D115AD18C2000ADA87 /* flower.png */; };
+		EA9DB30215AD18C2000ADA87 /* flower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D215AD18C2000ADA87 /* flower@2x.png */; };
+		EA9DB30315AD18C2000ADA87 /* grape.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D315AD18C2000ADA87 /* grape.png */; };
+		EA9DB30415AD18C2000ADA87 /* grape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D415AD18C2000ADA87 /* grape@2x.png */; };
+		EA9DB30515AD18C2000ADA87 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D515AD18C2000ADA87 /* house.png */; };
+		EA9DB30615AD18C2000ADA87 /* house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D615AD18C2000ADA87 /* house@2x.png */; };
+		EA9DB30715AD18C2000ADA87 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D715AD18C2000ADA87 /* orange.png */; };
+		EA9DB30815AD18C2000ADA87 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D815AD18C2000ADA87 /* orange@2x.png */; };
+		EA9DB30915AD18C2000ADA87 /* pear.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2D915AD18C2000ADA87 /* pear.png */; };
+		EA9DB30A15AD18C2000ADA87 /* pear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2DA15AD18C2000ADA87 /* pear@2x.png */; };
+		EA9DB30B15AD18C2000ADA87 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2DB15AD18C2000ADA87 /* pencil.png */; };
+		EA9DB30C15AD18C2000ADA87 /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2DC15AD18C2000ADA87 /* pencil@2x.png */; };
+		EA9DB30D15AD18C2000ADA87 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2DD15AD18C2000ADA87 /* point.png */; };
+		EA9DB30E15AD18C2000ADA87 /* point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2DE15AD18C2000ADA87 /* point@2x.png */; };
+		EA9DB30F15AD18C2000ADA87 /* sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2DF15AD18C2000ADA87 /* sticker.png */; };
+		EA9DB31015AD18C2000ADA87 /* sticker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2E015AD18C2000ADA87 /* sticker@2x.png */; };
+		EA9DB31115AD18C2000ADA87 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2E115AD18C2000ADA87 /* tree.png */; };
+		EA9DB31215AD18C2000ADA87 /* tree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2E215AD18C2000ADA87 /* tree@2x.png */; };
 		EAFB05BF15AC9ED5002A4868 /* MEDrawingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */; };
 		EAFB05C015AC9ED5002A4868 /* MEDrawingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */; };
 		EAFB05C415AC9EF0002A4868 /* MEDrawingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05C215AC9EF0002A4868 /* MEDrawingDoViewController.m */; };
@@ -1291,6 +1339,54 @@
 		EA9DB2A815ACFBC2000ADA87 /* MEBTFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEBTFViewController.h; sourceTree = "<group>"; };
 		EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEBTFViewController.m; sourceTree = "<group>"; };
 		EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEBTFViewController.xib; sourceTree = "<group>"; };
+		EA9DB2B315AD18C2000ADA87 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = draggable/apple.png; sourceTree = "<group>"; };
+		EA9DB2B415AD18C2000ADA87 /* apple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple@2x.png"; path = "draggable/apple@2x.png"; sourceTree = "<group>"; };
+		EA9DB2B515AD18C2000ADA87 /* balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = balloon.png; path = draggable/balloon.png; sourceTree = "<group>"; };
+		EA9DB2B615AD18C2000ADA87 /* balloon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "balloon@2x.png"; path = "draggable/balloon@2x.png"; sourceTree = "<group>"; };
+		EA9DB2B715AD18C2000ADA87 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banana.png; path = draggable/banana.png; sourceTree = "<group>"; };
+		EA9DB2B815AD18C2000ADA87 /* banana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "banana@2x.png"; path = "draggable/banana@2x.png"; sourceTree = "<group>"; };
+		EA9DB2B915AD18C2000ADA87 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bird.png; path = draggable/bird.png; sourceTree = "<group>"; };
+		EA9DB2BA15AD18C2000ADA87 /* bird@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bird@2x.png"; path = "draggable/bird@2x.png"; sourceTree = "<group>"; };
+		EA9DB2BB15AD18C2000ADA87 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book.png; path = draggable/book.png; sourceTree = "<group>"; };
+		EA9DB2BC15AD18C2000ADA87 /* book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book@2x.png"; path = "draggable/book@2x.png"; sourceTree = "<group>"; };
+		EA9DB2BD15AD18C2000ADA87 /* can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = can.png; path = draggable/can.png; sourceTree = "<group>"; };
+		EA9DB2BE15AD18C2000ADA87 /* can@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "can@2x.png"; path = "draggable/can@2x.png"; sourceTree = "<group>"; };
+		EA9DB2BF15AD18C2000ADA87 /* candy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = candy.png; path = draggable/candy.png; sourceTree = "<group>"; };
+		EA9DB2C015AD18C2000ADA87 /* candy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "candy@2x.png"; path = "draggable/candy@2x.png"; sourceTree = "<group>"; };
+		EA9DB2C115AD18C2000ADA87 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = draggable/cat.png; sourceTree = "<group>"; };
+		EA9DB2C215AD18C2000ADA87 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cat@2x.png"; path = "draggable/cat@2x.png"; sourceTree = "<group>"; };
+		EA9DB2C315AD18C2000ADA87 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin.png; path = draggable/coin.png; sourceTree = "<group>"; };
+		EA9DB2C415AD18C2000ADA87 /* coin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "coin@2x.png"; path = "draggable/coin@2x.png"; sourceTree = "<group>"; };
+		EA9DB2C515AD18C2000ADA87 /* cookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cookie.png; path = draggable/cookie.png; sourceTree = "<group>"; };
+		EA9DB2C615AD18C2000ADA87 /* cookie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cookie@2x.png"; path = "draggable/cookie@2x.png"; sourceTree = "<group>"; };
+		EA9DB2C715AD18C2000ADA87 /* cow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cow.png; path = draggable/cow.png; sourceTree = "<group>"; };
+		EA9DB2C815AD18C2000ADA87 /* cow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cow@2x.png"; path = "draggable/cow@2x.png"; sourceTree = "<group>"; };
+		EA9DB2C915AD18C2000ADA87 /* crayon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crayon.png; path = draggable/crayon.png; sourceTree = "<group>"; };
+		EA9DB2CA15AD18C2000ADA87 /* crayon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "crayon@2x.png"; path = "draggable/crayon@2x.png"; sourceTree = "<group>"; };
+		EA9DB2CB15AD18C2000ADA87 /* dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dish.png; path = draggable/dish.png; sourceTree = "<group>"; };
+		EA9DB2CC15AD18C2000ADA87 /* dish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dish@2x.png"; path = "draggable/dish@2x.png"; sourceTree = "<group>"; };
+		EA9DB2CD15AD18C2000ADA87 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog.png; path = draggable/dog.png; sourceTree = "<group>"; };
+		EA9DB2CE15AD18C2000ADA87 /* dog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dog@2x.png"; path = "draggable/dog@2x.png"; sourceTree = "<group>"; };
+		EA9DB2CF15AD18C2000ADA87 /* duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = duck.png; path = draggable/duck.png; sourceTree = "<group>"; };
+		EA9DB2D015AD18C2000ADA87 /* duck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "duck@2x.png"; path = "draggable/duck@2x.png"; sourceTree = "<group>"; };
+		EA9DB2D115AD18C2000ADA87 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower.png; path = draggable/flower.png; sourceTree = "<group>"; };
+		EA9DB2D215AD18C2000ADA87 /* flower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flower@2x.png"; path = "draggable/flower@2x.png"; sourceTree = "<group>"; };
+		EA9DB2D315AD18C2000ADA87 /* grape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grape.png; path = draggable/grape.png; sourceTree = "<group>"; };
+		EA9DB2D415AD18C2000ADA87 /* grape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grape@2x.png"; path = "draggable/grape@2x.png"; sourceTree = "<group>"; };
+		EA9DB2D515AD18C2000ADA87 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = draggable/house.png; sourceTree = "<group>"; };
+		EA9DB2D615AD18C2000ADA87 /* house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house@2x.png"; path = "draggable/house@2x.png"; sourceTree = "<group>"; };
+		EA9DB2D715AD18C2000ADA87 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange.png; path = draggable/orange.png; sourceTree = "<group>"; };
+		EA9DB2D815AD18C2000ADA87 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "orange@2x.png"; path = "draggable/orange@2x.png"; sourceTree = "<group>"; };
+		EA9DB2D915AD18C2000ADA87 /* pear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pear.png; path = draggable/pear.png; sourceTree = "<group>"; };
+		EA9DB2DA15AD18C2000ADA87 /* pear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pear@2x.png"; path = "draggable/pear@2x.png"; sourceTree = "<group>"; };
+		EA9DB2DB15AD18C2000ADA87 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pencil.png; path = draggable/pencil.png; sourceTree = "<group>"; };
+		EA9DB2DC15AD18C2000ADA87 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pencil@2x.png"; path = "draggable/pencil@2x.png"; sourceTree = "<group>"; };
+		EA9DB2DD15AD18C2000ADA87 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = point.png; path = draggable/point.png; sourceTree = "<group>"; };
+		EA9DB2DE15AD18C2000ADA87 /* point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "point@2x.png"; path = "draggable/point@2x.png"; sourceTree = "<group>"; };
+		EA9DB2DF15AD18C2000ADA87 /* sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sticker.png; path = draggable/sticker.png; sourceTree = "<group>"; };
+		EA9DB2E015AD18C2000ADA87 /* sticker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sticker@2x.png"; path = "draggable/sticker@2x.png"; sourceTree = "<group>"; };
+		EA9DB2E115AD18C2000ADA87 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tree.png; path = draggable/tree.png; sourceTree = "<group>"; };
+		EA9DB2E215AD18C2000ADA87 /* tree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tree@2x.png"; path = "draggable/tree@2x.png"; sourceTree = "<group>"; };
 		EAFB05BC15AC9ED5002A4868 /* MEDrawingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDrawingTitleViewController.h; sourceTree = "<group>"; };
 		EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDrawingTitleViewController.m; sourceTree = "<group>"; };
 		EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEDrawingTitleViewController.xib; sourceTree = "<group>"; };
@@ -1410,8 +1506,8 @@
 			isa = PBXGroup;
 			children = (
 				630A0CD915A623E400557C19 /* App Icons & Background Images */,
-				EA21051715A81B8A001D7405 /* Ask Modal Template */,
 				6370F44E15A7550300988BC6 /* Audios */,
+				EA21051715A81B8A001D7405 /* Ask Modal Template */,
 				6322ADE715A585C20068EC3D /* Button Images */,
 				63B81B0615A6C1D200A583F9 /* Core Resources */,
 				EAFB05E715ACB60B002A4868 /* DrawingTool */,
@@ -2222,6 +2318,61 @@
 			name = "Step 5: BTF";
 			sourceTree = "<group>";
 		};
+		EA9DB2B115AD1895000ADA87 /* draggable images */ = {
+			isa = PBXGroup;
+			children = (
+				EA9DB2B315AD18C2000ADA87 /* apple.png */,
+				EA9DB2B415AD18C2000ADA87 /* apple@2x.png */,
+				EA9DB2B515AD18C2000ADA87 /* balloon.png */,
+				EA9DB2B615AD18C2000ADA87 /* balloon@2x.png */,
+				EA9DB2B715AD18C2000ADA87 /* banana.png */,
+				EA9DB2B815AD18C2000ADA87 /* banana@2x.png */,
+				EA9DB2B915AD18C2000ADA87 /* bird.png */,
+				EA9DB2BA15AD18C2000ADA87 /* bird@2x.png */,
+				EA9DB2BB15AD18C2000ADA87 /* book.png */,
+				EA9DB2BC15AD18C2000ADA87 /* book@2x.png */,
+				EA9DB2BD15AD18C2000ADA87 /* can.png */,
+				EA9DB2BE15AD18C2000ADA87 /* can@2x.png */,
+				EA9DB2BF15AD18C2000ADA87 /* candy.png */,
+				EA9DB2C015AD18C2000ADA87 /* candy@2x.png */,
+				EA9DB2C115AD18C2000ADA87 /* cat.png */,
+				EA9DB2C215AD18C2000ADA87 /* cat@2x.png */,
+				EA9DB2C315AD18C2000ADA87 /* coin.png */,
+				EA9DB2C415AD18C2000ADA87 /* coin@2x.png */,
+				EA9DB2C515AD18C2000ADA87 /* cookie.png */,
+				EA9DB2C615AD18C2000ADA87 /* cookie@2x.png */,
+				EA9DB2C715AD18C2000ADA87 /* cow.png */,
+				EA9DB2C815AD18C2000ADA87 /* cow@2x.png */,
+				EA9DB2C915AD18C2000ADA87 /* crayon.png */,
+				EA9DB2CA15AD18C2000ADA87 /* crayon@2x.png */,
+				EA9DB2CB15AD18C2000ADA87 /* dish.png */,
+				EA9DB2CC15AD18C2000ADA87 /* dish@2x.png */,
+				EA9DB2CD15AD18C2000ADA87 /* dog.png */,
+				EA9DB2CE15AD18C2000ADA87 /* dog@2x.png */,
+				EA9DB2CF15AD18C2000ADA87 /* duck.png */,
+				EA9DB2D015AD18C2000ADA87 /* duck@2x.png */,
+				EA9DB2D115AD18C2000ADA87 /* flower.png */,
+				EA9DB2D215AD18C2000ADA87 /* flower@2x.png */,
+				EA9DB2D315AD18C2000ADA87 /* grape.png */,
+				EA9DB2D415AD18C2000ADA87 /* grape@2x.png */,
+				EA9DB2D515AD18C2000ADA87 /* house.png */,
+				EA9DB2D615AD18C2000ADA87 /* house@2x.png */,
+				EA9DB2D715AD18C2000ADA87 /* orange.png */,
+				EA9DB2D815AD18C2000ADA87 /* orange@2x.png */,
+				EA9DB2D915AD18C2000ADA87 /* pear.png */,
+				EA9DB2DA15AD18C2000ADA87 /* pear@2x.png */,
+				EA9DB2DB15AD18C2000ADA87 /* pencil.png */,
+				EA9DB2DC15AD18C2000ADA87 /* pencil@2x.png */,
+				EA9DB2DD15AD18C2000ADA87 /* point.png */,
+				EA9DB2DE15AD18C2000ADA87 /* point@2x.png */,
+				EA9DB2DF15AD18C2000ADA87 /* sticker.png */,
+				EA9DB2E015AD18C2000ADA87 /* sticker@2x.png */,
+				EA9DB2E115AD18C2000ADA87 /* tree.png */,
+				EA9DB2E215AD18C2000ADA87 /* tree@2x.png */,
+			);
+			name = "draggable images";
+			sourceTree = "<group>";
+		};
 		EAFB05B015AC9DDB002A4868 /* Step 3: Drawing */ = {
 			isa = PBXGroup;
 			children = (
@@ -2309,6 +2460,7 @@
 				EAFB05E115ACAE8F002A4868 /* CIHCanvasView.m */,
 				EAFB05E215ACAE8F002A4868 /* CIHDraggableImageView.h */,
 				EAFB05E315ACAE8F002A4868 /* CIHDraggableImageView.m */,
+				EA9DB2B115AD1895000ADA87 /* draggable images */,
 			);
 			name = DrawingTool;
 			sourceTree = "<group>";
@@ -2976,6 +3128,54 @@
 				6396987B15ACE24200CEE8E5 /* me.problem.2.287.m4a in Resources */,
 				6396987C15ACE24200CEE8E5 /* me.problem.2.288.m4a in Resources */,
 				EA9DB2AC15ACFBC2000ADA87 /* MEBTFViewController.xib in Resources */,
+				EA9DB2E315AD18C2000ADA87 /* apple.png in Resources */,
+				EA9DB2E415AD18C2000ADA87 /* apple@2x.png in Resources */,
+				EA9DB2E515AD18C2000ADA87 /* balloon.png in Resources */,
+				EA9DB2E615AD18C2000ADA87 /* balloon@2x.png in Resources */,
+				EA9DB2E715AD18C2000ADA87 /* banana.png in Resources */,
+				EA9DB2E815AD18C2000ADA87 /* banana@2x.png in Resources */,
+				EA9DB2E915AD18C2000ADA87 /* bird.png in Resources */,
+				EA9DB2EA15AD18C2000ADA87 /* bird@2x.png in Resources */,
+				EA9DB2EB15AD18C2000ADA87 /* book.png in Resources */,
+				EA9DB2EC15AD18C2000ADA87 /* book@2x.png in Resources */,
+				EA9DB2ED15AD18C2000ADA87 /* can.png in Resources */,
+				EA9DB2EE15AD18C2000ADA87 /* can@2x.png in Resources */,
+				EA9DB2EF15AD18C2000ADA87 /* candy.png in Resources */,
+				EA9DB2F015AD18C2000ADA87 /* candy@2x.png in Resources */,
+				EA9DB2F115AD18C2000ADA87 /* cat.png in Resources */,
+				EA9DB2F215AD18C2000ADA87 /* cat@2x.png in Resources */,
+				EA9DB2F315AD18C2000ADA87 /* coin.png in Resources */,
+				EA9DB2F415AD18C2000ADA87 /* coin@2x.png in Resources */,
+				EA9DB2F515AD18C2000ADA87 /* cookie.png in Resources */,
+				EA9DB2F615AD18C2000ADA87 /* cookie@2x.png in Resources */,
+				EA9DB2F715AD18C2000ADA87 /* cow.png in Resources */,
+				EA9DB2F815AD18C2000ADA87 /* cow@2x.png in Resources */,
+				EA9DB2F915AD18C2000ADA87 /* crayon.png in Resources */,
+				EA9DB2FA15AD18C2000ADA87 /* crayon@2x.png in Resources */,
+				EA9DB2FB15AD18C2000ADA87 /* dish.png in Resources */,
+				EA9DB2FC15AD18C2000ADA87 /* dish@2x.png in Resources */,
+				EA9DB2FD15AD18C2000ADA87 /* dog.png in Resources */,
+				EA9DB2FE15AD18C2000ADA87 /* dog@2x.png in Resources */,
+				EA9DB2FF15AD18C2000ADA87 /* duck.png in Resources */,
+				EA9DB30015AD18C2000ADA87 /* duck@2x.png in Resources */,
+				EA9DB30115AD18C2000ADA87 /* flower.png in Resources */,
+				EA9DB30215AD18C2000ADA87 /* flower@2x.png in Resources */,
+				EA9DB30315AD18C2000ADA87 /* grape.png in Resources */,
+				EA9DB30415AD18C2000ADA87 /* grape@2x.png in Resources */,
+				EA9DB30515AD18C2000ADA87 /* house.png in Resources */,
+				EA9DB30615AD18C2000ADA87 /* house@2x.png in Resources */,
+				EA9DB30715AD18C2000ADA87 /* orange.png in Resources */,
+				EA9DB30815AD18C2000ADA87 /* orange@2x.png in Resources */,
+				EA9DB30915AD18C2000ADA87 /* pear.png in Resources */,
+				EA9DB30A15AD18C2000ADA87 /* pear@2x.png in Resources */,
+				EA9DB30B15AD18C2000ADA87 /* pencil.png in Resources */,
+				EA9DB30C15AD18C2000ADA87 /* pencil@2x.png in Resources */,
+				EA9DB30D15AD18C2000ADA87 /* point.png in Resources */,
+				EA9DB30E15AD18C2000ADA87 /* point@2x.png in Resources */,
+				EA9DB30F15AD18C2000ADA87 /* sticker.png in Resources */,
+				EA9DB31015AD18C2000ADA87 /* sticker@2x.png in Resources */,
+				EA9DB31115AD18C2000ADA87 /* tree.png in Resources */,
+				EA9DB31215AD18C2000ADA87 /* tree@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

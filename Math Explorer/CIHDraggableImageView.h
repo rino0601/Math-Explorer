@@ -26,5 +26,4 @@
 @optional
 -(void)draggableImageView:(CIHDraggableImageView *)view dragFinishedOnKeyWindowAt:(CGPoint)groundZero;
 -(UIView *)getSketchFrame;
-
 @end

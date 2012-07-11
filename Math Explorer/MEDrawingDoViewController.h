@@ -7,13 +7,15 @@
 //
 
 #import "MEPageTemplateViewController.h"
+#import "CIHDraggableImageView.h"
 
-
+@class  CIHCanvasView;
 @class MEDrawingAskViewController;
 
-@interface MEDrawingDoViewController:MEPageTemplateViewController {
+@interface MEDrawingDoViewController:MEPageTemplateViewController <CIHDraggableImageViewDelegate>{
 	@private
 	BOOL isGoodToContinue;
+	CIHCanvasView *canvas;
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
 	IBOutlet UITextView *meDrawingDoProblem;
