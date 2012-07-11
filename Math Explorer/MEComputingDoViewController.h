@@ -12,6 +12,7 @@
 
 @interface MEComputingDoViewController : MEPageTemplateViewController {
 	@private
+	BOOL isGoodToContinue;
 	MEComputingAskViewController *meComputingAskActivity;
 	IBOutlet UILabel *meComputingDoInstruction;
 }

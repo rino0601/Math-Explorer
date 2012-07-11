@@ -53,7 +53,7 @@
 	localizer=NULL;
 	
 	NSArray *container=[problem componentsSeparatedByString:@" "];
-	NSArray *importantArray=[NSArray arrayWithObject:@"Backy"];
+	NSArray *importantArray=[NSArray arrayWithObjects:@"Becky",@"apples",nil];
 	
 	RINFindAct *prev=nil;
 	for(NSString *key in container) {
@@ -178,6 +178,13 @@ static NSMutableArray *_sentence;
 	for(RINFindAct *key in [RINFindAct sentence]) {
 		if([[key currentTitle] isEqualToString:[me currentTitle]]) {
 			[key setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+		} else {
+			if([[key currentTitle] hasPrefix:[me currentTitle]]) {
+				[key setTitleColor:[UIColor redColor] forState:UIControlStateNormal];	
+			}
+			if ([[me currentTitle] hasPrefix:[key currentTitle]]) {
+				[key setTitleColor:[UIColor redColor] forState:UIControlStateNormal];	
+			}
 		}
 	}
 	return word;

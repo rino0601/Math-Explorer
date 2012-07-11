@@ -630,6 +630,8 @@
 		EA755CB615AAB91D00BBEA72 /* MEFindingAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */; };
 		EA755CB715AAB91D00BBEA72 /* MEFindingAskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */; };
 		EA755CBC15AAC3DF00BBEA72 /* MEFindingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */; };
+		EA9DB2AB15ACFBC2000ADA87 /* MEBTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */; };
+		EA9DB2AC15ACFBC2000ADA87 /* MEBTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */; };
 		EAFB05BF15AC9ED5002A4868 /* MEDrawingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */; };
 		EAFB05C015AC9ED5002A4868 /* MEDrawingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */; };
 		EAFB05C415AC9EF0002A4868 /* MEDrawingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05C215AC9EF0002A4868 /* MEDrawingDoViewController.m */; };
@@ -1286,6 +1288,9 @@
 		EA755CB315AAB91D00BBEA72 /* MEFindingAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingAskViewController.h; sourceTree = "<group>"; };
 		EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingAskViewController.m; sourceTree = "<group>"; };
 		EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingAskViewController.xib; sourceTree = "<group>"; };
+		EA9DB2A815ACFBC2000ADA87 /* MEBTFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEBTFViewController.h; sourceTree = "<group>"; };
+		EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEBTFViewController.m; sourceTree = "<group>"; };
+		EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEBTFViewController.xib; sourceTree = "<group>"; };
 		EAFB05BC15AC9ED5002A4868 /* MEDrawingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDrawingTitleViewController.h; sourceTree = "<group>"; };
 		EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDrawingTitleViewController.m; sourceTree = "<group>"; };
 		EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEDrawingTitleViewController.xib; sourceTree = "<group>"; };
@@ -1449,6 +1454,7 @@
 				EA755C9F15AAB08100BBEA72 /* Step 2: Finding */,
 				EAFB05B015AC9DDB002A4868 /* Step 3: Drawing */,
 				EAFB05B215AC9DEB002A4868 /* Step 4: Computing */,
+				EA9DB2A615ACFB3F000ADA87 /* Step 5: BTF */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -2206,6 +2212,16 @@
 			name = "Stage 2: Ask Activity";
 			sourceTree = "<group>";
 		};
+		EA9DB2A615ACFB3F000ADA87 /* Step 5: BTF */ = {
+			isa = PBXGroup;
+			children = (
+				EA9DB2A815ACFBC2000ADA87 /* MEBTFViewController.h */,
+				EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */,
+				EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */,
+			);
+			name = "Step 5: BTF";
+			sourceTree = "<group>";
+		};
 		EAFB05B015AC9DDB002A4868 /* Step 3: Drawing */ = {
 			isa = PBXGroup;
 			children = (
@@ -2959,6 +2975,7 @@
 				6396987A15ACE24200CEE8E5 /* me.problem.2.286.m4a in Resources */,
 				6396987B15ACE24200CEE8E5 /* me.problem.2.287.m4a in Resources */,
 				6396987C15ACE24200CEE8E5 /* me.problem.2.288.m4a in Resources */,
+				EA9DB2AC15ACFBC2000ADA87 /* MEBTFViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2991,6 +3008,7 @@
 				EAFB05D815AC9F71002A4868 /* MEComputingAskViewController.m in Sources */,
 				EAFB05E515ACAE8F002A4868 /* CIHCanvasView.m in Sources */,
 				EAFB05E615ACAE8F002A4868 /* CIHDraggableImageView.m in Sources */,
+				EA9DB2AB15ACFBC2000ADA87 /* MEBTFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
