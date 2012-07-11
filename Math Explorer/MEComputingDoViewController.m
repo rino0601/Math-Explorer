@@ -9,7 +9,7 @@
 #import "MEComputingDoViewController.h"
 #import "MEAppDelegate.h"
 #import "MEComputingAskViewController.h"
-// some where.
+#import "MEBTFViewController.h"
 
 @implementation MEComputingDoViewController
 
@@ -67,7 +67,7 @@
 		
 		[self presentModalViewController:meComputingAskActivity animated:YES];
 	} else {
-		//goto next
+		[[self navigationController] pushViewController:[[MEBTFViewController alloc] initWithNibName:@"MEBTFViewController" bundle:nil] animated:YES];
 	}
 }
 

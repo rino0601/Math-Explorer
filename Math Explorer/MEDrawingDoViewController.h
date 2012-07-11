@@ -16,6 +16,7 @@
 	BOOL isGoodToContinue;
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
+	IBOutlet UITextView *meDrawingDoProblem;
 }
 
 @end

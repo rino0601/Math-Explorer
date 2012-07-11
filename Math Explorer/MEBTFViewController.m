@@ -17,7 +17,7 @@
 	[super viewDidLayoutSubviews];
 	
 	[self setButton:MEButtonHome hidden:YES];
-	[self setButton:MEButtonSay hidden:NO];
+	[self setButton:MEButtonSay hidden:YES];
 	
 }
 

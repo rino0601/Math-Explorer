@@ -77,16 +77,15 @@
 	//
 }
 
--(void)homeButtonAction:(id)sender {
-	NSMutableArray *restoring=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] homeBackup];
-	[restoring removeLastObject];
-	[restoring addObject:self];
-	[[self navigationController] setViewControllers:restoring animated:NO];
-	[[self navigationController] setNavigationBarHidden:YES animated:NO];
-	[[self navigationController] popViewControllerAnimated:YES];
-}
-
 -(void)nextButtonAction:(id)sender {
+	NSMutableString *answer = [[NSMutableString alloc] init];
+	[answer appendString:@"\""];
+	for(NSString *key in [RINFindAct foundWord]) {
+		[answer appendFormat:@" %@,",key];
+	}
+	answer=[[NSMutableString alloc] initWithString:[answer substringToIndex:[answer length]-1]];
+	[answer appendString:@"\""];
+	[meFindingAskActivity setMyAnswer:answer];
 	if(isGoodToContinue==NO) {
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
 		[meFindingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];

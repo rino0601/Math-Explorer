@@ -13,7 +13,9 @@
 	NSInteger next[10];
 	NSString *string[10];
 	NSUInteger current;
+	NSString *formatForAnswer;
 	IBOutlet UITextView *meFindingAsk;
 }
+@property(strong,nonatomic) NSString *myAnswer;
 
 @end

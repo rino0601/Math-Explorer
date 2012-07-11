@@ -10,6 +10,7 @@
 #import "MEAppDelegate.h"
 
 @implementation MEFindingAskViewController
+@synthesize myAnswer;
 
 -(void)viewDidLayoutSubviews {
 	[super viewDidLayoutSubviews];
@@ -51,8 +52,7 @@
 	
 	sqlite3_bind_text(localizer, 1, [@"me.finding.ask.answer" UTF8String], -1, NULL);
 	sqlite3_step(localizer);
-	string[8]=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
-	string[9]=string[8];
+	formatForAnswer=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
 	sqlite3_finalize(localizer);
 	
 	
@@ -84,11 +84,19 @@
 	[chkAprv setHidden:NO];
 	[chkNo setHidden:YES];
 	[chkYes setHidden:YES];
+	string[9] = [NSString stringWithFormat:formatForAnswer,myAnswer];
 	[meFindingAsk setText:string[9]];
 	current=9;
 }
 
 -(void)approveButtonAction:(id)sender {
+	if(next[current]==8) {
+		string[8] = [NSString stringWithFormat:formatForAnswer,myAnswer];
+	}
+	if(next[current]==9) {
+		string[9] = [NSString stringWithFormat:formatForAnswer,myAnswer];
+	}
+	
 	if(next[current]<0) {
 		if(current==7)
 			[super approveButtonAction:sender];
