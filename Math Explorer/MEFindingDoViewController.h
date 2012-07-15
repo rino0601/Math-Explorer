@@ -20,22 +20,3 @@
 }
 
 @end
-
-@interface RINFindAct : UIButton {
-	@private
-	RINFindAct *front, *rear;
-	BOOL relateF,relateR;
-	BOOL important;
-}
-@property BOOL important;
-
-+(NSMutableArray *)foundWord;
-+(NSMutableArray *)sentence;
--(CGRect)arragementBysize:(CGSize)itSize;
--(id)initWithString:(NSString *)string Front:(RINFindAct *)_front;
--(void)found:(id)sender;
--(NSMutableString *)_found:(id)sender;
-
--(void)setRear:(RINFindAct *)_rear;
-
-@end
