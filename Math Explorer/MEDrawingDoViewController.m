@@ -12,6 +12,7 @@
 #import "MEAppDelegate.h"
 #import "MEDrawingAskViewController.h"
 #import "MEComputingTitleViewController.h"
+#import "RINFindAct.h"
 
 
 @implementation MEDrawingDoViewController
@@ -34,12 +35,11 @@
 	[utilEraser addTarget:self action:@selector(clearSketchView:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:utilEraser];
 
-	UIButton *utilDrag=[UIButton buttonWithType:UIButtonTypeCustom];
-	[utilDrag setFrame:CGRectMake(196, 600, 128, 128)];
-	[utilDrag setTitle:@"Dict" forState:UIControlStateNormal];//@
-	[utilDrag addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[[self view] addSubview:utilDrag];
-	[utilDrag setHidden:YES];
+	CIHDraggableImageView *item = [[CIHDraggableImageView alloc] initWithFrame:CGRectMake(196, 600, 128, 128)];
+	[item setImage:[UIImage imageNamed:@"apple.png"]];
+	[item setDelegate:self];
+	[item setUserInteractionEnabled:YES];
+	[[self view] addSubview:item];
 
 	
 	[self setButton:MEButtonSay hidden:NO];
@@ -66,10 +66,29 @@
 	sqlite3_step(localizer);
 	const char *sv1=(const char *)sqlite3_column_text(localizer, 1), *sv2=(const char *)sqlite3_column_text(localizer, 2), *ov1=(const char *)sqlite3_column_text(localizer, 3), *ov2=(const char *)sqlite3_column_text(localizer, 4);
 	char emptstr[1]={0};
-	[meDrawingDoProblem setText:[NSString stringWithFormat:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)], sv1==NULL?emptstr:sv1, sv2==NULL?emptstr:sv2, ov1==NULL?emptstr:ov1, ov2==NULL?emptstr:ov2, sqlite3_column_int(localizer, 5), sqlite3_column_int(localizer, 6)]];
+	NSString *problem =[NSString stringWithFormat:[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)], sv1==NULL?emptstr:sv1, sv2==NULL?emptstr:sv2, ov1==NULL?emptstr:ov1, ov2==NULL?emptstr:ov2, sqlite3_column_int(localizer, 5), sqlite3_column_int(localizer, 6)];
 	sqlite3_finalize(localizer);
 	
 	localizer=NULL;
+	
+	NSArray *container=[problem componentsSeparatedByString:@" "];
+	NSArray *importantArray=[NSArray arrayWithObjects:@"Becky",@"apples",nil];
+	
+	RINFindAct *prev=nil;
+	for(NSString *key in container) {
+		RINFindAct *now=[RINFindAct alloc];
+		if(prev!=nil) {
+			[prev setRear:now];
+		}
+		now = [now initWithString:key Front:prev Frame:CGRectMake(20, 110, 984, 190)];
+		for(NSString *subkey in importantArray) {
+			if([key hasPrefix:subkey]) {
+				[now setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+			}
+		}
+		[self.view addSubview:now];
+		prev= now;
+	}
 }
 
 -(void)sayButtonAction:(id)sender {
@@ -126,6 +145,9 @@
 			break;
 	}
 	 //*/
+}
+-(void)draggableImageView:(CIHDraggableImageView *)view dragFinishedOnKeyWindowAt:(CGPoint)groundZero {
+	[canvas stampImage:[view image] at:groundZero withSize:[view bounds].size];
 }
 
 

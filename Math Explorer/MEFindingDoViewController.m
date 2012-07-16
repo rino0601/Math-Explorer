@@ -62,7 +62,7 @@
 		if(prev!=nil) {
 			[prev setRear:now];
 		}
-		now = [now initWithString:key Front:prev];
+		now = [now initWithString:key Front:prev Frame:CGRectMake(20, 250, 984, 350)];
 		for(NSString *subkey in importantArray) {
 			if([key hasPrefix:subkey]) {
 				[now setImportant:YES];

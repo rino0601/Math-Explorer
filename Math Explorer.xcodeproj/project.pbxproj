@@ -680,6 +680,9 @@
 		EA9DB31015AD18C2000ADA87 /* sticker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2E015AD18C2000ADA87 /* sticker@2x.png */; };
 		EA9DB31115AD18C2000ADA87 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2E115AD18C2000ADA87 /* tree.png */; };
 		EA9DB31215AD18C2000ADA87 /* tree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2E215AD18C2000ADA87 /* tree@2x.png */; };
+		EA9E3A9215B43ECE003EE631 /* RINCalculrator.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9E3A8F15B43ECE003EE631 /* RINCalculrator.m */; };
+		EA9E3A9315B43ECE003EE631 /* backbord.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3A9015B43ECE003EE631 /* backbord.png */; };
+		EA9E3A9415B43ECE003EE631 /* backborddark.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3A9115B43ECE003EE631 /* backborddark.png */; };
 		EABC2F6215B2A9A400EAF994 /* RINFindAct.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC2F6115B2A9A400EAF994 /* RINFindAct.m */; };
 		EAFB05BF15AC9ED5002A4868 /* MEDrawingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */; };
 		EAFB05C015AC9ED5002A4868 /* MEDrawingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */; };
@@ -1388,6 +1391,10 @@
 		EA9DB2E015AD18C2000ADA87 /* sticker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sticker@2x.png"; path = "draggable/sticker@2x.png"; sourceTree = "<group>"; };
 		EA9DB2E115AD18C2000ADA87 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tree.png; path = draggable/tree.png; sourceTree = "<group>"; };
 		EA9DB2E215AD18C2000ADA87 /* tree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tree@2x.png"; path = "draggable/tree@2x.png"; sourceTree = "<group>"; };
+		EA9E3A8E15B43ECE003EE631 /* RINCalculrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RINCalculrator.h; sourceTree = "<group>"; };
+		EA9E3A8F15B43ECE003EE631 /* RINCalculrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RINCalculrator.m; sourceTree = "<group>"; };
+		EA9E3A9015B43ECE003EE631 /* backbord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbord.png; sourceTree = "<group>"; };
+		EA9E3A9115B43ECE003EE631 /* backborddark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backborddark.png; sourceTree = "<group>"; };
 		EABC2F6015B2A9A400EAF994 /* RINFindAct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RINFindAct.h; sourceTree = "<group>"; };
 		EABC2F6115B2A9A400EAF994 /* RINFindAct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RINFindAct.m; sourceTree = "<group>"; };
 		EAFB05BC15AC9ED5002A4868 /* MEDrawingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDrawingTitleViewController.h; sourceTree = "<group>"; };
@@ -1512,9 +1519,10 @@
 				6370F44E15A7550300988BC6 /* Audios */,
 				EA21051715A81B8A001D7405 /* Ask Modal Template */,
 				6322ADE715A585C20068EC3D /* Button Images */,
+				EA9E3A8315B42C72003EE631 /* Computing Tool */,
 				63B81B0615A6C1D200A583F9 /* Core Resources */,
-				EAFB05E715ACB60B002A4868 /* DrawingTool */,
-				EABC2F5E15B2A95F00EAF994 /* FindingTool */,
+				EAFB05E715ACB60B002A4868 /* Drawing Tool */,
+				EABC2F5E15B2A95F00EAF994 /* Finding Tool */,
 				6322ADFA15A58D8B0068EC3D /* Page Templates */,
 			);
 			name = Resources;
@@ -2377,13 +2385,24 @@
 			name = "draggable images";
 			sourceTree = "<group>";
 		};
-		EABC2F5E15B2A95F00EAF994 /* FindingTool */ = {
+		EA9E3A8315B42C72003EE631 /* Computing Tool */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E3A8E15B43ECE003EE631 /* RINCalculrator.h */,
+				EA9E3A8F15B43ECE003EE631 /* RINCalculrator.m */,
+				EA9E3A9015B43ECE003EE631 /* backbord.png */,
+				EA9E3A9115B43ECE003EE631 /* backborddark.png */,
+			);
+			name = "Computing Tool";
+			sourceTree = "<group>";
+		};
+		EABC2F5E15B2A95F00EAF994 /* Finding Tool */ = {
 			isa = PBXGroup;
 			children = (
 				EABC2F6015B2A9A400EAF994 /* RINFindAct.h */,
 				EABC2F6115B2A9A400EAF994 /* RINFindAct.m */,
 			);
-			name = FindingTool;
+			name = "Finding Tool";
 			sourceTree = "<group>";
 		};
 		EAFB05B015AC9DDB002A4868 /* Step 3: Drawing */ = {
@@ -2466,7 +2485,7 @@
 			name = "Stage 0: Title";
 			sourceTree = "<group>";
 		};
-		EAFB05E715ACB60B002A4868 /* DrawingTool */ = {
+		EAFB05E715ACB60B002A4868 /* Drawing Tool */ = {
 			isa = PBXGroup;
 			children = (
 				EAFB05E015ACAE8F002A4868 /* CIHCanvasView.h */,
@@ -2475,7 +2494,7 @@
 				EAFB05E315ACAE8F002A4868 /* CIHDraggableImageView.m */,
 				EA9DB2B115AD1895000ADA87 /* draggable images */,
 			);
-			name = DrawingTool;
+			name = "Drawing Tool";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3189,6 +3208,8 @@
 				EA9DB31015AD18C2000ADA87 /* sticker@2x.png in Resources */,
 				EA9DB31115AD18C2000ADA87 /* tree.png in Resources */,
 				EA9DB31215AD18C2000ADA87 /* tree@2x.png in Resources */,
+				EA9E3A9315B43ECE003EE631 /* backbord.png in Resources */,
+				EA9E3A9415B43ECE003EE631 /* backborddark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3223,6 +3244,7 @@
 				EAFB05E615ACAE8F002A4868 /* CIHDraggableImageView.m in Sources */,
 				EA9DB2AB15ACFBC2000ADA87 /* MEBTFViewController.m in Sources */,
 				EABC2F6215B2A9A400EAF994 /* RINFindAct.m in Sources */,
+				EA9E3A9215B43ECE003EE631 /* RINCalculrator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

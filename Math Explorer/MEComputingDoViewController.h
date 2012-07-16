@@ -7,14 +7,20 @@
 //
 
 #import "MEPageTemplateViewController.h"
+#import "RINCalculrator.h"
 
 @class MEComputingAskViewController;
+@class RINCalculrator;
 
-@interface MEComputingDoViewController : MEPageTemplateViewController {
+@protocol RINCalculratorDelegate;
+
+@interface MEComputingDoViewController : MEPageTemplateViewController <RINCalculratorDelegate> {
 	@private
 	BOOL isGoodToContinue;
 	MEComputingAskViewController *meComputingAskActivity;
 	IBOutlet UILabel *meComputingDoInstruction;
+	IBOutlet RINCalculrator *meComputingTool;
+	int cnv[3];
 }
-
+-(void)submitUserAnswerWithValues:(NSArray *)values;
 @end

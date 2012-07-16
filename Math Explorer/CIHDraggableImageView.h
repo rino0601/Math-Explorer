@@ -17,7 +17,7 @@
 	IBOutlet id <CIHDraggableImageViewDelegate> delegate;
 }
 
-//@property(strong, nonatomic) id <CIHDraggableImageViewDelegate> delegate;
+@property(strong, nonatomic) id <CIHDraggableImageViewDelegate> delegate;
 
 @end
 

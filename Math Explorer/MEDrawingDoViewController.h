@@ -18,7 +18,8 @@
 	CIHCanvasView *canvas;
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
-	IBOutlet UITextView *meDrawingDoProblem;
 }
+
+-(void)draggableImageView:(CIHDraggableImageView *)view dragFinishedOnKeyWindowAt:(CGPoint)groundZero;
 
 @end

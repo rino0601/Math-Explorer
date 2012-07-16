@@ -13,13 +13,14 @@
 	RINFindAct *front, *rear;
 	BOOL relateF,relateR;
 	BOOL important;
+	CGRect scope;
 }
 @property BOOL important;
 
 +(NSMutableArray *)foundWord;
 +(NSMutableArray *)sentence;
 -(CGRect)arragementBysize:(CGSize)itSize;
--(id)initWithString:(NSString *)string Front:(RINFindAct *)_front;
+-(id)initWithString:(NSString *)string Front:(RINFindAct *)_front Frame:(CGRect)frame;
 -(void)found:(id)sender;
 -(NSMutableString *)_found:(id)sender;
 

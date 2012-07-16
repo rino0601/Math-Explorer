@@ -28,11 +28,10 @@ static NSMutableArray *_sentence;
 	return _sentence;
 }
 -(CGRect)arragementBysize:(CGSize)itSize {
-	CGRect scope=CGRectMake(20, 250, 984, 350);
 	CGRect _front = [front frame];
 	CGSize space =[@" " sizeWithFont:[UIFont boldSystemFontOfSize:48.0]];
 	if (front==nil) {
-		return CGRectMake(20, 250, itSize.width, itSize.height);
+		return CGRectMake(scope.origin.x, scope.origin.y, itSize.width, itSize.height);
 	}
 	if(_front.origin.x+_front.size.width+space.width+space.width+itSize.width>scope.origin.x+scope.size.width) { //Line add.
 		return CGRectMake(scope.origin.x, _front.origin.y+_front.size.height+8, itSize.width, itSize.height);
@@ -40,10 +39,10 @@ static NSMutableArray *_sentence;
 	return CGRectMake(_front.origin.x+_front.size.width+space.width, _front.origin.y, itSize.width, itSize.height);
 }
 
--(id)initWithString:(NSString *)string Front:(RINFindAct *)_front{
-	CGSize labelSize = [string sizeWithFont:[UIFont boldSystemFontOfSize:48.0]];
-	
+-(id)initWithString:(NSString *)string Front:(RINFindAct *)_front Frame:(CGRect)frame {
 	self=[RINFindAct buttonWithType:UIButtonTypeCustom];
+	scope=frame;
+	CGSize labelSize = [string sizeWithFont:[UIFont boldSystemFontOfSize:48.0]];
 	front=_front;
     [self setTitle:string forState:UIControlStateNormal];
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
