@@ -23,4 +23,5 @@
 	int cnv[3];
 }
 -(void)submitUserAnswerWithValues:(NSArray *)values;
+-(IBAction)PressTutorialButton:(id)sender;
 @end

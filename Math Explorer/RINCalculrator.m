@@ -200,7 +200,32 @@
 	[self PressClearButton:sender event:nil];
 }
 - (void) PressTutorialButton:(id)sender event:(UIEvent *)e {
-	int row1=nv1, row2=nv2, row3=correct;
+	int row1,row2,row3;
+	if([sender tag]==4) {
+ 		row1=nv1, row2=nv2, row3=correct;
+	} else {
+		UIButton *bSender=sender;
+		NSString *title = [bSender currentTitle];
+		NSString *temp;
+		if([title length]==3) {
+			temp=[title substringToIndex:1];
+			row1=[temp intValue];
+			temp=[title substringFromIndex:1];
+			row2=[temp intValue];
+			row3=row1+row2;
+			row2=abs(row2);
+		} else {
+			temp=[title substringToIndex:2];
+			row1=[temp intValue];
+			if(row1<10)
+				temp=[title substringFromIndex:1];
+			else
+				temp=[title substringFromIndex:2];
+			row2=[temp intValue];
+			row3=row1+row2;
+			row2=abs(row2);
+		}
+	}
 	[NSThread detachNewThreadSelector:@selector(clearEvent:) toTarget:self withObject:nil];
 	sleep(1);
 	//row1

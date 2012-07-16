@@ -14,7 +14,7 @@
 }
 @property int nv1,nv2,correct;
 @property id<RINCalculratorDelegate> viewController;
-
+- (void) PressTutorialButton:(id)sender event:(UIEvent *)e;
 @end
 
 @protocol RINCalculratorDelegate <NSObject>

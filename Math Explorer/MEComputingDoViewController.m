@@ -50,6 +50,7 @@
 	
 	sqlite3_prepare_v2(dbo, [@"SELECT problem_numbers.nv1, problem_numbers.nv2, problem_numbers.type FROM problem_numbers, problems WHERE problems.id=:problemid AND problem_numbers.id=problems.number_id" UTF8String], -1, &localizer, NULL);
 	sqlite3_bind_int(localizer, 1, problemID);
+	sqlite3_step(localizer);
 	cnv[0]=sqlite3_column_int(localizer, 0);
 	cnv[1]=sqlite3_column_int(localizer, 1);
 	cnv[2]=sqlite3_column_int(localizer, 2);
@@ -142,6 +143,9 @@
 			[meComputingAskActivity noButtonAction:nil];
 		}
 	}
+}
+-(IBAction)PressTutorialButton:(id)sender {
+	[meComputingTool PressTutorialButton:sender event:nil];
 }
 
 @end
