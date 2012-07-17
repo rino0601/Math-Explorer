@@ -30,8 +30,13 @@
 
 -(void)nextButtonAction:(id)sender {
 	NSUInteger old = [(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
-	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setProblemID:old+1];
-	
+	NSUInteger langCode = [(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+	old+=12;
+	if(langCode==1&&old>288)
+		old=1;
+	if(langCode==2&&old>576)
+		old=289;
+	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setProblemID:old];
 	NSMutableArray *goingNext=[NSMutableArray arrayWithObject:[[MEReadingTitleViewController alloc] initWithNibName:@"MEReadingTitleViewController" bundle:nil]];
 	[goingNext addObject:self];
 	[[self navigationController] setViewControllers:goingNext animated:NO];

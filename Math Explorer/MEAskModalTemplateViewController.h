@@ -10,6 +10,7 @@
 
 
 extern NSString *const MEAskActivityConfirmed;
+extern NSString *const MEAskActivityDismissed;
 
 @interface MEAskModalTemplateViewController:UIViewController {
 	@protected

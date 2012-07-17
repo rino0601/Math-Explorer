@@ -88,6 +88,7 @@
 			[super approveButtonAction:sender];
 		else
 		 	[[self presentingViewController] dismissModalViewControllerAnimated:YES];
+		[[NSNotificationCenter defaultCenter] postNotificationName:MEAskActivityDismissed object:self userInfo:nil];
 	}
 	else {
 		[meReadingAsk setText:string[next[current]]];
