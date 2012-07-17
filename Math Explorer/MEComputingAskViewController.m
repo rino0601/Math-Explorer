@@ -57,7 +57,9 @@
 	
 	sqlite3_bind_text(localizer, 1, [@"me.computing.ask.answer.computed" UTF8String], -1, NULL);
 	sqlite3_step(localizer);
-	string[10]=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
+	if(string[10]==0){
+		string[10]=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
+	}
 	sqlite3_finalize(localizer);
 	
 	
@@ -105,5 +107,19 @@
 		current=next[current];
 	}
 }
-
+-(void)setAnswer:(NSString *)ans {
+	static NSString *format=@"null";
+	if([format isEqualToString:@"null"]) {
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
+		sqlite3_stmt *localizer=NULL;
+		sqlite3_prepare_v2(dbo, [@"SELECT value FROM general_strings WHERE key=:keystring AND lang=:langnum ORDER BY relation ASC" UTF8String], -1, &localizer, NULL);
+		sqlite3_bind_text(localizer, 1, [@"me.computing.ask.answer.computed" UTF8String], -1, NULL);
+		sqlite3_bind_int(localizer, 2, langCode);
+		sqlite3_step(localizer);
+		format=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
+		sqlite3_finalize(localizer);
+	}
+	string[10]=[NSString stringWithFormat:format,ans];
+}
 @end

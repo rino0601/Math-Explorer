@@ -120,27 +120,21 @@
 	nsn = [temp intValue];
 	if (ctype==2) {
 		if(nv1==cnv2&&nv2==cnv1&&nv3==(nv2-nv1)&&nsn==1) {
-			[self presentModalViewController:meComputingAskActivity animated:YES];
-			[meComputingAskActivity yesButtonAction:nil];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"O : %d-%d=%d",nv2,nv1,nv3]];
 		} else {
-			[self presentModalViewController:meComputingAskActivity animated:YES];
-			[meComputingAskActivity noButtonAction:nil];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"X : %d-%d=%d",nv2,nv1,nv3]];
 		}
 	} else if (ctype==1) {
 		if(nv1==cnv1&&nv2==cnv2&&nv3==(nv1-nv2)&&nsn==1) {
-			[self presentModalViewController:meComputingAskActivity animated:YES];
-			[meComputingAskActivity yesButtonAction:nil];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"O : %d-%d=%d",nv1,nv2,nv3]];
 		} else {
-			[self presentModalViewController:meComputingAskActivity animated:YES];
-			[meComputingAskActivity noButtonAction:nil];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"X : %d-%d=%d",nv1,nv2,nv3]];
 		}
 	} else {
 		if(nv3==(nv1+nv2)&&nsn==0 && ((nv1==cnv1&&nv2==cnv2)||(nv1==cnv2&&nv2==cnv1))) {
-			[self presentModalViewController:meComputingAskActivity animated:YES];
-			[meComputingAskActivity yesButtonAction:nil];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"O : %d+%d=%d",nv1,nv2,nv3]];
 		} else {
-			[self presentModalViewController:meComputingAskActivity animated:YES];
-			[meComputingAskActivity noButtonAction:nil];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"X : %d+%d=%d",nv1,nv2,nv3]];
 		}
 	}
 }

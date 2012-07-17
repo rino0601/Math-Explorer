@@ -16,7 +16,7 @@
 	handleDiffFromOrigin=[[touches anyObject] locationInView:self];
 	
 	copycat=[[UIImageView alloc] initWithFrame:[self bounds]];
-	[copycat setImage:[[UIImage alloc] initWithCGImage:[self image].CGImage scale:1.0 orientation:UIImageOrientationRight]];
+	[copycat setImage:[[UIImage alloc] initWithCGImage:[self image].CGImage scale:1.0 orientation:UIImageOrientationLeft]];
 	[[[UIApplication sharedApplication] keyWindow] addSubview:copycat];
 	
 	CGPoint locationInWindow=[[touches anyObject] locationInView:[[UIApplication sharedApplication] keyWindow]];
@@ -29,8 +29,9 @@
 //	CGPoint locationInWindow=[[touches anyObject] locationInView:[[UIApplication sharedApplication] keyWindow]];
 	CGPoint locationInWindow=[[touches anyObject] locationInView:[delegate getSketchFrame]];
 	
-	if([delegate respondsToSelector:@selector(draggableImageView:dragFinishedOnKeyWindowAt:)]==YES)
+	if([delegate respondsToSelector:@selector(draggableImageView:dragFinishedOnKeyWindowAt:)]==YES) {
 		[delegate draggableImageView:self dragFinishedOnKeyWindowAt:CGPointMake(locationInWindow.x-handleDiffFromOrigin.x-5, locationInWindow.y-handleDiffFromOrigin.y-25)];
+	}
 	//*/
 	
 	[copycat removeFromSuperview];
@@ -41,6 +42,9 @@
 	CGPoint locationInWindow=[[touches anyObject] locationInView:[[UIApplication sharedApplication] keyWindow]];
 	[copycat setCenter:CGPointMake(locationInWindow.x-handleDiffFromOrigin.x+([copycat bounds].size.width/2), locationInWindow.y-handleDiffFromOrigin.y+([copycat bounds].size.height/2))];
 	//[copycat setCenter:CGPointMake(locationInWindow.x+([copycat bounds].size.width/2), locationInWindow.y+([copycat bounds].size.height/2))];
+}
+-(void)setDelegate:(id)Delegate {
+	delegate=Delegate;
 }
 
 @end

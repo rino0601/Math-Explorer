@@ -14,10 +14,9 @@
 @interface CIHDraggableImageView:UIImageView {
 	UIImageView *copycat;
 	CGPoint handleDiffFromOrigin;
-	IBOutlet id <CIHDraggableImageViewDelegate> delegate;
+	id <CIHDraggableImageViewDelegate> delegate;
 }
-
-@property(strong, nonatomic) id <CIHDraggableImageViewDelegate> delegate;
+-(void)setDelegate:(id)Delegate;
 
 @end
 

@@ -149,6 +149,9 @@
 -(void)draggableImageView:(CIHDraggableImageView *)view dragFinishedOnKeyWindowAt:(CGPoint)groundZero {
 	[canvas stampImage:[view image] at:groundZero withSize:[view bounds].size];
 }
+-(UIView *)getSketchFrame {
+	return canvas;
+}
 
 
 @end

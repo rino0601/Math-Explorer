@@ -201,7 +201,7 @@
 }
 - (void) PressTutorialButton:(id)sender event:(UIEvent *)e {
 	int row1,row2,row3;
-	if([sender tag]==4) {
+	if([sender tag]==5) {
  		row1=nv1, row2=nv2, row3=correct;
 	} else {
 		UIButton *bSender=sender;
