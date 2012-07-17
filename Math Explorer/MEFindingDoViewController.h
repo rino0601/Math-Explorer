@@ -7,12 +7,13 @@
 //
 
 #import "MEPageTemplateViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
 
 @class MEFindingAskViewController;
 
 @interface MEFindingDoViewController:MEPageTemplateViewController {
 	@private
+	AVAudioPlayer *avp;
 	BOOL isGoodToContinue;
 	MEFindingAskViewController *meFindingAskActivity;
 	IBOutlet UILabel *mefindingDoInstruction;

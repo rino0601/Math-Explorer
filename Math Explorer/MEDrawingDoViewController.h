@@ -8,12 +8,14 @@
 
 #import "MEPageTemplateViewController.h"
 #import "CIHDraggableImageView.h"
+#import <AVFoundation/AVFoundation.h>
 
 @class  CIHCanvasView;
 @class MEDrawingAskViewController;
 
 @interface MEDrawingDoViewController:MEPageTemplateViewController <CIHDraggableImageViewDelegate>{
 	@private
+	AVAudioPlayer *avp;
 	BOOL isGoodToContinue;
 	CIHCanvasView *canvas;
 	MEDrawingAskViewController *meDrawingAskActivity;

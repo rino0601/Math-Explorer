@@ -44,7 +44,13 @@
 	
 	[self setButton:MEButtonSay hidden:NO];
 	
+	NSError *err=nil;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode],problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
+	
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, problemID]] error:&err];
+	[avp setVolume:1.0f];
+	[avp prepareToPlay];
+	
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
 	sqlite3_stmt *localizer=NULL;
 	
@@ -92,7 +98,11 @@
 }
 
 -(void)sayButtonAction:(id)sender {
-	//
+	if([avp isPlaying]==NO) {
+		[avp setCurrentTime:0.0];
+		[avp play];
+	} else
+		[avp stop];
 }
 
 -(void)nextButtonAction:(id)sender {

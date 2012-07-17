@@ -8,6 +8,7 @@
 
 #import "MEPageTemplateViewController.h"
 #import "RINCalculrator.h"
+#import <AVFoundation/AVFoundation.h>
 
 @class MEComputingAskViewController;
 @class RINCalculrator;
@@ -16,6 +17,7 @@
 
 @interface MEComputingDoViewController : MEPageTemplateViewController <RINCalculratorDelegate> {
 	@private
+	AVAudioPlayer *avp;
 	BOOL isGoodToContinue;
 	MEComputingAskViewController *meComputingAskActivity;
 	IBOutlet UILabel *meComputingDoInstruction;
