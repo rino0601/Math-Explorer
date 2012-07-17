@@ -22,6 +22,9 @@
 	IBOutlet UILabel *meDrawingDoInstruction;
 }
 
+-(IBAction)lineColorChanged:(id)sender;
+-(IBAction)lineWidthChanged:(id)sender;
+
 -(void)draggableImageView:(CIHDraggableImageView *)view dragFinishedOnKeyWindowAt:(CGPoint)groundZero;
 
 @end

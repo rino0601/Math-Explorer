@@ -124,37 +124,33 @@
 -(void)clearSketchView:(id)sender {
 	[canvas clearView];
 }
--(void)lineColorChanged:(id)sender {
-	/*/
+-(IBAction)lineColorChanged:(id)sender {
 	switch([sender selectedSegmentIndex]) {
 		case 0:
 		default:
-			[sketchView changeColor:[UIColor blackColor]];
+			[canvas changeColor:[UIColor blackColor]];
 			break;
 		case 1:
-			[sketchView changeColor:[UIColor redColor]];
+			[canvas changeColor:[UIColor redColor]];
 			break;
 		case 2:
-			[sketchView changeColor:[UIColor blueColor]];
+			[canvas changeColor:[UIColor blueColor]];
 			break;
 	}
-	//*/
 }
--(void)lineWidthChanged:(id)sender {
-	/*//
+-(IBAction)lineWidthChanged:(id)sender {
 	switch([sender selectedSegmentIndex]) {
 		case 0:
 		default:
-			[sketchView changeWidth:LINE_THICKNESS_THICK];
+			[canvas changeWidth:LINE_THICKNESS_THICK];
 			break;
 		case 1:
-			[sketchView changeWidth:LINE_THICKNESS_NORMAL];
+			[canvas changeWidth:LINE_THICKNESS_NORMAL];
 			break;
 		case 2:
-			[sketchView changeWidth:LINE_THICKNESS_THIN];
+			[canvas changeWidth:LINE_THICKNESS_THIN];
 			break;
 	}
-	 //*/
 }
 -(void)draggableImageView:(CIHDraggableImageView *)view dragFinishedOnKeyWindowAt:(CGPoint)groundZero {
 	[canvas stampImage:[view image] at:groundZero withSize:[view bounds].size];
