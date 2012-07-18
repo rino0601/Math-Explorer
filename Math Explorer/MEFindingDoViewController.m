@@ -92,7 +92,7 @@
 	NSMutableString *answer = [[NSMutableString alloc] init];
 	[answer appendString:@"\""];
 	for(NSString *key in [RINFindAct foundWord]) {
-		[answer appendFormat:@"%@,",key];
+		[answer appendFormat:@" %@,",key];
 	}
 	answer=[[NSMutableString alloc] initWithString:[answer substringToIndex:[answer length]-1]];
 	[answer appendString:@"\""];
