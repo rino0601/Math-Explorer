@@ -90,10 +90,12 @@
 
 -(void)approveButtonAction:(id)sender {
 	if(next[current]<0) {
-		if(current==7)
+		if(current==7) {
 			[super approveButtonAction:sender];
-		else
+		} else {
 			[[self presentingViewController] dismissModalViewControllerAnimated:YES];
+			[[NSNotificationCenter defaultCenter] postNotificationName:MEAskActivityDismissed object:self userInfo:nil];
+		}
 	}
 	else {
 		[meDrawingAsk setText:string[next[current]]];

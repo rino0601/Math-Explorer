@@ -18,12 +18,17 @@
 @property BOOL important;
 
 +(NSMutableArray *)foundWord;
++(void)removeFoundWord;
 +(NSMutableArray *)sentence;
--(CGRect)arragementBysize:(CGSize)itSize;
++(void)removeSentence;
 -(id)initWithString:(NSString *)string Front:(RINFindAct *)_front Frame:(CGRect)frame;
+-(void)setRear:(RINFindAct *)_rear;
+
+
+-(CGRect)arragementBysize:(CGSize)itSize;
 -(void)found:(id)sender;
 -(NSMutableString *)_found:(id)sender;
 
--(void)setRear:(RINFindAct *)_rear;
+
 
 @end

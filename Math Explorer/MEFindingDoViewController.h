@@ -17,7 +17,7 @@
 	BOOL isGoodToContinue;
 	MEFindingAskViewController *meFindingAskActivity;
 	IBOutlet UILabel *mefindingDoInstruction;
-	
+	NSMutableArray *mArray;
 }
 
 @end

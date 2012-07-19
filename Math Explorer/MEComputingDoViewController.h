@@ -23,6 +23,7 @@
 	IBOutlet UILabel *meComputingDoInstruction;
 	IBOutlet RINCalculrator *meComputingTool;
 	int cnv[3];
+	NSMutableArray *mArray;
 }
 -(void)submitUserAnswerWithValues:(NSArray *)values;
 -(IBAction)PressTutorialButton:(id)sender;

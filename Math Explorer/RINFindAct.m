@@ -21,11 +21,21 @@ static NSMutableArray *_sentence;
 	}
 	return _foundWord;
 }
++(void)removeFoundWord {
+	if(_foundWord==nil)
+		return;
+	[_foundWord removeAllObjects];
+}
 +(NSMutableArray *)sentence {
 	if(_sentence==nil) {
 		_sentence=[[NSMutableArray alloc] init];
 	}
 	return _sentence;
+}
++(void)removeSentence {
+	if(_sentence==nil)
+		return;
+	[_sentence removeAllObjects];
 }
 -(CGRect)arragementBysize:(CGSize)itSize {
 	CGRect _front = [front frame];
@@ -66,7 +76,6 @@ static NSMutableArray *_sentence;
 	}else {
 		word = [self _found:sender];
 		[[RINFindAct foundWord] addObject:word];
-		//		NSLog(@"%@",[RINFindAct foundWord]);
 	}
 }
 -(NSMutableString *)_found:(id)sender {

@@ -15,8 +15,8 @@
 
 @implementation MEReadingDoViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	isGoodToContinue=NO;
 	meReadingAskActivity=[[MEReadingAskViewController alloc] initWithNibName:@"MEReadingAskViewController" bundle:nil];

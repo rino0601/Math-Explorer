@@ -20,6 +20,7 @@
 	CIHCanvasView *canvas;
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
+	NSMutableArray *mArray;
 }
 
 -(IBAction)lineColorChanged:(id)sender;

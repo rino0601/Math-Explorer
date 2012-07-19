@@ -97,10 +97,12 @@
 
 -(void)approveButtonAction:(id)sender {
 	if(next[current]<0) {
-		if(current==10)
+		if(current==10) {
 			[super approveButtonAction:sender];
-		else
+		} else {
 			[[self presentingViewController] dismissModalViewControllerAnimated:YES];
+			[[NSNotificationCenter defaultCenter] postNotificationName:MEAskActivityDismissed object:self userInfo:nil];
+		}
 	}
 	else {
 		[meComputingAsk setText:string[next[current]]];

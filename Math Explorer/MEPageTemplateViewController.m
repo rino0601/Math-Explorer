@@ -16,8 +16,8 @@
 	return (interfaceOrientation==UIInterfaceOrientationLandscapeLeft);
 }
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	[[[self navigationController] navigationBar] setBarStyle:UIBarStyleBlackTranslucent];
 	
