@@ -26,8 +26,17 @@
 	
 	[d setLangCode:[sender tag]];
 	
-	if([d langCode]==2)
-		[d setProblemID:289];
+	switch ([d langCode]) {
+		case 1:
+			[d setProblemID:1];
+			break;
+		case 2:
+			[d setProblemID:289];
+			break;
+		default:
+			NSLog(@"lancode ERR");
+			break;
+	}
 	
 	[[self navigationController] pushViewController:[[METitleViewController alloc] initWithNibName:@"METitleViewController" bundle:nil] animated:YES];
 }
