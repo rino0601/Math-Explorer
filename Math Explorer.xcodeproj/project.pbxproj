@@ -630,6 +630,16 @@
 		EA755CB615AAB91D00BBEA72 /* MEFindingAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */; };
 		EA755CB715AAB91D00BBEA72 /* MEFindingAskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */; };
 		EA755CBC15AAC3DF00BBEA72 /* MEFindingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */; };
+		EA96539215BB1432005B3838 /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538815BB1432005B3838 /* boy.png */; };
+		EA96539315BB1432005B3838 /* boy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538915BB1432005B3838 /* boy@2x.png */; };
+		EA96539415BB1432005B3838 /* fork.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538A15BB1432005B3838 /* fork.png */; };
+		EA96539515BB1432005B3838 /* fork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538B15BB1432005B3838 /* fork@2x.png */; };
+		EA96539615BB1432005B3838 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538C15BB1432005B3838 /* girl.png */; };
+		EA96539715BB1432005B3838 /* girl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538D15BB1432005B3838 /* girl@2x.png */; };
+		EA96539815BB1432005B3838 /* student.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538E15BB1432005B3838 /* student.png */; };
+		EA96539915BB1432005B3838 /* student@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96538F15BB1432005B3838 /* student@2x.png */; };
+		EA96539A15BB1432005B3838 /* teacher.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96539015BB1432005B3838 /* teacher.png */; };
+		EA96539B15BB1432005B3838 /* teacher@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA96539115BB1432005B3838 /* teacher@2x.png */; };
 		EA9DB2AB15ACFBC2000ADA87 /* MEBTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */; };
 		EA9DB2AC15ACFBC2000ADA87 /* MEBTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */; };
 		EA9DB2E315AD18C2000ADA87 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9DB2B315AD18C2000ADA87 /* apple.png */; };
@@ -1340,6 +1350,16 @@
 		EA755CB315AAB91D00BBEA72 /* MEFindingAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingAskViewController.h; sourceTree = "<group>"; };
 		EA755CB415AAB91D00BBEA72 /* MEFindingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingAskViewController.m; sourceTree = "<group>"; };
 		EA755CB515AAB91D00BBEA72 /* MEFindingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingAskViewController.xib; sourceTree = "<group>"; };
+		EA96538815BB1432005B3838 /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boy.png; path = draggable/boy.png; sourceTree = "<group>"; };
+		EA96538915BB1432005B3838 /* boy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "boy@2x.png"; path = "draggable/boy@2x.png"; sourceTree = "<group>"; };
+		EA96538A15BB1432005B3838 /* fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fork.png; path = draggable/fork.png; sourceTree = "<group>"; };
+		EA96538B15BB1432005B3838 /* fork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fork@2x.png"; path = "draggable/fork@2x.png"; sourceTree = "<group>"; };
+		EA96538C15BB1432005B3838 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = girl.png; path = draggable/girl.png; sourceTree = "<group>"; };
+		EA96538D15BB1432005B3838 /* girl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "girl@2x.png"; path = "draggable/girl@2x.png"; sourceTree = "<group>"; };
+		EA96538E15BB1432005B3838 /* student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = student.png; path = draggable/student.png; sourceTree = "<group>"; };
+		EA96538F15BB1432005B3838 /* student@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "student@2x.png"; path = "draggable/student@2x.png"; sourceTree = "<group>"; };
+		EA96539015BB1432005B3838 /* teacher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teacher.png; path = draggable/teacher.png; sourceTree = "<group>"; };
+		EA96539115BB1432005B3838 /* teacher@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "teacher@2x.png"; path = "draggable/teacher@2x.png"; sourceTree = "<group>"; };
 		EA9DB2A815ACFBC2000ADA87 /* MEBTFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEBTFViewController.h; sourceTree = "<group>"; };
 		EA9DB2A915ACFBC2000ADA87 /* MEBTFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEBTFViewController.m; sourceTree = "<group>"; };
 		EA9DB2AA15ACFBC2000ADA87 /* MEBTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEBTFViewController.xib; sourceTree = "<group>"; };
@@ -2333,6 +2353,16 @@
 		EA9DB2B115AD1895000ADA87 /* draggable images */ = {
 			isa = PBXGroup;
 			children = (
+				EA96538815BB1432005B3838 /* boy.png */,
+				EA96538915BB1432005B3838 /* boy@2x.png */,
+				EA96538A15BB1432005B3838 /* fork.png */,
+				EA96538B15BB1432005B3838 /* fork@2x.png */,
+				EA96538C15BB1432005B3838 /* girl.png */,
+				EA96538D15BB1432005B3838 /* girl@2x.png */,
+				EA96538E15BB1432005B3838 /* student.png */,
+				EA96538F15BB1432005B3838 /* student@2x.png */,
+				EA96539015BB1432005B3838 /* teacher.png */,
+				EA96539115BB1432005B3838 /* teacher@2x.png */,
 				EA9DB2B315AD18C2000ADA87 /* apple.png */,
 				EA9DB2B415AD18C2000ADA87 /* apple@2x.png */,
 				EA9DB2B515AD18C2000ADA87 /* balloon.png */,
@@ -3210,6 +3240,16 @@
 				EA9DB31215AD18C2000ADA87 /* tree@2x.png in Resources */,
 				EA9E3A9315B43ECE003EE631 /* backbord.png in Resources */,
 				EA9E3A9415B43ECE003EE631 /* backborddark.png in Resources */,
+				EA96539215BB1432005B3838 /* boy.png in Resources */,
+				EA96539315BB1432005B3838 /* boy@2x.png in Resources */,
+				EA96539415BB1432005B3838 /* fork.png in Resources */,
+				EA96539515BB1432005B3838 /* fork@2x.png in Resources */,
+				EA96539615BB1432005B3838 /* girl.png in Resources */,
+				EA96539715BB1432005B3838 /* girl@2x.png in Resources */,
+				EA96539815BB1432005B3838 /* student.png in Resources */,
+				EA96539915BB1432005B3838 /* student@2x.png in Resources */,
+				EA96539A15BB1432005B3838 /* teacher.png in Resources */,
+				EA96539B15BB1432005B3838 /* teacher@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
