@@ -694,6 +694,8 @@
 		EA9E3A9315B43ECE003EE631 /* backbord.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3A9015B43ECE003EE631 /* backbord.png */; };
 		EA9E3A9415B43ECE003EE631 /* backborddark.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3A9115B43ECE003EE631 /* backborddark.png */; };
 		EABC2F6215B2A9A400EAF994 /* RINFindAct.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC2F6115B2A9A400EAF994 /* RINFindAct.m */; };
+		EAD85A6B15BC3AB3007ED32F /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD85A6915BC3AB3007ED32F /* pen.png */; };
+		EAD85A6C15BC3AB3007ED32F /* pen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD85A6A15BC3AB3007ED32F /* pen@2x.png */; };
 		EAFB05BF15AC9ED5002A4868 /* MEDrawingTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */; };
 		EAFB05C015AC9ED5002A4868 /* MEDrawingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */; };
 		EAFB05C415AC9EF0002A4868 /* MEDrawingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFB05C215AC9EF0002A4868 /* MEDrawingDoViewController.m */; };
@@ -1417,6 +1419,8 @@
 		EA9E3A9115B43ECE003EE631 /* backborddark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backborddark.png; sourceTree = "<group>"; };
 		EABC2F6015B2A9A400EAF994 /* RINFindAct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RINFindAct.h; sourceTree = "<group>"; };
 		EABC2F6115B2A9A400EAF994 /* RINFindAct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RINFindAct.m; sourceTree = "<group>"; };
+		EAD85A6915BC3AB3007ED32F /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pen.png; path = draggable/pen.png; sourceTree = "<group>"; };
+		EAD85A6A15BC3AB3007ED32F /* pen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pen@2x.png"; path = "draggable/pen@2x.png"; sourceTree = "<group>"; };
 		EAFB05BC15AC9ED5002A4868 /* MEDrawingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDrawingTitleViewController.h; sourceTree = "<group>"; };
 		EAFB05BD15AC9ED5002A4868 /* MEDrawingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDrawingTitleViewController.m; sourceTree = "<group>"; };
 		EAFB05BE15AC9ED5002A4868 /* MEDrawingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEDrawingTitleViewController.xib; sourceTree = "<group>"; };
@@ -2353,6 +2357,8 @@
 		EA9DB2B115AD1895000ADA87 /* draggable images */ = {
 			isa = PBXGroup;
 			children = (
+				EAD85A6915BC3AB3007ED32F /* pen.png */,
+				EAD85A6A15BC3AB3007ED32F /* pen@2x.png */,
 				EA96538815BB1432005B3838 /* boy.png */,
 				EA96538915BB1432005B3838 /* boy@2x.png */,
 				EA96538A15BB1432005B3838 /* fork.png */,
@@ -3250,6 +3256,8 @@
 				EA96539915BB1432005B3838 /* student@2x.png in Resources */,
 				EA96539A15BB1432005B3838 /* teacher.png in Resources */,
 				EA96539B15BB1432005B3838 /* teacher@2x.png in Resources */,
+				EAD85A6B15BC3AB3007ED32F /* pen.png in Resources */,
+				EAD85A6C15BC3AB3007ED32F /* pen@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@
 @property BOOL important;
 @property BOOL relateF,relateR;
 
+
 +(NSMutableArray *)foundWord;
 +(NSMutableArray *)sentence;
 +(NSMutableArray *)makeRINFindActView:(UIView *)view Frame:(CGRect)frame String:(NSString *)string Important:(NSArray *)important;

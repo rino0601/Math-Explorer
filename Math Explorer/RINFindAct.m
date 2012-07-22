@@ -67,14 +67,15 @@ static NSMutableArray *_sentence;
 }
 
 -(void)found:(id)sender {
-	if([(UIButton *)sender currentTitleColor]==[UIColor redColor])
+	RINFindAct *send=sender;
+	if([send currentTitleColor]==[UIColor redColor])
 		return;
-	if(!important)
+	if(![send important])
 		return ;
 	NSString *word;
-	if(relateR) {
+	if([send relateR]) {
 		[rear found:rear];
-	}else {
+	} else {
 		word = [self _found:sender];
 		[[RINFindAct foundWord] addObject:word];
 	}
@@ -110,11 +111,8 @@ static NSMutableArray *_sentence;
 	NSArray *container=[string componentsSeparatedByString:@" "];
 	RINFindAct *prev=nil;
 	for(NSString *key in container) {
-		RINFindAct *now=[RINFindAct alloc];
-		if(prev!=nil) {
-			[prev setRear:now];
-		}
-		now = [now initWithString:key Front:prev Frame:frame];
+		RINFindAct *now=[[RINFindAct alloc] initWithString:key Front:prev Frame:frame];
+		[prev setRear:now];
 		[view addSubview:now];
 		prev= now;
 		[mArray addObject:now];

@@ -9,7 +9,7 @@
 #import "MELangSelectViewController.h"
 #import "MEAppDelegate.h"
 #import "METitleViewController.h"
-
+#import "RINFindAct.h"
 
 @implementation MELangSelectViewController
 
@@ -37,6 +37,8 @@
 			NSLog(@"lancode ERR");
 			break;
 	}
+	[RINFindAct removeFoundWord];
+	[RINFindAct removeSentence];
 	
 	[[self navigationController] pushViewController:[[METitleViewController alloc] initWithNibName:@"METitleViewController" bundle:nil] animated:YES];
 }
