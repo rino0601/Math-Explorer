@@ -11,8 +11,8 @@
 
 @implementation MEDrawingAskViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	NSInteger tn[10]={-1, -1, -1, 8, 7, -1, 7, -1, 4, 6};
 	for(NSUInteger i=0; i<10; ++i)

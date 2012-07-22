@@ -13,8 +13,8 @@
 
 @implementation MEReadingTitleViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	[[self navigationController] setNavigationBarHidden:NO animated:NO];
 	

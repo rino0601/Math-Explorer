@@ -13,8 +13,8 @@
 
 @implementation MELearningGoalViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	[self setButton:MEButtonHome hidden:YES];
 	[self setButton:MEButtonSay hidden:NO];

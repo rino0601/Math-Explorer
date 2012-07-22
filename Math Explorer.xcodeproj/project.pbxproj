@@ -624,6 +624,19 @@
 		63FD5E9115A9AF6A00486875 /* MEReadingAskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FD5E8F15A9AF6A00486875 /* MEReadingAskViewController.xib */; };
 		EA186D3C15BC633C003B611C /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = EA186D3A15BC633C003B611C /* eraser.png */; };
 		EA186D3D15BC633C003B611C /* eraser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA186D3B15BC633C003B611C /* eraser@2x.png */; };
+		EA186D4A15BC8DF2003B611C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA186D4915BC8DF2003B611C /* MediaPlayer.framework */; };
+		EA186D5715BC8E1D003B611C /* example.computing.ko.2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D4B15BC8E1D003B611C /* example.computing.ko.2.m4v */; };
+		EA186D5815BC8E1D003B611C /* example.drawing.ko.2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D4C15BC8E1D003B611C /* example.drawing.ko.2.m4v */; };
+		EA186D5915BC8E1D003B611C /* example.computing.ko.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D4D15BC8E1D003B611C /* example.computing.ko.1.m4v */; };
+		EA186D5A15BC8E1D003B611C /* example.drawing.ko.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D4E15BC8E1D003B611C /* example.drawing.ko.1.m4v */; };
+		EA186D5B15BC8E1D003B611C /* example.finding.ko.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D4F15BC8E1D003B611C /* example.finding.ko.1.m4v */; };
+		EA186D5C15BC8E1D003B611C /* example.finding.ko.2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5015BC8E1D003B611C /* example.finding.ko.2.m4v */; };
+		EA186D5D15BC8E1D003B611C /* example.computing.en.2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5115BC8E1D003B611C /* example.computing.en.2.m4v */; };
+		EA186D5E15BC8E1D003B611C /* example.drawing.en.2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5215BC8E1D003B611C /* example.drawing.en.2.m4v */; };
+		EA186D5F15BC8E1D003B611C /* example.finding.en.2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5315BC8E1D003B611C /* example.finding.en.2.m4v */; };
+		EA186D6015BC8E1D003B611C /* example.computing.en.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5415BC8E1D003B611C /* example.computing.en.1.m4v */; };
+		EA186D6115BC8E1D003B611C /* example.drawing.en.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5515BC8E1D003B611C /* example.drawing.en.1.m4v */; };
+		EA186D6215BC8E1D003B611C /* example.finding.en.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5615BC8E1D003B611C /* example.finding.en.1.m4v */; };
 		EA21051B15A81BBE001D7405 /* MEAskModalTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */; };
 		EA755CA615AAB12A00BBEA72 /* MEFindingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */; };
 		EA755CAF15AAB6A300BBEA72 /* MEFindingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CAD15AAB6A300BBEA72 /* MEFindingDoViewController.m */; };
@@ -1342,8 +1355,21 @@
 		63FD5E8F15A9AF6A00486875 /* MEReadingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEReadingAskViewController.xib; sourceTree = "<group>"; };
 		EA186D3A15BC633C003B611C /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
 		EA186D3B15BC633C003B611C /* eraser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eraser@2x.png"; sourceTree = "<group>"; };
+		EA186D4915BC8DF2003B611C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EA186D4B15BC8E1D003B611C /* example.computing.ko.2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.computing.ko.2.m4v; sourceTree = "<group>"; };
+		EA186D4C15BC8E1D003B611C /* example.drawing.ko.2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.drawing.ko.2.m4v; sourceTree = "<group>"; };
+		EA186D4D15BC8E1D003B611C /* example.computing.ko.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.computing.ko.1.m4v; sourceTree = "<group>"; };
+		EA186D4E15BC8E1D003B611C /* example.drawing.ko.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.drawing.ko.1.m4v; sourceTree = "<group>"; };
+		EA186D4F15BC8E1D003B611C /* example.finding.ko.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.finding.ko.1.m4v; sourceTree = "<group>"; };
+		EA186D5015BC8E1D003B611C /* example.finding.ko.2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.finding.ko.2.m4v; sourceTree = "<group>"; };
+		EA186D5115BC8E1D003B611C /* example.computing.en.2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.computing.en.2.m4v; sourceTree = "<group>"; };
+		EA186D5215BC8E1D003B611C /* example.drawing.en.2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.drawing.en.2.m4v; sourceTree = "<group>"; };
+		EA186D5315BC8E1D003B611C /* example.finding.en.2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.finding.en.2.m4v; sourceTree = "<group>"; };
+		EA186D5415BC8E1D003B611C /* example.computing.en.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.computing.en.1.m4v; sourceTree = "<group>"; };
+		EA186D5515BC8E1D003B611C /* example.drawing.en.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.drawing.en.1.m4v; sourceTree = "<group>"; };
+		EA186D5615BC8E1D003B611C /* example.finding.en.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.finding.en.1.m4v; sourceTree = "<group>"; };
 		EA21051815A81BBE001D7405 /* MEAskModalTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAskModalTemplateViewController.h; sourceTree = "<group>"; };
-		EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAskModalTemplateViewController.m; sourceTree = "<group>"; };
+		EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MEAskModalTemplateViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EA755CA215AAB12A00BBEA72 /* MEFindingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingTitleViewController.h; sourceTree = "<group>"; };
 		EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingTitleViewController.m; sourceTree = "<group>"; };
 		EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingTitleViewController.xib; sourceTree = "<group>"; };
@@ -1432,13 +1458,13 @@
 		EAFB05C715AC9F16002A4868 /* MEDrawingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDrawingAskViewController.m; sourceTree = "<group>"; };
 		EAFB05C815AC9F16002A4868 /* MEDrawingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEDrawingAskViewController.xib; sourceTree = "<group>"; };
 		EAFB05CB15AC9F40002A4868 /* MEComputingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEComputingTitleViewController.h; sourceTree = "<group>"; };
-		EAFB05CC15AC9F40002A4868 /* MEComputingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEComputingTitleViewController.m; sourceTree = "<group>"; };
+		EAFB05CC15AC9F40002A4868 /* MEComputingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MEComputingTitleViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EAFB05CD15AC9F40002A4868 /* MEComputingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEComputingTitleViewController.xib; sourceTree = "<group>"; };
 		EAFB05D015AC9F54002A4868 /* MEComputingDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEComputingDoViewController.h; sourceTree = "<group>"; };
 		EAFB05D115AC9F54002A4868 /* MEComputingDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEComputingDoViewController.m; sourceTree = "<group>"; };
 		EAFB05D215AC9F54002A4868 /* MEComputingDoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEComputingDoViewController.xib; sourceTree = "<group>"; };
 		EAFB05D515AC9F71002A4868 /* MEComputingAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEComputingAskViewController.h; sourceTree = "<group>"; };
-		EAFB05D615AC9F71002A4868 /* MEComputingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEComputingAskViewController.m; sourceTree = "<group>"; };
+		EAFB05D615AC9F71002A4868 /* MEComputingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MEComputingAskViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EAFB05D715AC9F71002A4868 /* MEComputingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEComputingAskViewController.xib; sourceTree = "<group>"; };
 		EAFB05E015ACAE8F002A4868 /* CIHCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIHCanvasView.h; sourceTree = "<group>"; };
 		EAFB05E115ACAE8F002A4868 /* CIHCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIHCanvasView.m; sourceTree = "<group>"; };
@@ -1451,6 +1477,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA186D4A15BC8DF2003B611C /* MediaPlayer.framework in Frameworks */,
 				6370F45615A75ECE00988BC6 /* AVFoundation.framework in Frameworks */,
 				63B81B0B15A6C31600A583F9 /* libsqlite3.dylib in Frameworks */,
 				6322ADCD15A473BF0068EC3D /* UIKit.framework in Frameworks */,
@@ -1505,6 +1532,7 @@
 		6322ADCB15A473BF0068EC3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA186D4915BC8DF2003B611C /* MediaPlayer.framework */,
 				6370F45515A75ECE00988BC6 /* AVFoundation.framework */,
 				6322ADD015A473BF0068EC3D /* CoreGraphics.framework */,
 				6322ADCE15A473BF0068EC3D /* Foundation.framework */,
@@ -2292,6 +2320,18 @@
 		EA186D3F15BC648E003B611C /* Video Example */ = {
 			isa = PBXGroup;
 			children = (
+				EA186D4B15BC8E1D003B611C /* example.computing.ko.2.m4v */,
+				EA186D4C15BC8E1D003B611C /* example.drawing.ko.2.m4v */,
+				EA186D4D15BC8E1D003B611C /* example.computing.ko.1.m4v */,
+				EA186D4E15BC8E1D003B611C /* example.drawing.ko.1.m4v */,
+				EA186D4F15BC8E1D003B611C /* example.finding.ko.1.m4v */,
+				EA186D5015BC8E1D003B611C /* example.finding.ko.2.m4v */,
+				EA186D5115BC8E1D003B611C /* example.computing.en.2.m4v */,
+				EA186D5215BC8E1D003B611C /* example.drawing.en.2.m4v */,
+				EA186D5315BC8E1D003B611C /* example.finding.en.2.m4v */,
+				EA186D5415BC8E1D003B611C /* example.computing.en.1.m4v */,
+				EA186D5515BC8E1D003B611C /* example.drawing.en.1.m4v */,
+				EA186D5615BC8E1D003B611C /* example.finding.en.1.m4v */,
 			);
 			name = "Video Example";
 			sourceTree = "<group>";
@@ -3261,6 +3301,18 @@
 				EAD85A6C15BC3AB3007ED32F /* pen@2x.png in Resources */,
 				EA186D3C15BC633C003B611C /* eraser.png in Resources */,
 				EA186D3D15BC633C003B611C /* eraser@2x.png in Resources */,
+				EA186D5715BC8E1D003B611C /* example.computing.ko.2.m4v in Resources */,
+				EA186D5815BC8E1D003B611C /* example.drawing.ko.2.m4v in Resources */,
+				EA186D5915BC8E1D003B611C /* example.computing.ko.1.m4v in Resources */,
+				EA186D5A15BC8E1D003B611C /* example.drawing.ko.1.m4v in Resources */,
+				EA186D5B15BC8E1D003B611C /* example.finding.ko.1.m4v in Resources */,
+				EA186D5C15BC8E1D003B611C /* example.finding.ko.2.m4v in Resources */,
+				EA186D5D15BC8E1D003B611C /* example.computing.en.2.m4v in Resources */,
+				EA186D5E15BC8E1D003B611C /* example.drawing.en.2.m4v in Resources */,
+				EA186D5F15BC8E1D003B611C /* example.finding.en.2.m4v in Resources */,
+				EA186D6015BC8E1D003B611C /* example.computing.en.1.m4v in Resources */,
+				EA186D6115BC8E1D003B611C /* example.drawing.en.1.m4v in Resources */,
+				EA186D6215BC8E1D003B611C /* example.finding.en.1.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

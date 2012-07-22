@@ -21,6 +21,7 @@
 	BOOL isGoodToContinue;
 	MEComputingAskViewController *meComputingAskActivity;
 	IBOutlet UILabel *meComputingDoInstruction;
+	IBOutlet UILabel *calExamples;
 	IBOutlet RINCalculrator *meComputingTool;
 	int cnv[3];
 	NSMutableArray *mArray;

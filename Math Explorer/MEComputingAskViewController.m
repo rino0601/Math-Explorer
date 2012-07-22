@@ -11,8 +11,8 @@
 
 @implementation MEComputingAskViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	NSInteger tn[11]={-1, -1, -1, 8, 7, -1, 7, 10, 4, 6,-1};
 	for(NSUInteger i=0; i<11; ++i)

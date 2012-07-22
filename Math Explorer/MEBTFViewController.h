@@ -9,5 +9,11 @@
 #import "MEPageTemplateViewController.h"
 
 @interface MEBTFViewController : MEPageTemplateViewController
+@property(strong,nonatomic) IBOutlet UILabel *BTFtitle;
+@property(strong,nonatomic) IBOutlet UILabel *BTFcoment;
+@property(strong,nonatomic) IBOutlet UILabel *problemMeter;
+@property(strong,nonatomic) IBOutlet UISlider *problemSelecter;
+
+-(IBAction)selectProblem:(UISlider *)sender;
 
 @end

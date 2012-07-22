@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">12A256</string>
+		<string key="IBDocument.SystemVersion">12A269</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2546</string>
-		<string key="IBDocument.AppKitVersion">1185</string>
-		<string key="IBDocument.HIToolboxVersion">622.00</string>
+		<string key="IBDocument.AppKitVersion">1187</string>
+		<string key="IBDocument.HIToolboxVersion">624.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">1497</string>
@@ -110,7 +110,7 @@
 							<object class="IBUILabel" id="565138883">
 								<reference key="NSNextResponder" ref="854614433"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{120, 0}, {225, 57}}</string>
+								<string key="NSFrameSize">{464, 57}</string>
 								<reference key="NSSuperview" ref="854614433"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="686813705"/>
@@ -129,6 +129,7 @@
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
+								<int key="IBUITextAlignment">1</int>
 								<reference key="IBUIFontDescription" ref="601084268"/>
 								<reference key="IBUIFont" ref="385708926"/>
 							</object>
@@ -377,6 +378,7 @@
 								<string key="NSFrame">{{380, 208}, {64, 64}}</string>
 								<reference key="NSSuperview" ref="854614433"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -572,6 +574,14 @@
 						<reference key="destination" ref="986005868"/>
 					</object>
 					<int key="connectionID">7</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">calExamples</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="565138883"/>
+					</object>
+					<int key="connectionID">51</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -957,7 +967,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">50</int>
+			<int key="maxID">51</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -976,10 +986,15 @@
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="calExamples">UILabel</string>
 						<string key="meComputingDoInstruction">UILabel</string>
 						<string key="meComputingTool">RINCalculrator</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="calExamples">
+							<string key="name">calExamples</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="meComputingDoInstruction">
 							<string key="name">meComputingDoInstruction</string>
 							<string key="candidateClassName">UILabel</string>

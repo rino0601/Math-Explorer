@@ -14,8 +14,8 @@
 
 @implementation METitleViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	[self setButton:MEButtonHome hidden:YES];
 	

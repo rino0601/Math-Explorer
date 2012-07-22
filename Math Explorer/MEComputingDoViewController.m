@@ -90,6 +90,8 @@
 	[meComputingTool setNv2:cnv[1]];
 	[meComputingTool setCorrect:(cnv[2]==0?(cnv[0]+cnv[1]):(ABS(cnv[0]-cnv[1])))];
 	[self.view addSubview:meComputingTool];
+	
+	[calExamples setText:(langCode==1?@"examples":@"예제들(눌러보세요)")];
 }
 
 -(void)sayButtonAction:(id)sender {

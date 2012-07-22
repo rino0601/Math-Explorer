@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 
 extern NSString *const MEAskActivityConfirmed;
 extern NSString *const MEAskActivityDismissed;
@@ -16,6 +16,7 @@ extern NSString *const MEAskActivityDismissed;
 	@protected
 	NSUInteger noCount;
 	UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
+	MPMoviePlayerController *moviePlayer;
 }
 
 -(void)sayButtonAction:(id)sender;

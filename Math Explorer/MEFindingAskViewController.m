@@ -12,8 +12,8 @@
 @implementation MEFindingAskViewController
 @synthesize myAnswer;
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	NSInteger tn[10]={-1, -1, -1, 8, 7, -1, 7, -1, 4, 6};
 	for(NSUInteger i=0; i<10; ++i)
@@ -68,16 +68,51 @@
 	[chkNo setHidden:NO];
 	[chkYes setHidden:NO];
 	[chkAprv setHidden:YES];
+	if(moviePlayer!=nil) {
+		[[moviePlayer view] removeFromSuperview];
+		moviePlayer=nil;
+	}
 }
 
 -(void)noButtonAction:(id)sender {
-	[chkAprv setHidden:NO];
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	[chkNo setHidden:YES];
 	[chkYes setHidden:YES];
+	[chkAprv setHidden:NO];
 	[meFindingAsk setText:string[noCount]];
 	current=noCount;
 	if(noCount<4)
 		[super noButtonAction:sender];
+	if(current==1) {
+		NSString *urlStr;
+		if(langCode==1) {
+			urlStr=@"example.finding.en.1";
+		} else {
+			urlStr=@"example.finding.ko.1";
+		}
+		moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:urlStr ofType:@"m4v"]]];
+		[[moviePlayer view] setFrame:CGRectMake(70, 172, 400, 300)];
+		[[self view] addSubview:[moviePlayer view]];
+		[moviePlayer setShouldAutoplay:YES];
+		[moviePlayer play];
+	} else if (current==2) {
+		NSString *urlStr;
+		if(langCode==1) {
+			urlStr=@"example.finding.en.2";
+		} else {
+			urlStr=@"example.finding.ko.2";
+		}
+		moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:urlStr ofType:@"m4v"]]];
+		[[moviePlayer view] setFrame:CGRectMake(70, 172, 400, 300)];
+		[[self view] addSubview:[moviePlayer view]];
+		[moviePlayer setShouldAutoplay:YES];
+		[moviePlayer play];
+	} else {
+		if(moviePlayer!=nil) {
+			[[moviePlayer view] removeFromSuperview];
+			moviePlayer=nil;
+		}
+	}
 }
 
 -(void)yesButtonAction:(id)sender {
@@ -90,6 +125,10 @@
 }
 
 -(void)approveButtonAction:(id)sender {
+	if(moviePlayer!=nil) {
+		[[moviePlayer view] removeFromSuperview];
+		moviePlayer=nil;
+	}
 	if(next[current]==8) {
 		string[8] = [NSString stringWithFormat:formatForAnswer,myAnswer];
 	}

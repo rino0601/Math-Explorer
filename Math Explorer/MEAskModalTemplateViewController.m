@@ -19,8 +19,8 @@ NSString *const MEAskActivityDismissed=@"Oh, Seriously?";
 	return (toInterfaceOrientation==UIInterfaceOrientationLandscapeLeft);
 }
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	noCount=0;
 	
@@ -35,7 +35,6 @@ NSString *const MEAskActivityDismissed=@"Oh, Seriously?";
 	[utilSay setFrame:CGRectMake(39, 472, 128, 128)];
 	[utilSay setBackgroundImage:[UIImage imageNamed:@"UtilSay.png"] forState:UIControlStateNormal];
 	[utilSay addTarget:self action:@selector(sayButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[utilSay setHidden:YES];
 	[[self view] addSubview:utilSay];
 	
 	// No button

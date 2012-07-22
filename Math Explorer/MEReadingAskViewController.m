@@ -12,8 +12,8 @@
 
 @implementation MEReadingAskViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	NSInteger tn[8]={-1, -1, -1, 4, 7, -1, 7, -1};
 	for(NSUInteger i=0; i<8; ++i)

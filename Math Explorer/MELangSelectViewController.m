@@ -13,8 +13,8 @@
 
 @implementation MELangSelectViewController
 
--(void)viewDidLayoutSubviews {
-	[super viewDidLayoutSubviews];
+-(void)viewDidLoad {
+	[super viewDidLoad];
 	
 	[self setButton:MEButtonHome hidden:YES];
 	[self setButton:MEButtonPrev hidden:YES];
