@@ -91,7 +91,7 @@
 			urlStr=@"example.finding.ko.1";
 		}
 		moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:urlStr ofType:@"m4v"]]];
-		[[moviePlayer view] setFrame:CGRectMake(70, 172, 400, 300)];
+		[[moviePlayer view] setFrame:CGRectMake(70, 247, 300, 225)];
 		[[self view] addSubview:[moviePlayer view]];
 		[moviePlayer setShouldAutoplay:YES];
 		[moviePlayer play];
@@ -103,7 +103,7 @@
 			urlStr=@"example.finding.ko.2";
 		}
 		moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:urlStr ofType:@"m4v"]]];
-		[[moviePlayer view] setFrame:CGRectMake(70, 172, 400, 300)];
+		[[moviePlayer view] setFrame:CGRectMake(70, 247, 300, 225)];
 		[[self view] addSubview:[moviePlayer view]];
 		[moviePlayer setShouldAutoplay:YES];
 		[moviePlayer play];
