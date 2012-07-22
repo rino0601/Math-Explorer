@@ -11,6 +11,7 @@
 @implementation RINFindAct
 
 @synthesize important;
+@synthesize relateF,relateR;
 
 static NSMutableArray *_foundWord;
 static NSMutableArray *_sentence;
@@ -103,5 +104,56 @@ static NSMutableArray *_sentence;
 -(void)setRear:(RINFindAct *)_rear {
 	rear=_rear;
 }
-
++(NSMutableArray *)makeRINFindActView:(UIView *)view Frame:(CGRect)frame String:(NSString *)string Important:(NSArray *)important {
+	//important has NSStrings
+	NSMutableArray *mArray=[[NSMutableArray alloc] init];
+	NSArray *container=[string componentsSeparatedByString:@" "];
+	RINFindAct *prev=nil;
+	for(NSString *key in container) {
+		RINFindAct *now=[RINFindAct alloc];
+		if(prev!=nil) {
+			[prev setRear:now];
+		}
+		now = [now initWithString:key Front:prev Frame:frame];
+		[view addSubview:now];
+		prev= now;
+		[mArray addObject:now];
+	}
+	container=nil;
+	
+	NSInteger importantlast=[important indexOfObject:[important lastObject]];
+	NSInteger mArrayLast=[mArray indexOfObject:[mArray lastObject]];
+	for (NSInteger i=0 ; i<=importantlast ; i++) {
+		NSArray *compare=[(NSString *)[important objectAtIndex:i] componentsSeparatedByString:@" "];
+		NSInteger compareLast=[compare indexOfObject:[compare lastObject]];
+		for(NSInteger j=0 ; j<=mArrayLast-compareLast ; j++) {
+			RINFindAct *temp=[mArray objectAtIndex:j];
+			BOOL mark=YES;
+			for(NSInteger k=0 ; k<=compareLast ; k++ ) {
+				temp=[mArray objectAtIndex:j+k];
+				mark=mark&&(![temp important])&&[[temp currentTitle] hasPrefix:[compare objectAtIndex:k]];
+			} if(mark) {
+				for (NSInteger k=0 ; k<=compareLast ; k++ ) {
+					temp=[mArray objectAtIndex:j+k];
+					[temp setRelateF:YES];
+					[temp setImportant:YES];
+					[temp setRelateR:YES];
+				}
+				temp=[mArray objectAtIndex:j];
+				[temp setRelateF:NO];
+				temp=[mArray objectAtIndex:j+compareLast];
+				[temp setRelateR:NO];
+			}
+		}
+	}
+	return mArray;
+}
++(void)removeRINFindActView:(NSMutableArray *)RINView {
+	for (RINFindAct *key in RINView) {
+		[key removeFromSuperview];
+	}
+	[RINView removeAllObjects];
+	[RINFindAct removeFoundWord];
+	[RINFindAct removeSentence];
+}
 @end

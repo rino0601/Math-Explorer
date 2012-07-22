@@ -11,23 +11,25 @@
 @interface RINFindAct : UIButton {
 @private
 	RINFindAct *front, *rear;
-	BOOL relateF,relateR;
 	BOOL important;
 	CGRect scope;
 }
 @property BOOL important;
+@property BOOL relateF,relateR;
 
 +(NSMutableArray *)foundWord;
-+(void)removeFoundWord;
 +(NSMutableArray *)sentence;
-+(void)removeSentence;
++(NSMutableArray *)makeRINFindActView:(UIView *)view Frame:(CGRect)frame String:(NSString *)string Important:(NSArray *)important;
++(void)removeRINFindActView:(NSMutableArray *)RINView;
 -(id)initWithString:(NSString *)string Front:(RINFindAct *)_front Frame:(CGRect)frame;
 -(void)setRear:(RINFindAct *)_rear;
 
-
++(void)removeFoundWord;
++(void)removeSentence;
 -(CGRect)arragementBysize:(CGSize)itSize;
 -(void)found:(id)sender;
 -(NSMutableString *)_found:(id)sender;
+
 
 
 

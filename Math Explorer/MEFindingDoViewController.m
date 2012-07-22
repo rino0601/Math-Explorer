@@ -117,6 +117,7 @@
 }
 -(void)problemChange:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
+	
 	static NSUInteger stepProblemId=0;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode], problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
 	if(stepProblemId==0) {
@@ -127,7 +128,8 @@
 		stepProblemId-=11;
 		if(stepProblemId>problemID+11)
 			stepProblemId=problemID;
-	}
+	} // maybe need amend.
+	
 	NSError *err=nil;
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
 	sqlite3_stmt *localizer=NULL;
