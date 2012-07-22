@@ -147,17 +147,7 @@
 
 -(void)problemChange:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
-	static NSUInteger stepProblemId=0;
-	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode], problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
-	if(stepProblemId==0) {
-		stepProblemId=problemID;
-	}
-	stepProblemId+=4;
-	if(stepProblemId>problemID+11){
-		stepProblemId-=11;
-		if(stepProblemId>problemID+11)
-			stepProblemId=problemID;
-	}
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode], problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] nextProblem];
 	
 	//load DB.
 	NSError *err=nil;
@@ -165,13 +155,13 @@
 	sqlite3_stmt *localizer=NULL;
 	
 	//load&set sound.
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, (langCode==2?stepProblemId-288:stepProblemId)]] error:&err];
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, (langCode==2?problemID-288:problemID)]] error:&err];
 	[avp setVolume:1.0f];
 	[avp prepareToPlay];
 	
 	//load&set problem.
 	sqlite3_prepare_v2(dbo, [@"SELECT problem_strings.string, problem_nouns.sv1, problem_nouns.sv2, problem_nouns.ov1, problem_nouns.ov2, problem_numbers.nv1, problem_numbers.nv2 FROM problems, problem_strings, problem_nouns, problem_numbers WHERE problems.id=:problemid AND problems.lang=:langcode AND problem_strings.id=problems.string_id AND problem_nouns.id=problems.noun_id AND problem_numbers.id=problems.number_id" UTF8String], -1, &localizer, NULL);
-	sqlite3_bind_int(localizer, 1, stepProblemId);
+	sqlite3_bind_int(localizer, 1, problemID);
 	sqlite3_bind_int(localizer, 2, langCode);
 	sqlite3_step(localizer);
 	const char *_sv1=(const char *)sqlite3_column_text(localizer, 1), *_sv2=(const char *)sqlite3_column_text(localizer, 2), *_ov1=(const char *)sqlite3_column_text(localizer, 3), *_ov2=(const char *)sqlite3_column_text(localizer, 4);
@@ -181,7 +171,7 @@
 	
 	//load keywords.
 	sqlite3_prepare_v2(dbo, [@"SELECT problem_keywords.keywords FROM problems, problem_keywords WHERE problems.id=:problemid AND problem_keywords.string_id=problems.string_id" UTF8String], -1, &localizer, NULL);
-	sqlite3_bind_int(localizer, 1, stepProblemId);
+	sqlite3_bind_int(localizer, 1, problemID);
 	sqlite3_step(localizer);
 	NSString *important=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
 	sqlite3_finalize(localizer);
@@ -191,7 +181,7 @@
 	
 	//load imgID
 	sqlite3_prepare_v2(dbo, [@"SELECT name1, name2 FROM images WHERE problem_id=:problemid" UTF8String], -1, &localizer, NULL);
-	sqlite3_bind_int(localizer, 1, stepProblemId);
+	sqlite3_bind_int(localizer, 1, problemID);
 	sqlite3_step(localizer);
 	int imgId1=sqlite3_column_int(localizer, 0),imgId2=sqlite3_column_int(localizer, 1);
 	sqlite3_finalize(localizer);

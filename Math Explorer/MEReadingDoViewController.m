@@ -8,10 +8,8 @@
 
 #import "MEReadingDoViewController.h"
 #import "MEAppDelegate.h"
-#import "MEDictionaryViewController.h"
 #import "MEReadingAskViewController.h"
 #import "MEFindingTitleViewController.h"
-
 
 @implementation MEReadingDoViewController
 
@@ -20,14 +18,6 @@
 	
 	isGoodToContinue=NO;
 	meReadingAskActivity=[[MEReadingAskViewController alloc] initWithNibName:@"MEReadingAskViewController" bundle:nil];
-	
-	/*/ Dictionary button
-	UIButton *utilDict=[UIButton buttonWithType:UIButtonTypeCustom];
-	[utilDict setFrame:CGRectMake(332, 600, 128, 128)];
-	[utilDict setTitle:@"Dict" forState:UIControlStateNormal];//@
-	[utilDict addTarget:self action:@selector(dictButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-	[[self view] addSubview:utilDict];
-	//*/
 	
 	[self setButton:MEButtonSay hidden:NO];
 	
@@ -65,29 +55,12 @@
 	localizer=NULL;
 }
 
--(void)dictButtonAction:(id)sender {
-	/*
-	MEDictionaryViewController *dict=[[MEDictionaryViewController alloc] init];
-	[dict setModalPresentationStyle:UIModalPresentationFullScreen];
-	[self presentModalViewController:dict animated:YES];
-	//*/
-}
-
 -(void)sayButtonAction:(id)sender {
 	if([avp isPlaying]==NO) {
 		[avp setCurrentTime:0.0];
 		[avp play];
 	} else
 		[avp stop];
-}
-
--(void)homeButtonAction:(id)sender {
-	NSMutableArray *restoring=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] homeBackup];
-	[restoring removeLastObject];
-	[restoring addObject:self];
-	[[self navigationController] setViewControllers:restoring animated:NO];
-	[[self navigationController] setNavigationBarHidden:YES animated:NO];
-	[[self navigationController] popViewControllerAnimated:YES];
 }
 
 -(void)nextButtonAction:(id)sender {
@@ -108,27 +81,17 @@
 }
 -(void)problemChange:(NSNotification *)notif {
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
-	static NSUInteger stepProblemId=0;
-	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode], problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
-	if(stepProblemId==0) {
-		stepProblemId=problemID;
-	}
-	stepProblemId+=4;
-	if(stepProblemId>problemID+11){
-		stepProblemId-=11;
-		if(stepProblemId>problemID+11)
-			stepProblemId=problemID;
-	}
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode], problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] nextProblem];
 	NSError *err=nil;
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
 	sqlite3_stmt *localizer=NULL;
 	
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, (langCode==2?stepProblemId-288:stepProblemId)]] error:&err];
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, (langCode==2?problemID-288:problemID)]] error:&err];
 	[avp setVolume:1.0f];
 	[avp prepareToPlay];
 	
 	sqlite3_prepare_v2(dbo, [@"SELECT problem_strings.string, problem_nouns.sv1, problem_nouns.sv2, problem_nouns.ov1, problem_nouns.ov2, problem_numbers.nv1, problem_numbers.nv2 FROM problems, problem_strings, problem_nouns, problem_numbers WHERE problems.id=:problemid AND problems.lang=:langcode AND problem_strings.id=problems.string_id AND problem_nouns.id=problems.noun_id AND problem_numbers.id=problems.number_id" UTF8String], -1, &localizer, NULL);
-	sqlite3_bind_int(localizer, 1, stepProblemId);
+	sqlite3_bind_int(localizer, 1, problemID);
 	sqlite3_bind_int(localizer, 2, langCode);
 	sqlite3_step(localizer);
 	const char *_sv1=(const char *)sqlite3_column_text(localizer, 1), *_sv2=(const char *)sqlite3_column_text(localizer, 2), *_ov1=(const char *)sqlite3_column_text(localizer, 3), *_ov2=(const char *)sqlite3_column_text(localizer, 4);

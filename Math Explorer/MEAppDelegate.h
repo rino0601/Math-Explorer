@@ -21,4 +21,6 @@
 @property(nonatomic, readonly) sqlite3 *dbo;
 @property(strong, nonatomic) UIWindow *mainWindow;
 
+-(NSUInteger)nextProblem;
+
 @end

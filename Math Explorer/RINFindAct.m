@@ -45,7 +45,7 @@ static NSMutableArray *_sentence;
 		return CGRectMake(scope.origin.x, scope.origin.y, itSize.width, itSize.height);
 	}
 	if(_front.origin.x+_front.size.width+space.width+space.width+itSize.width>scope.origin.x+scope.size.width) { //Line add.
-		return CGRectMake(scope.origin.x, _front.origin.y+_front.size.height+8, itSize.width, itSize.height);
+		return CGRectMake(scope.origin.x, _front.origin.y+_front.size.height, itSize.width, itSize.height);
 	}
 	return CGRectMake(_front.origin.x+_front.size.width+space.width, _front.origin.y, itSize.width, itSize.height);
 }
