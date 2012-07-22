@@ -23,8 +23,7 @@
 	canvas=[[CIHCanvasView alloc] initWithFrame:CGRectMake(20, 300, 984, 280)];
 	[canvas setAlpha:0.5];
 	[canvas changeColor:[UIColor blueColor]];
-	[[self view] addSubview:canvas];
-	
+	[[self view] insertSubview:canvas atIndex:1];
 	
 	isGoodToContinue=NO;
 	meDrawingAskActivity=[[MEDrawingAskViewController alloc] initWithNibName:@"MEDrawingAskViewController" bundle:nil];
@@ -35,12 +34,17 @@
 	[utilEraser addTarget:self action:@selector(clearSketchView:) forControlEvents:UIControlEventTouchUpInside];
 	[[self view] addSubview:utilEraser];
 
-	CIHDraggableImageView *item = [[CIHDraggableImageView alloc] initWithFrame:CGRectMake(196, 600, 128, 128)];
-	[item setImage:[UIImage imageNamed:@"apple.png"]];
-	[item setDelegate:self];
-	[item setUserInteractionEnabled:YES];
-	[[self view] addSubview:item];
+	CIHDraggableImageView *item1 = [[CIHDraggableImageView alloc] initWithFrame:CGRectMake(196, 600, 128, 128)];
+	[item1 setImage:[UIImage imageNamed:@"apple.png"]];
+	[item1 setDelegate:self];
+	[item1 setUserInteractionEnabled:YES];
+	[[self view] addSubview:item1];
 
+	CIHDraggableImageView *item2 = [[CIHDraggableImageView alloc] initWithFrame:CGRectMake(60, 600, 128, 128)];
+	[item2 setImage:[UIImage imageNamed:@"apple.png"]];
+	[item2 setDelegate:self];
+	[item2 setUserInteractionEnabled:YES];
+	[[self view] addSubview:item2];
 	
 	[self setButton:MEButtonSay hidden:NO];
 	
