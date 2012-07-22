@@ -622,6 +622,8 @@
 		63B81B2415A6D21C00A583F9 /* MEAI@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B81B2015A6D21C00A583F9 /* MEAI@2x.png */; };
 		63FD5E9015A9AF6A00486875 /* MEReadingAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FD5E8E15A9AF6A00486875 /* MEReadingAskViewController.m */; };
 		63FD5E9115A9AF6A00486875 /* MEReadingAskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FD5E8F15A9AF6A00486875 /* MEReadingAskViewController.xib */; };
+		EA186D3C15BC633C003B611C /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = EA186D3A15BC633C003B611C /* eraser.png */; };
+		EA186D3D15BC633C003B611C /* eraser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA186D3B15BC633C003B611C /* eraser@2x.png */; };
 		EA21051B15A81BBE001D7405 /* MEAskModalTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */; };
 		EA21052E15A82D17001D7405 /* MEDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21052D15A82D17001D7405 /* MEDictionaryViewController.m */; };
 		EA755CA615AAB12A00BBEA72 /* MEFindingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */; };
@@ -1339,6 +1341,8 @@
 		63FD5E8D15A9AF6A00486875 /* MEReadingAskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEReadingAskViewController.h; sourceTree = "<group>"; };
 		63FD5E8E15A9AF6A00486875 /* MEReadingAskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEReadingAskViewController.m; sourceTree = "<group>"; };
 		63FD5E8F15A9AF6A00486875 /* MEReadingAskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEReadingAskViewController.xib; sourceTree = "<group>"; };
+		EA186D3A15BC633C003B611C /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
+		EA186D3B15BC633C003B611C /* eraser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eraser@2x.png"; sourceTree = "<group>"; };
 		EA21051815A81BBE001D7405 /* MEAskModalTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAskModalTemplateViewController.h; sourceTree = "<group>"; };
 		EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAskModalTemplateViewController.m; sourceTree = "<group>"; };
 		EA21052C15A82D17001D7405 /* MEDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDictionaryViewController.h; sourceTree = "<group>"; };
@@ -1555,6 +1559,8 @@
 		6322ADE715A585C20068EC3D /* Button Images */ = {
 			isa = PBXGroup;
 			children = (
+				EA186D3A15BC633C003B611C /* eraser.png */,
+				EA186D3B15BC633C003B611C /* eraser@2x.png */,
 				6370F47015A962CB00988BC6 /* ChkAprv.png */,
 				6370F47115A962CB00988BC6 /* ChkAprv@2x.png */,
 				6322ADEA15A585F20068EC3D /* NavHome.png */,
@@ -3258,6 +3264,8 @@
 				EA96539B15BB1432005B3838 /* teacher@2x.png in Resources */,
 				EAD85A6B15BC3AB3007ED32F /* pen.png in Resources */,
 				EAD85A6C15BC3AB3007ED32F /* pen@2x.png in Resources */,
+				EA186D3C15BC633C003B611C /* eraser.png in Resources */,
+				EA186D3D15BC633C003B611C /* eraser@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

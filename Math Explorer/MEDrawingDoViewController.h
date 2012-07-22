@@ -21,6 +21,7 @@
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
 	NSMutableArray *mArray;
+	CIHDraggableImageView *item1, *item2;
 }
 
 -(IBAction)lineColorChanged:(id)sender;
