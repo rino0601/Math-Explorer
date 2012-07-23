@@ -743,6 +743,8 @@
 		EA593CCF15BD93EF00F5EB72 /* me.subtitle.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6315BD93EF00F5EB72 /* me.subtitle.0.2.m4a */; };
 		EA593CD015BD93EF00F5EB72 /* me.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6415BD93EF00F5EB72 /* me.title.0.1.m4a */; };
 		EA593CD115BD93EF00F5EB72 /* me.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6515BD93EF00F5EB72 /* me.title.0.2.m4a */; };
+		EA593CD715BD9E7C00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593CD515BD9E7900F5EB72 /* me.learning.goal.detail.0.1.m4a */; };
+		EA593CD815BD9E7C00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593CD615BD9E7A00F5EB72 /* me.learning.goal.detail.0.2.m4a */; };
 		EA755CA615AAB12A00BBEA72 /* MEFindingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */; };
 		EA755CAF15AAB6A300BBEA72 /* MEFindingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CAD15AAB6A300BBEA72 /* MEFindingDoViewController.m */; };
 		EA755CB015AAB6A300BBEA72 /* MEFindingDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CAE15AAB6A300BBEA72 /* MEFindingDoViewController.xib */; };
@@ -1580,7 +1582,8 @@
 		EA593C6315BD93EF00F5EB72 /* me.subtitle.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.subtitle.0.2.m4a; path = narrations/general/me.subtitle.0.2.m4a; sourceTree = "<group>"; };
 		EA593C6415BD93EF00F5EB72 /* me.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.title.0.1.m4a; path = narrations/general/me.title.0.1.m4a; sourceTree = "<group>"; };
 		EA593C6515BD93EF00F5EB72 /* me.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.title.0.2.m4a; path = narrations/general/me.title.0.2.m4a; sourceTree = "<group>"; };
-		EA593CD215BD958A00F5EB72 /* me.learning.goal.detail.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.2.m4a; path = narrations/general/me.learning.goal.detail.2.m4a; sourceTree = "<group>"; };
+		EA593CD515BD9E7900F5EB72 /* me.learning.goal.detail.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.0.1.m4a; path = narrations/general/me.learning.goal.detail.0.1.m4a; sourceTree = "<group>"; };
+		EA593CD615BD9E7A00F5EB72 /* me.learning.goal.detail.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.0.2.m4a; path = narrations/general/me.learning.goal.detail.0.2.m4a; sourceTree = "<group>"; };
 		EA755CA215AAB12A00BBEA72 /* MEFindingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingTitleViewController.h; sourceTree = "<group>"; };
 		EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingTitleViewController.m; sourceTree = "<group>"; };
 		EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingTitleViewController.xib; sourceTree = "<group>"; };
@@ -1895,7 +1898,6 @@
 		6370F45015A7553300988BC6 /* General Texts */ = {
 			isa = PBXGroup;
 			children = (
-				EA593CD215BD958A00F5EB72 /* me.learning.goal.detail.2.m4a */,
 				EA593BFA15BD93EB00F5EB72 /* me.ask.button.no.0.1.m4a */,
 				EA593BFB15BD93EB00F5EB72 /* me.ask.button.no.0.2.m4a */,
 				EA593BFC15BD93EB00F5EB72 /* me.ask.button.yes.0.1.m4a */,
@@ -1967,6 +1969,8 @@
 				EA593C3E15BD93ED00F5EB72 /* me.finding.ask.finish.0.1.m4a */,
 				EA593C3F15BD93ED00F5EB72 /* me.finding.ask.finish.0.2.m4a */,
 				EA593C4015BD93ED00F5EB72 /* me.finding.ask.question.0.1.m4a */,
+				EA593CD515BD9E7900F5EB72 /* me.learning.goal.detail.0.1.m4a */,
+				EA593CD615BD9E7A00F5EB72 /* me.learning.goal.detail.0.2.m4a */,
 				EA593C4115BD93ED00F5EB72 /* me.finding.ask.question.0.2.m4a */,
 				EA593C4215BD93ED00F5EB72 /* me.finding.do.instruction.0.1.m4a */,
 				EA593C4315BD93ED00F5EB72 /* me.finding.do.instruction.0.2.m4a */,
@@ -3735,6 +3739,8 @@
 				EA593CCF15BD93EF00F5EB72 /* me.subtitle.0.2.m4a in Resources */,
 				EA593CD015BD93EF00F5EB72 /* me.title.0.1.m4a in Resources */,
 				EA593CD115BD93EF00F5EB72 /* me.title.0.2.m4a in Resources */,
+				EA593CD715BD9E7C00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */,
+				EA593CD815BD9E7C00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
