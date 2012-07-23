@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
 extern NSString *const MEAskActivityConfirmed;
 extern NSString *const MEAskActivityDismissed;
@@ -17,6 +18,7 @@ extern NSString *const MEAskActivityDismissed;
 	NSUInteger noCount;
 	UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
 	MPMoviePlayerController *moviePlayer;
+	AVAudioPlayer *avp;
 }
 
 -(void)sayButtonAction:(id)sender;

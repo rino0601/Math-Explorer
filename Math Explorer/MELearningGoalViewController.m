@@ -20,12 +20,12 @@
 	[self setButton:MEButtonSay hidden:NO];
 	
 	NSError *err=nil;
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"me.learning.goal.detail.m4a"] error:&err];
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.detail.%d.m4a",langCode]] error:&err];
 	[avp setVolume:1.0f];
 	[avp prepareToPlay];
 	
-	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
 	sqlite3_stmt *localizer=NULL;
 	

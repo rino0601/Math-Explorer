@@ -142,4 +142,19 @@
 	}
 }
 
+-(void)sayButtonAction:(id)sender {
+	NSError *err=nil;
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+	//**************//
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.general.%d.%03d.m4a", langCode,current]] error:&err];
+	[avp setVolume:1.0f];
+	[avp prepareToPlay];
+	
+	if([avp isPlaying]==NO) {
+		[avp setCurrentTime:0.0];
+		[avp play];
+	} else
+		[avp stop];
+}
+
 @end
