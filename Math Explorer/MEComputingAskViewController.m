@@ -165,10 +165,22 @@
 }
 
 -(void)sayButtonAction:(id)sender {
+	NSString *fileFormat;
+	switch (current) {
+		case 0:fileFormat=@"me.computing.ask.answer.no.0.%d.m4a";break;
+		case 1:fileFormat=@"me.computing.ask.answer.no.1.%d.m4a";break;
+		case 2:fileFormat=@"me.computing.ask.answer.no.2.%d.m4a";break;
+		case 3:fileFormat=@"me.computing.ask.answer.no.3.%d.m4a";break;
+		case 4:fileFormat=@"me.computing.ask.answer.no.4.%d.m4a";break;
+		case 5:fileFormat=@"me.computing.ask.question.0.%d.m4a";break;
+		case 6:fileFormat=@"me.computing.ask.answer.yes.0.%d.m4a";break;
+		case 7:fileFormat=@"me.computing.ask.finish.0.%d.m4a";break;
+		case 10:fileFormat=@"me.computing.ask.answer.computed.0.%d.m4a";break;
+		default:fileFormat=@"me.computing.ask.answer.0.%d.m4a";break;
+	}
 	NSError *err=nil;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
-	//**************//
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.general.%d.%03d.m4a", langCode,current]] error:&err];
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:fileFormat, langCode,current]] error:&err];
 	[avp setVolume:1.0f];
 	[avp prepareToPlay];
 	

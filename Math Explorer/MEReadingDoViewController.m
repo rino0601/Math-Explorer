@@ -57,8 +57,7 @@
 -(void)navigationBarTap:(UIGestureRecognizer *)recognizer {
 	NSError *err=nil;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
-	//**************//
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.detail.1.m4a"]] error:&err];
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.reading.do.title.0.%d.m4a",langCode]] error:&err];
 	[avp setVolume:1.0f];
 	[avp prepareToPlay];
 	if([avp isPlaying]==NO) {
@@ -131,8 +130,7 @@
 	if(CGRectContainsPoint([meReadingDoInstruction frame], [touch locationInView:[self view]])) {
 		NSError *err=nil;
 		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
-		//**************//
-		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.detail.1.m4a"]] error:&err];
+		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.reading.do.instruction.0.%d.m4a",langCode]] error:&err];
 		[avp setVolume:1.0f];
 		[avp prepareToPlay];
 		

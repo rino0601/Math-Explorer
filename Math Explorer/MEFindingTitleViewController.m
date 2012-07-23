@@ -51,4 +51,21 @@
 	[[self navigationController] pushViewController:[[MEFindingDoViewController alloc] initWithNibName:@"MEFindingDoViewController" bundle:nil] animated:YES];
 }
 
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch =[[event allTouches] anyObject];
+	if(CGRectContainsPoint([meFindingTitle frame], [touch locationInView:[self view]])) {
+		NSError *err=nil;
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.finding.title.0.%d.m4a",langCode]] error:&err];
+		[avp setVolume:1.0f];
+		[avp prepareToPlay];
+		
+		if([avp isPlaying]==NO) {
+			[avp setCurrentTime:0.0];
+			[avp play];
+		} else
+			[avp stop];
+	}
+}
+
 @end

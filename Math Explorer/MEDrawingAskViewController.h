@@ -7,6 +7,7 @@
 //
 
 #import "MEAskModalTemplateViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface MEDrawingAskViewController : MEAskModalTemplateViewController {
 	@private

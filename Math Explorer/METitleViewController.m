@@ -41,5 +41,35 @@
 -(void)nextButtonAction:(id)sender {
 	[[self navigationController] pushViewController:[[MELearningGoalViewController alloc] initWithNibName:@"MELearningGoalViewController" bundle:nil] animated:YES];
 }
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch =[[event allTouches] anyObject];
+	if(CGRectContainsPoint([meTitle frame], [touch locationInView:[self view]])) {
+		NSError *err=nil;
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.title.0.%d.m4a",langCode]] error:&err];
+		[avp setVolume:1.0f];
+		[avp prepareToPlay];
+		
+		if([avp isPlaying]==NO) {
+			[avp setCurrentTime:0.0];
+			[avp play];
+		} else
+			[avp stop];
+	}
+	
+	if(CGRectContainsPoint([meSubtitle frame], [touch locationInView:[self view]])) {
+		NSError *err=nil;
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.subtitle.0.%d.m4a",langCode]] error:&err];
+		[avp setVolume:1.0f];
+		[avp prepareToPlay];
+		
+		if([avp isPlaying]==NO) {
+			[avp setCurrentTime:0.0];
+			[avp play];
+		} else
+			[avp stop];
+	}
+}
 
 @end

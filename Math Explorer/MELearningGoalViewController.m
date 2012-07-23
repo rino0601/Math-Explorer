@@ -19,14 +19,8 @@
 	[self setButton:MEButtonHome hidden:YES];
 	[self setButton:MEButtonSay hidden:NO];
 	
-	NSError *err=nil;
-	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
-	
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.detail.%d.m4a",langCode]] error:&err];
-	[avp setVolume:1.0f];
-	[avp prepareToPlay];
-	
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3_stmt *localizer=NULL;
 	
 	sqlite3_prepare_v2(dbo, [@"SELECT value FROM general_strings WHERE key=:keystring AND lang=:langnum" UTF8String], -1, &localizer, NULL);
@@ -45,6 +39,14 @@
 }
 
 -(void)sayButtonAction:(id)sender {
+	NSError *err=nil;
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+	
+#warning langCode 2's resource require.
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.detail.%d.m4a",langCode]] error:&err];
+	[avp setVolume:1.0f];
+	[avp prepareToPlay];
+	
 	if([avp isPlaying]==NO) {
 		[avp setCurrentTime:0.0];
 		[avp play];
@@ -55,6 +57,22 @@
 -(void)nextButtonAction:(id)sender {
 	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setHomeBackup:[NSMutableArray arrayWithArray:[[self navigationController] viewControllers]]];
 	[[self navigationController] setViewControllers:[NSArray arrayWithObject:[[MEReadingTitleViewController alloc] initWithNibName:@"MEReadingTitleViewController" bundle:nil]] animated:YES];
+}
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch =[[event allTouches] anyObject];
+	if(CGRectContainsPoint([meLearningGoalTitle frame], [touch locationInView:[self view]])) {
+		NSError *err=nil;
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.title.0.%d.m4a",langCode]] error:&err];
+		[avp setVolume:1.0f];
+		[avp prepareToPlay];
+		
+		if([avp isPlaying]==NO) {
+			[avp setCurrentTime:0.0];
+			[avp play];
+		} else
+			[avp stop];
+	}
 }
 
 @end

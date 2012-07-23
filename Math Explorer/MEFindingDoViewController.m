@@ -22,14 +22,9 @@
 	meFindingAskActivity=[[MEFindingAskViewController alloc] initWithNibName:@"MEFindingAskViewController" bundle:nil];
 	
 	[self setButton:MEButtonSay hidden:NO];
-	NSError *err=nil;
-	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode],problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
-
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, (langCode==2?problemID-288:problemID)]] error:&err];
-	[avp setVolume:1.0f];
-	[avp prepareToPlay];
 	
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode],problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
 	sqlite3_stmt *localizer=NULL;
 	
 	sqlite3_prepare_v2(dbo, [@"SELECT value FROM general_strings WHERE key=:keystring AND lang=:langcode" UTF8String], -1, &localizer, NULL);
@@ -67,9 +62,34 @@
 	localizer=NULL;
 	
 	mArray=[RINFindAct makeRINFindActView:[self view] Frame:CGRectMake(20, 250, 984, 350) String:problem Important:keywords];
+	
+	UITapGestureRecognizer* tapRecon = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(navigationBarTap:)];
+    tapRecon.numberOfTapsRequired = 1;
+	[[self.navigationController.navigationBar.subviews objectAtIndex:0] setUserInteractionEnabled:YES];
+    [[self.navigationController.navigationBar.subviews objectAtIndex:0] addGestureRecognizer:tapRecon];
+}
+
+-(void)navigationBarTap:(UIGestureRecognizer *)recognizer {
+	NSError *err=nil;
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.finding.do.title.0.%d.m4a",langCode]] error:&err];
+	[avp setVolume:1.0f];
+	[avp prepareToPlay];
+	if([avp isPlaying]==NO) {
+		[avp setCurrentTime:0.0];
+		[avp play];
+	} else
+		[avp stop];
 }
 
 -(void)sayButtonAction:(id)sender {
+	NSError *err=nil;
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode],problemID=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
+	
+	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.problem.%d.%03d.m4a", langCode, (langCode==2?problemID-288:problemID)]] error:&err];
+	[avp setVolume:1.0f];
+	[avp prepareToPlay];
+	
 	if([avp isPlaying]==NO) {
 		[avp setCurrentTime:0.0];
 		[avp play];
@@ -146,6 +166,22 @@
 	[RINFindAct removeRINFindActView:mArray];
 	//than make problem with keyword;
 	mArray=[RINFindAct makeRINFindActView:[self view] Frame:CGRectMake(20, 250, 984, 350) String:problem Important:keywords];
+}
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch =[[event allTouches] anyObject];
+	if(CGRectContainsPoint([mefindingDoInstruction frame], [touch locationInView:[self view]])) {
+		NSError *err=nil;
+		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.finding.do.instruction.0.%d.m4a",langCode]] error:&err];
+		[avp setVolume:1.0f];
+		[avp prepareToPlay];
+		
+		if([avp isPlaying]==NO) {
+			[avp setCurrentTime:0.0];
+			[avp play];
+		} else
+			[avp stop];
+	}
 }
 
 

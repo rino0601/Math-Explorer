@@ -7,11 +7,12 @@
 //
 
 #import "MEPageTemplateViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
 
 @interface MEReadingTitleViewController:MEPageTemplateViewController {
 	@private
 	IBOutlet UILabel *meReadingTitle;
+	AVAudioPlayer *avp;
 }
 
 @end

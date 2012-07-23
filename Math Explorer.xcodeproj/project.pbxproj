@@ -638,6 +638,114 @@
 		EA186D6115BC8E1D003B611C /* example.drawing.en.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5515BC8E1D003B611C /* example.drawing.en.1.m4v */; };
 		EA186D6215BC8E1D003B611C /* example.finding.en.1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EA186D5615BC8E1D003B611C /* example.finding.en.1.m4v */; };
 		EA21051B15A81BBE001D7405 /* MEAskModalTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */; };
+		EA593C6615BD93EF00F5EB72 /* me.ask.button.no.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593BFA15BD93EB00F5EB72 /* me.ask.button.no.0.1.m4a */; };
+		EA593C6715BD93EF00F5EB72 /* me.ask.button.no.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593BFB15BD93EB00F5EB72 /* me.ask.button.no.0.2.m4a */; };
+		EA593C6815BD93EF00F5EB72 /* me.ask.button.yes.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593BFC15BD93EB00F5EB72 /* me.ask.button.yes.0.1.m4a */; };
+		EA593C6915BD93EF00F5EB72 /* me.ask.button.yes.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593BFD15BD93EB00F5EB72 /* me.ask.button.yes.0.2.m4a */; };
+		EA593C6A15BD93EF00F5EB72 /* me.computing.ask.answer.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593BFE15BD93EB00F5EB72 /* me.computing.ask.answer.0.1.m4a */; };
+		EA593C6B15BD93EF00F5EB72 /* me.computing.ask.answer.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593BFF15BD93EB00F5EB72 /* me.computing.ask.answer.0.2.m4a */; };
+		EA593C6C15BD93EF00F5EB72 /* me.computing.ask.answer.computed.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0015BD93EB00F5EB72 /* me.computing.ask.answer.computed.0.1.m4a */; };
+		EA593C6D15BD93EF00F5EB72 /* me.computing.ask.answer.computed.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0115BD93EB00F5EB72 /* me.computing.ask.answer.computed.0.2.m4a */; };
+		EA593C6E15BD93EF00F5EB72 /* me.computing.ask.answer.no.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0215BD93EB00F5EB72 /* me.computing.ask.answer.no.0.1.m4a */; };
+		EA593C6F15BD93EF00F5EB72 /* me.computing.ask.answer.no.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0315BD93EB00F5EB72 /* me.computing.ask.answer.no.0.2.m4a */; };
+		EA593C7015BD93EF00F5EB72 /* me.computing.ask.answer.no.1.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0415BD93EB00F5EB72 /* me.computing.ask.answer.no.1.1.m4a */; };
+		EA593C7115BD93EF00F5EB72 /* me.computing.ask.answer.no.1.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0515BD93EB00F5EB72 /* me.computing.ask.answer.no.1.2.m4a */; };
+		EA593C7215BD93EF00F5EB72 /* me.computing.ask.answer.no.2.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0615BD93EB00F5EB72 /* me.computing.ask.answer.no.2.1.m4a */; };
+		EA593C7315BD93EF00F5EB72 /* me.computing.ask.answer.no.2.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0715BD93EB00F5EB72 /* me.computing.ask.answer.no.2.2.m4a */; };
+		EA593C7415BD93EF00F5EB72 /* me.computing.ask.answer.no.3.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0815BD93EB00F5EB72 /* me.computing.ask.answer.no.3.1.m4a */; };
+		EA593C7515BD93EF00F5EB72 /* me.computing.ask.answer.no.3.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0915BD93EB00F5EB72 /* me.computing.ask.answer.no.3.2.m4a */; };
+		EA593C7615BD93EF00F5EB72 /* me.computing.ask.answer.no.4.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0A15BD93EB00F5EB72 /* me.computing.ask.answer.no.4.1.m4a */; };
+		EA593C7715BD93EF00F5EB72 /* me.computing.ask.answer.no.4.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0B15BD93EB00F5EB72 /* me.computing.ask.answer.no.4.2.m4a */; };
+		EA593C7815BD93EF00F5EB72 /* me.computing.ask.answer.yes.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0C15BD93EB00F5EB72 /* me.computing.ask.answer.yes.0.1.m4a */; };
+		EA593C7915BD93EF00F5EB72 /* me.computing.ask.answer.yes.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0D15BD93EB00F5EB72 /* me.computing.ask.answer.yes.0.2.m4a */; };
+		EA593C7A15BD93EF00F5EB72 /* me.computing.ask.finish.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0E15BD93EB00F5EB72 /* me.computing.ask.finish.0.1.m4a */; };
+		EA593C7B15BD93EF00F5EB72 /* me.computing.ask.finish.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C0F15BD93EB00F5EB72 /* me.computing.ask.finish.0.2.m4a */; };
+		EA593C7C15BD93EF00F5EB72 /* me.computing.ask.question.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1015BD93EB00F5EB72 /* me.computing.ask.question.0.1.m4a */; };
+		EA593C7D15BD93EF00F5EB72 /* me.computing.ask.question.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1115BD93EC00F5EB72 /* me.computing.ask.question.0.2.m4a */; };
+		EA593C7E15BD93EF00F5EB72 /* me.computing.do.instruction.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1215BD93EC00F5EB72 /* me.computing.do.instruction.0.1.m4a */; };
+		EA593C7F15BD93EF00F5EB72 /* me.computing.do.instruction.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1315BD93EC00F5EB72 /* me.computing.do.instruction.0.2.m4a */; };
+		EA593C8015BD93EF00F5EB72 /* me.computing.do.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1415BD93EC00F5EB72 /* me.computing.do.title.0.1.m4a */; };
+		EA593C8115BD93EF00F5EB72 /* me.computing.do.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1515BD93EC00F5EB72 /* me.computing.do.title.0.2.m4a */; };
+		EA593C8215BD93EF00F5EB72 /* me.computing.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1615BD93EC00F5EB72 /* me.computing.title.0.1.m4a */; };
+		EA593C8315BD93EF00F5EB72 /* me.computing.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1715BD93EC00F5EB72 /* me.computing.title.0.2.m4a */; };
+		EA593C8415BD93EF00F5EB72 /* me.drawing.ask.answer.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1815BD93EC00F5EB72 /* me.drawing.ask.answer.0.1.m4a */; };
+		EA593C8515BD93EF00F5EB72 /* me.drawing.ask.answer.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1915BD93EC00F5EB72 /* me.drawing.ask.answer.0.2.m4a */; };
+		EA593C8615BD93EF00F5EB72 /* me.drawing.ask.answer.no.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1A15BD93EC00F5EB72 /* me.drawing.ask.answer.no.0.1.m4a */; };
+		EA593C8715BD93EF00F5EB72 /* me.drawing.ask.answer.no.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1B15BD93EC00F5EB72 /* me.drawing.ask.answer.no.0.2.m4a */; };
+		EA593C8815BD93EF00F5EB72 /* me.drawing.ask.answer.no.1.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1C15BD93EC00F5EB72 /* me.drawing.ask.answer.no.1.1.m4a */; };
+		EA593C8915BD93EF00F5EB72 /* me.drawing.ask.answer.no.1.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1D15BD93EC00F5EB72 /* me.drawing.ask.answer.no.1.2.m4a */; };
+		EA593C8A15BD93EF00F5EB72 /* me.drawing.ask.answer.no.2.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1E15BD93EC00F5EB72 /* me.drawing.ask.answer.no.2.1.m4a */; };
+		EA593C8B15BD93EF00F5EB72 /* me.drawing.ask.answer.no.2.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C1F15BD93EC00F5EB72 /* me.drawing.ask.answer.no.2.2.m4a */; };
+		EA593C8C15BD93EF00F5EB72 /* me.drawing.ask.answer.no.3.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2015BD93EC00F5EB72 /* me.drawing.ask.answer.no.3.1.m4a */; };
+		EA593C8D15BD93EF00F5EB72 /* me.drawing.ask.answer.no.3.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2115BD93EC00F5EB72 /* me.drawing.ask.answer.no.3.2.m4a */; };
+		EA593C8E15BD93EF00F5EB72 /* me.drawing.ask.answer.no.4.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2215BD93EC00F5EB72 /* me.drawing.ask.answer.no.4.1.m4a */; };
+		EA593C8F15BD93EF00F5EB72 /* me.drawing.ask.answer.no.4.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2315BD93EC00F5EB72 /* me.drawing.ask.answer.no.4.2.m4a */; };
+		EA593C9015BD93EF00F5EB72 /* me.drawing.ask.answer.yes.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2415BD93EC00F5EB72 /* me.drawing.ask.answer.yes.0.1.m4a */; };
+		EA593C9115BD93EF00F5EB72 /* me.drawing.ask.answer.yes.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2515BD93EC00F5EB72 /* me.drawing.ask.answer.yes.0.2.m4a */; };
+		EA593C9215BD93EF00F5EB72 /* me.drawing.ask.finish.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2615BD93EC00F5EB72 /* me.drawing.ask.finish.0.1.m4a */; };
+		EA593C9315BD93EF00F5EB72 /* me.drawing.ask.finish.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2715BD93ED00F5EB72 /* me.drawing.ask.finish.0.2.m4a */; };
+		EA593C9415BD93EF00F5EB72 /* me.drawing.ask.question.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2815BD93ED00F5EB72 /* me.drawing.ask.question.0.1.m4a */; };
+		EA593C9515BD93EF00F5EB72 /* me.drawing.ask.question.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2915BD93ED00F5EB72 /* me.drawing.ask.question.0.2.m4a */; };
+		EA593C9615BD93EF00F5EB72 /* me.drawing.do.instruction.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2A15BD93ED00F5EB72 /* me.drawing.do.instruction.0.1.m4a */; };
+		EA593C9715BD93EF00F5EB72 /* me.drawing.do.instruction.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2B15BD93ED00F5EB72 /* me.drawing.do.instruction.0.2.m4a */; };
+		EA593C9815BD93EF00F5EB72 /* me.drawing.do.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2C15BD93ED00F5EB72 /* me.drawing.do.title.0.1.m4a */; };
+		EA593C9915BD93EF00F5EB72 /* me.drawing.do.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2D15BD93ED00F5EB72 /* me.drawing.do.title.0.2.m4a */; };
+		EA593C9A15BD93EF00F5EB72 /* me.drawing.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2E15BD93ED00F5EB72 /* me.drawing.title.0.1.m4a */; };
+		EA593C9B15BD93EF00F5EB72 /* me.drawing.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C2F15BD93ED00F5EB72 /* me.drawing.title.0.2.m4a */; };
+		EA593C9C15BD93EF00F5EB72 /* me.finding.ask.answer.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3015BD93ED00F5EB72 /* me.finding.ask.answer.0.1.m4a */; };
+		EA593C9D15BD93EF00F5EB72 /* me.finding.ask.answer.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3115BD93ED00F5EB72 /* me.finding.ask.answer.0.2.m4a */; };
+		EA593C9E15BD93EF00F5EB72 /* me.finding.ask.answer.no.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3215BD93ED00F5EB72 /* me.finding.ask.answer.no.0.1.m4a */; };
+		EA593C9F15BD93EF00F5EB72 /* me.finding.ask.answer.no.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3315BD93ED00F5EB72 /* me.finding.ask.answer.no.0.2.m4a */; };
+		EA593CA015BD93EF00F5EB72 /* me.finding.ask.answer.no.1.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3415BD93ED00F5EB72 /* me.finding.ask.answer.no.1.1.m4a */; };
+		EA593CA115BD93EF00F5EB72 /* me.finding.ask.answer.no.1.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3515BD93ED00F5EB72 /* me.finding.ask.answer.no.1.2.m4a */; };
+		EA593CA215BD93EF00F5EB72 /* me.finding.ask.answer.no.2.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3615BD93ED00F5EB72 /* me.finding.ask.answer.no.2.1.m4a */; };
+		EA593CA315BD93EF00F5EB72 /* me.finding.ask.answer.no.2.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3715BD93ED00F5EB72 /* me.finding.ask.answer.no.2.2.m4a */; };
+		EA593CA415BD93EF00F5EB72 /* me.finding.ask.answer.no.3.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3815BD93ED00F5EB72 /* me.finding.ask.answer.no.3.1.m4a */; };
+		EA593CA515BD93EF00F5EB72 /* me.finding.ask.answer.no.3.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3915BD93ED00F5EB72 /* me.finding.ask.answer.no.3.2.m4a */; };
+		EA593CA615BD93EF00F5EB72 /* me.finding.ask.answer.no.4.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3A15BD93ED00F5EB72 /* me.finding.ask.answer.no.4.1.m4a */; };
+		EA593CA715BD93EF00F5EB72 /* me.finding.ask.answer.no.4.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3B15BD93ED00F5EB72 /* me.finding.ask.answer.no.4.2.m4a */; };
+		EA593CA815BD93EF00F5EB72 /* me.finding.ask.answer.yes.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3C15BD93ED00F5EB72 /* me.finding.ask.answer.yes.0.1.m4a */; };
+		EA593CA915BD93EF00F5EB72 /* me.finding.ask.answer.yes.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3D15BD93ED00F5EB72 /* me.finding.ask.answer.yes.0.2.m4a */; };
+		EA593CAA15BD93EF00F5EB72 /* me.finding.ask.finish.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3E15BD93ED00F5EB72 /* me.finding.ask.finish.0.1.m4a */; };
+		EA593CAB15BD93EF00F5EB72 /* me.finding.ask.finish.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C3F15BD93ED00F5EB72 /* me.finding.ask.finish.0.2.m4a */; };
+		EA593CAC15BD93EF00F5EB72 /* me.finding.ask.question.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4015BD93ED00F5EB72 /* me.finding.ask.question.0.1.m4a */; };
+		EA593CAD15BD93EF00F5EB72 /* me.finding.ask.question.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4115BD93ED00F5EB72 /* me.finding.ask.question.0.2.m4a */; };
+		EA593CAE15BD93EF00F5EB72 /* me.finding.do.instruction.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4215BD93ED00F5EB72 /* me.finding.do.instruction.0.1.m4a */; };
+		EA593CAF15BD93EF00F5EB72 /* me.finding.do.instruction.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4315BD93ED00F5EB72 /* me.finding.do.instruction.0.2.m4a */; };
+		EA593CB015BD93EF00F5EB72 /* me.finding.do.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4415BD93ED00F5EB72 /* me.finding.do.title.0.1.m4a */; };
+		EA593CB115BD93EF00F5EB72 /* me.finding.do.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4515BD93ED00F5EB72 /* me.finding.do.title.0.2.m4a */; };
+		EA593CB215BD93EF00F5EB72 /* me.finding.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4615BD93ED00F5EB72 /* me.finding.title.0.1.m4a */; };
+		EA593CB315BD93EF00F5EB72 /* me.finding.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4715BD93ED00F5EB72 /* me.finding.title.0.2.m4a */; };
+		EA593CB415BD93EF00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4815BD93ED00F5EB72 /* me.learning.goal.detail.0.1.m4a */; };
+		EA593CB515BD93EF00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4915BD93ED00F5EB72 /* me.learning.goal.detail.0.2.m4a */; };
+		EA593CB615BD93EF00F5EB72 /* me.learning.goal.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4A15BD93ED00F5EB72 /* me.learning.goal.title.0.1.m4a */; };
+		EA593CB715BD93EF00F5EB72 /* me.learning.goal.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4B15BD93ED00F5EB72 /* me.learning.goal.title.0.2.m4a */; };
+		EA593CB815BD93EF00F5EB72 /* me.reading.ask.answer.no.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4C15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.1.m4a */; };
+		EA593CB915BD93EF00F5EB72 /* me.reading.ask.answer.no.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4D15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.2.m4a */; };
+		EA593CBA15BD93EF00F5EB72 /* me.reading.ask.answer.no.1.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4E15BD93ED00F5EB72 /* me.reading.ask.answer.no.1.1.m4a */; };
+		EA593CBB15BD93EF00F5EB72 /* me.reading.ask.answer.no.1.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4F15BD93ED00F5EB72 /* me.reading.ask.answer.no.1.2.m4a */; };
+		EA593CBC15BD93EF00F5EB72 /* me.reading.ask.answer.no.2.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5015BD93EF00F5EB72 /* me.reading.ask.answer.no.2.1.m4a */; };
+		EA593CBD15BD93EF00F5EB72 /* me.reading.ask.answer.no.2.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5115BD93EF00F5EB72 /* me.reading.ask.answer.no.2.2.m4a */; };
+		EA593CBE15BD93EF00F5EB72 /* me.reading.ask.answer.no.3.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5215BD93EF00F5EB72 /* me.reading.ask.answer.no.3.1.m4a */; };
+		EA593CBF15BD93EF00F5EB72 /* me.reading.ask.answer.no.3.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5315BD93EF00F5EB72 /* me.reading.ask.answer.no.3.2.m4a */; };
+		EA593CC015BD93EF00F5EB72 /* me.reading.ask.answer.no.4.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5415BD93EF00F5EB72 /* me.reading.ask.answer.no.4.1.m4a */; };
+		EA593CC115BD93EF00F5EB72 /* me.reading.ask.answer.no.4.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5515BD93EF00F5EB72 /* me.reading.ask.answer.no.4.2.m4a */; };
+		EA593CC215BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5615BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.1.m4a */; };
+		EA593CC315BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5715BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.2.m4a */; };
+		EA593CC415BD93EF00F5EB72 /* me.reading.ask.finish.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5815BD93EF00F5EB72 /* me.reading.ask.finish.0.1.m4a */; };
+		EA593CC515BD93EF00F5EB72 /* me.reading.ask.finish.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5915BD93EF00F5EB72 /* me.reading.ask.finish.0.2.m4a */; };
+		EA593CC615BD93EF00F5EB72 /* me.reading.ask.question.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5A15BD93EF00F5EB72 /* me.reading.ask.question.0.1.m4a */; };
+		EA593CC715BD93EF00F5EB72 /* me.reading.ask.question.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5B15BD93EF00F5EB72 /* me.reading.ask.question.0.2.m4a */; };
+		EA593CC815BD93EF00F5EB72 /* me.reading.do.instruction.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5C15BD93EF00F5EB72 /* me.reading.do.instruction.0.1.m4a */; };
+		EA593CC915BD93EF00F5EB72 /* me.reading.do.instruction.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5D15BD93EF00F5EB72 /* me.reading.do.instruction.0.2.m4a */; };
+		EA593CCA15BD93EF00F5EB72 /* me.reading.do.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5E15BD93EF00F5EB72 /* me.reading.do.title.0.1.m4a */; };
+		EA593CCB15BD93EF00F5EB72 /* me.reading.do.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C5F15BD93EF00F5EB72 /* me.reading.do.title.0.2.m4a */; };
+		EA593CCC15BD93EF00F5EB72 /* me.reading.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6015BD93EF00F5EB72 /* me.reading.title.0.1.m4a */; };
+		EA593CCD15BD93EF00F5EB72 /* me.reading.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6115BD93EF00F5EB72 /* me.reading.title.0.2.m4a */; };
+		EA593CCE15BD93EF00F5EB72 /* me.subtitle.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6215BD93EF00F5EB72 /* me.subtitle.0.1.m4a */; };
+		EA593CCF15BD93EF00F5EB72 /* me.subtitle.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6315BD93EF00F5EB72 /* me.subtitle.0.2.m4a */; };
+		EA593CD015BD93EF00F5EB72 /* me.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6415BD93EF00F5EB72 /* me.title.0.1.m4a */; };
+		EA593CD115BD93EF00F5EB72 /* me.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C6515BD93EF00F5EB72 /* me.title.0.2.m4a */; };
 		EA755CA615AAB12A00BBEA72 /* MEFindingTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */; };
 		EA755CAF15AAB6A300BBEA72 /* MEFindingDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA755CAD15AAB6A300BBEA72 /* MEFindingDoViewController.m */; };
 		EA755CB015AAB6A300BBEA72 /* MEFindingDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA755CAE15AAB6A300BBEA72 /* MEFindingDoViewController.xib */; };
@@ -1370,6 +1478,115 @@
 		EA186D5615BC8E1D003B611C /* example.finding.en.1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.finding.en.1.m4v; sourceTree = "<group>"; };
 		EA21051815A81BBE001D7405 /* MEAskModalTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAskModalTemplateViewController.h; sourceTree = "<group>"; };
 		EA21051915A81BBE001D7405 /* MEAskModalTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MEAskModalTemplateViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EA593BFA15BD93EB00F5EB72 /* me.ask.button.no.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.ask.button.no.0.1.m4a; path = narrations/general/me.ask.button.no.0.1.m4a; sourceTree = "<group>"; };
+		EA593BFB15BD93EB00F5EB72 /* me.ask.button.no.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.ask.button.no.0.2.m4a; path = narrations/general/me.ask.button.no.0.2.m4a; sourceTree = "<group>"; };
+		EA593BFC15BD93EB00F5EB72 /* me.ask.button.yes.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.ask.button.yes.0.1.m4a; path = narrations/general/me.ask.button.yes.0.1.m4a; sourceTree = "<group>"; };
+		EA593BFD15BD93EB00F5EB72 /* me.ask.button.yes.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.ask.button.yes.0.2.m4a; path = narrations/general/me.ask.button.yes.0.2.m4a; sourceTree = "<group>"; };
+		EA593BFE15BD93EB00F5EB72 /* me.computing.ask.answer.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.0.1.m4a; path = narrations/general/me.computing.ask.answer.0.1.m4a; sourceTree = "<group>"; };
+		EA593BFF15BD93EB00F5EB72 /* me.computing.ask.answer.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.0.2.m4a; path = narrations/general/me.computing.ask.answer.0.2.m4a; sourceTree = "<group>"; };
+		EA593C0015BD93EB00F5EB72 /* me.computing.ask.answer.computed.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.computed.0.1.m4a; path = narrations/general/me.computing.ask.answer.computed.0.1.m4a; sourceTree = "<group>"; };
+		EA593C0115BD93EB00F5EB72 /* me.computing.ask.answer.computed.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.computed.0.2.m4a; path = narrations/general/me.computing.ask.answer.computed.0.2.m4a; sourceTree = "<group>"; };
+		EA593C0215BD93EB00F5EB72 /* me.computing.ask.answer.no.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.0.1.m4a; path = narrations/general/me.computing.ask.answer.no.0.1.m4a; sourceTree = "<group>"; };
+		EA593C0315BD93EB00F5EB72 /* me.computing.ask.answer.no.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.0.2.m4a; path = narrations/general/me.computing.ask.answer.no.0.2.m4a; sourceTree = "<group>"; };
+		EA593C0415BD93EB00F5EB72 /* me.computing.ask.answer.no.1.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.1.1.m4a; path = narrations/general/me.computing.ask.answer.no.1.1.m4a; sourceTree = "<group>"; };
+		EA593C0515BD93EB00F5EB72 /* me.computing.ask.answer.no.1.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.1.2.m4a; path = narrations/general/me.computing.ask.answer.no.1.2.m4a; sourceTree = "<group>"; };
+		EA593C0615BD93EB00F5EB72 /* me.computing.ask.answer.no.2.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.2.1.m4a; path = narrations/general/me.computing.ask.answer.no.2.1.m4a; sourceTree = "<group>"; };
+		EA593C0715BD93EB00F5EB72 /* me.computing.ask.answer.no.2.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.2.2.m4a; path = narrations/general/me.computing.ask.answer.no.2.2.m4a; sourceTree = "<group>"; };
+		EA593C0815BD93EB00F5EB72 /* me.computing.ask.answer.no.3.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.3.1.m4a; path = narrations/general/me.computing.ask.answer.no.3.1.m4a; sourceTree = "<group>"; };
+		EA593C0915BD93EB00F5EB72 /* me.computing.ask.answer.no.3.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.3.2.m4a; path = narrations/general/me.computing.ask.answer.no.3.2.m4a; sourceTree = "<group>"; };
+		EA593C0A15BD93EB00F5EB72 /* me.computing.ask.answer.no.4.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.4.1.m4a; path = narrations/general/me.computing.ask.answer.no.4.1.m4a; sourceTree = "<group>"; };
+		EA593C0B15BD93EB00F5EB72 /* me.computing.ask.answer.no.4.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.no.4.2.m4a; path = narrations/general/me.computing.ask.answer.no.4.2.m4a; sourceTree = "<group>"; };
+		EA593C0C15BD93EB00F5EB72 /* me.computing.ask.answer.yes.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.yes.0.1.m4a; path = narrations/general/me.computing.ask.answer.yes.0.1.m4a; sourceTree = "<group>"; };
+		EA593C0D15BD93EB00F5EB72 /* me.computing.ask.answer.yes.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.answer.yes.0.2.m4a; path = narrations/general/me.computing.ask.answer.yes.0.2.m4a; sourceTree = "<group>"; };
+		EA593C0E15BD93EB00F5EB72 /* me.computing.ask.finish.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.finish.0.1.m4a; path = narrations/general/me.computing.ask.finish.0.1.m4a; sourceTree = "<group>"; };
+		EA593C0F15BD93EB00F5EB72 /* me.computing.ask.finish.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.finish.0.2.m4a; path = narrations/general/me.computing.ask.finish.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1015BD93EB00F5EB72 /* me.computing.ask.question.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.question.0.1.m4a; path = narrations/general/me.computing.ask.question.0.1.m4a; sourceTree = "<group>"; };
+		EA593C1115BD93EC00F5EB72 /* me.computing.ask.question.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.ask.question.0.2.m4a; path = narrations/general/me.computing.ask.question.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1215BD93EC00F5EB72 /* me.computing.do.instruction.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.do.instruction.0.1.m4a; path = narrations/general/me.computing.do.instruction.0.1.m4a; sourceTree = "<group>"; };
+		EA593C1315BD93EC00F5EB72 /* me.computing.do.instruction.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.do.instruction.0.2.m4a; path = narrations/general/me.computing.do.instruction.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1415BD93EC00F5EB72 /* me.computing.do.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.do.title.0.1.m4a; path = narrations/general/me.computing.do.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C1515BD93EC00F5EB72 /* me.computing.do.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.do.title.0.2.m4a; path = narrations/general/me.computing.do.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1615BD93EC00F5EB72 /* me.computing.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.title.0.1.m4a; path = narrations/general/me.computing.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C1715BD93EC00F5EB72 /* me.computing.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.computing.title.0.2.m4a; path = narrations/general/me.computing.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1815BD93EC00F5EB72 /* me.drawing.ask.answer.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.0.1.m4a; path = narrations/general/me.drawing.ask.answer.0.1.m4a; sourceTree = "<group>"; };
+		EA593C1915BD93EC00F5EB72 /* me.drawing.ask.answer.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.0.2.m4a; path = narrations/general/me.drawing.ask.answer.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1A15BD93EC00F5EB72 /* me.drawing.ask.answer.no.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.0.1.m4a; path = narrations/general/me.drawing.ask.answer.no.0.1.m4a; sourceTree = "<group>"; };
+		EA593C1B15BD93EC00F5EB72 /* me.drawing.ask.answer.no.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.0.2.m4a; path = narrations/general/me.drawing.ask.answer.no.0.2.m4a; sourceTree = "<group>"; };
+		EA593C1C15BD93EC00F5EB72 /* me.drawing.ask.answer.no.1.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.1.1.m4a; path = narrations/general/me.drawing.ask.answer.no.1.1.m4a; sourceTree = "<group>"; };
+		EA593C1D15BD93EC00F5EB72 /* me.drawing.ask.answer.no.1.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.1.2.m4a; path = narrations/general/me.drawing.ask.answer.no.1.2.m4a; sourceTree = "<group>"; };
+		EA593C1E15BD93EC00F5EB72 /* me.drawing.ask.answer.no.2.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.2.1.m4a; path = narrations/general/me.drawing.ask.answer.no.2.1.m4a; sourceTree = "<group>"; };
+		EA593C1F15BD93EC00F5EB72 /* me.drawing.ask.answer.no.2.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.2.2.m4a; path = narrations/general/me.drawing.ask.answer.no.2.2.m4a; sourceTree = "<group>"; };
+		EA593C2015BD93EC00F5EB72 /* me.drawing.ask.answer.no.3.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.3.1.m4a; path = narrations/general/me.drawing.ask.answer.no.3.1.m4a; sourceTree = "<group>"; };
+		EA593C2115BD93EC00F5EB72 /* me.drawing.ask.answer.no.3.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.3.2.m4a; path = narrations/general/me.drawing.ask.answer.no.3.2.m4a; sourceTree = "<group>"; };
+		EA593C2215BD93EC00F5EB72 /* me.drawing.ask.answer.no.4.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.4.1.m4a; path = narrations/general/me.drawing.ask.answer.no.4.1.m4a; sourceTree = "<group>"; };
+		EA593C2315BD93EC00F5EB72 /* me.drawing.ask.answer.no.4.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.no.4.2.m4a; path = narrations/general/me.drawing.ask.answer.no.4.2.m4a; sourceTree = "<group>"; };
+		EA593C2415BD93EC00F5EB72 /* me.drawing.ask.answer.yes.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.yes.0.1.m4a; path = narrations/general/me.drawing.ask.answer.yes.0.1.m4a; sourceTree = "<group>"; };
+		EA593C2515BD93EC00F5EB72 /* me.drawing.ask.answer.yes.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.answer.yes.0.2.m4a; path = narrations/general/me.drawing.ask.answer.yes.0.2.m4a; sourceTree = "<group>"; };
+		EA593C2615BD93EC00F5EB72 /* me.drawing.ask.finish.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.finish.0.1.m4a; path = narrations/general/me.drawing.ask.finish.0.1.m4a; sourceTree = "<group>"; };
+		EA593C2715BD93ED00F5EB72 /* me.drawing.ask.finish.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.finish.0.2.m4a; path = narrations/general/me.drawing.ask.finish.0.2.m4a; sourceTree = "<group>"; };
+		EA593C2815BD93ED00F5EB72 /* me.drawing.ask.question.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.question.0.1.m4a; path = narrations/general/me.drawing.ask.question.0.1.m4a; sourceTree = "<group>"; };
+		EA593C2915BD93ED00F5EB72 /* me.drawing.ask.question.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.ask.question.0.2.m4a; path = narrations/general/me.drawing.ask.question.0.2.m4a; sourceTree = "<group>"; };
+		EA593C2A15BD93ED00F5EB72 /* me.drawing.do.instruction.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.do.instruction.0.1.m4a; path = narrations/general/me.drawing.do.instruction.0.1.m4a; sourceTree = "<group>"; };
+		EA593C2B15BD93ED00F5EB72 /* me.drawing.do.instruction.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.do.instruction.0.2.m4a; path = narrations/general/me.drawing.do.instruction.0.2.m4a; sourceTree = "<group>"; };
+		EA593C2C15BD93ED00F5EB72 /* me.drawing.do.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.do.title.0.1.m4a; path = narrations/general/me.drawing.do.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C2D15BD93ED00F5EB72 /* me.drawing.do.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.do.title.0.2.m4a; path = narrations/general/me.drawing.do.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C2E15BD93ED00F5EB72 /* me.drawing.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.title.0.1.m4a; path = narrations/general/me.drawing.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C2F15BD93ED00F5EB72 /* me.drawing.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.drawing.title.0.2.m4a; path = narrations/general/me.drawing.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C3015BD93ED00F5EB72 /* me.finding.ask.answer.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.0.1.m4a; path = narrations/general/me.finding.ask.answer.0.1.m4a; sourceTree = "<group>"; };
+		EA593C3115BD93ED00F5EB72 /* me.finding.ask.answer.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.0.2.m4a; path = narrations/general/me.finding.ask.answer.0.2.m4a; sourceTree = "<group>"; };
+		EA593C3215BD93ED00F5EB72 /* me.finding.ask.answer.no.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.0.1.m4a; path = narrations/general/me.finding.ask.answer.no.0.1.m4a; sourceTree = "<group>"; };
+		EA593C3315BD93ED00F5EB72 /* me.finding.ask.answer.no.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.0.2.m4a; path = narrations/general/me.finding.ask.answer.no.0.2.m4a; sourceTree = "<group>"; };
+		EA593C3415BD93ED00F5EB72 /* me.finding.ask.answer.no.1.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.1.1.m4a; path = narrations/general/me.finding.ask.answer.no.1.1.m4a; sourceTree = "<group>"; };
+		EA593C3515BD93ED00F5EB72 /* me.finding.ask.answer.no.1.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.1.2.m4a; path = narrations/general/me.finding.ask.answer.no.1.2.m4a; sourceTree = "<group>"; };
+		EA593C3615BD93ED00F5EB72 /* me.finding.ask.answer.no.2.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.2.1.m4a; path = narrations/general/me.finding.ask.answer.no.2.1.m4a; sourceTree = "<group>"; };
+		EA593C3715BD93ED00F5EB72 /* me.finding.ask.answer.no.2.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.2.2.m4a; path = narrations/general/me.finding.ask.answer.no.2.2.m4a; sourceTree = "<group>"; };
+		EA593C3815BD93ED00F5EB72 /* me.finding.ask.answer.no.3.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.3.1.m4a; path = narrations/general/me.finding.ask.answer.no.3.1.m4a; sourceTree = "<group>"; };
+		EA593C3915BD93ED00F5EB72 /* me.finding.ask.answer.no.3.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.3.2.m4a; path = narrations/general/me.finding.ask.answer.no.3.2.m4a; sourceTree = "<group>"; };
+		EA593C3A15BD93ED00F5EB72 /* me.finding.ask.answer.no.4.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.4.1.m4a; path = narrations/general/me.finding.ask.answer.no.4.1.m4a; sourceTree = "<group>"; };
+		EA593C3B15BD93ED00F5EB72 /* me.finding.ask.answer.no.4.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.no.4.2.m4a; path = narrations/general/me.finding.ask.answer.no.4.2.m4a; sourceTree = "<group>"; };
+		EA593C3C15BD93ED00F5EB72 /* me.finding.ask.answer.yes.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.yes.0.1.m4a; path = narrations/general/me.finding.ask.answer.yes.0.1.m4a; sourceTree = "<group>"; };
+		EA593C3D15BD93ED00F5EB72 /* me.finding.ask.answer.yes.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.answer.yes.0.2.m4a; path = narrations/general/me.finding.ask.answer.yes.0.2.m4a; sourceTree = "<group>"; };
+		EA593C3E15BD93ED00F5EB72 /* me.finding.ask.finish.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.finish.0.1.m4a; path = narrations/general/me.finding.ask.finish.0.1.m4a; sourceTree = "<group>"; };
+		EA593C3F15BD93ED00F5EB72 /* me.finding.ask.finish.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.finish.0.2.m4a; path = narrations/general/me.finding.ask.finish.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4015BD93ED00F5EB72 /* me.finding.ask.question.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.question.0.1.m4a; path = narrations/general/me.finding.ask.question.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4115BD93ED00F5EB72 /* me.finding.ask.question.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.ask.question.0.2.m4a; path = narrations/general/me.finding.ask.question.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4215BD93ED00F5EB72 /* me.finding.do.instruction.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.do.instruction.0.1.m4a; path = narrations/general/me.finding.do.instruction.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4315BD93ED00F5EB72 /* me.finding.do.instruction.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.do.instruction.0.2.m4a; path = narrations/general/me.finding.do.instruction.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4415BD93ED00F5EB72 /* me.finding.do.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.do.title.0.1.m4a; path = narrations/general/me.finding.do.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4515BD93ED00F5EB72 /* me.finding.do.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.do.title.0.2.m4a; path = narrations/general/me.finding.do.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4615BD93ED00F5EB72 /* me.finding.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.title.0.1.m4a; path = narrations/general/me.finding.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4715BD93ED00F5EB72 /* me.finding.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.title.0.2.m4a; path = narrations/general/me.finding.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4815BD93ED00F5EB72 /* me.learning.goal.detail.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.0.1.m4a; path = narrations/general/me.learning.goal.detail.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4915BD93ED00F5EB72 /* me.learning.goal.detail.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.0.2.m4a; path = narrations/general/me.learning.goal.detail.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4A15BD93ED00F5EB72 /* me.learning.goal.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.title.0.1.m4a; path = narrations/general/me.learning.goal.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4B15BD93ED00F5EB72 /* me.learning.goal.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.title.0.2.m4a; path = narrations/general/me.learning.goal.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4C15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.0.1.m4a; path = narrations/general/me.reading.ask.answer.no.0.1.m4a; sourceTree = "<group>"; };
+		EA593C4D15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.0.2.m4a; path = narrations/general/me.reading.ask.answer.no.0.2.m4a; sourceTree = "<group>"; };
+		EA593C4E15BD93ED00F5EB72 /* me.reading.ask.answer.no.1.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.1.1.m4a; path = narrations/general/me.reading.ask.answer.no.1.1.m4a; sourceTree = "<group>"; };
+		EA593C4F15BD93ED00F5EB72 /* me.reading.ask.answer.no.1.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.1.2.m4a; path = narrations/general/me.reading.ask.answer.no.1.2.m4a; sourceTree = "<group>"; };
+		EA593C5015BD93EF00F5EB72 /* me.reading.ask.answer.no.2.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.2.1.m4a; path = narrations/general/me.reading.ask.answer.no.2.1.m4a; sourceTree = "<group>"; };
+		EA593C5115BD93EF00F5EB72 /* me.reading.ask.answer.no.2.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.2.2.m4a; path = narrations/general/me.reading.ask.answer.no.2.2.m4a; sourceTree = "<group>"; };
+		EA593C5215BD93EF00F5EB72 /* me.reading.ask.answer.no.3.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.3.1.m4a; path = narrations/general/me.reading.ask.answer.no.3.1.m4a; sourceTree = "<group>"; };
+		EA593C5315BD93EF00F5EB72 /* me.reading.ask.answer.no.3.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.3.2.m4a; path = narrations/general/me.reading.ask.answer.no.3.2.m4a; sourceTree = "<group>"; };
+		EA593C5415BD93EF00F5EB72 /* me.reading.ask.answer.no.4.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.4.1.m4a; path = narrations/general/me.reading.ask.answer.no.4.1.m4a; sourceTree = "<group>"; };
+		EA593C5515BD93EF00F5EB72 /* me.reading.ask.answer.no.4.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.4.2.m4a; path = narrations/general/me.reading.ask.answer.no.4.2.m4a; sourceTree = "<group>"; };
+		EA593C5615BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.yes.0.1.m4a; path = narrations/general/me.reading.ask.answer.yes.0.1.m4a; sourceTree = "<group>"; };
+		EA593C5715BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.yes.0.2.m4a; path = narrations/general/me.reading.ask.answer.yes.0.2.m4a; sourceTree = "<group>"; };
+		EA593C5815BD93EF00F5EB72 /* me.reading.ask.finish.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.finish.0.1.m4a; path = narrations/general/me.reading.ask.finish.0.1.m4a; sourceTree = "<group>"; };
+		EA593C5915BD93EF00F5EB72 /* me.reading.ask.finish.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.finish.0.2.m4a; path = narrations/general/me.reading.ask.finish.0.2.m4a; sourceTree = "<group>"; };
+		EA593C5A15BD93EF00F5EB72 /* me.reading.ask.question.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.question.0.1.m4a; path = narrations/general/me.reading.ask.question.0.1.m4a; sourceTree = "<group>"; };
+		EA593C5B15BD93EF00F5EB72 /* me.reading.ask.question.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.question.0.2.m4a; path = narrations/general/me.reading.ask.question.0.2.m4a; sourceTree = "<group>"; };
+		EA593C5C15BD93EF00F5EB72 /* me.reading.do.instruction.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.do.instruction.0.1.m4a; path = narrations/general/me.reading.do.instruction.0.1.m4a; sourceTree = "<group>"; };
+		EA593C5D15BD93EF00F5EB72 /* me.reading.do.instruction.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.do.instruction.0.2.m4a; path = narrations/general/me.reading.do.instruction.0.2.m4a; sourceTree = "<group>"; };
+		EA593C5E15BD93EF00F5EB72 /* me.reading.do.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.do.title.0.1.m4a; path = narrations/general/me.reading.do.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C5F15BD93EF00F5EB72 /* me.reading.do.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.do.title.0.2.m4a; path = narrations/general/me.reading.do.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C6015BD93EF00F5EB72 /* me.reading.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.title.0.1.m4a; path = narrations/general/me.reading.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C6115BD93EF00F5EB72 /* me.reading.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.title.0.2.m4a; path = narrations/general/me.reading.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593C6215BD93EF00F5EB72 /* me.subtitle.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.subtitle.0.1.m4a; path = narrations/general/me.subtitle.0.1.m4a; sourceTree = "<group>"; };
+		EA593C6315BD93EF00F5EB72 /* me.subtitle.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.subtitle.0.2.m4a; path = narrations/general/me.subtitle.0.2.m4a; sourceTree = "<group>"; };
+		EA593C6415BD93EF00F5EB72 /* me.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.title.0.1.m4a; path = narrations/general/me.title.0.1.m4a; sourceTree = "<group>"; };
+		EA593C6515BD93EF00F5EB72 /* me.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.title.0.2.m4a; path = narrations/general/me.title.0.2.m4a; sourceTree = "<group>"; };
+		EA593CD215BD958A00F5EB72 /* me.learning.goal.detail.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.2.m4a; path = narrations/general/me.learning.goal.detail.2.m4a; sourceTree = "<group>"; };
 		EA755CA215AAB12A00BBEA72 /* MEFindingTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEFindingTitleViewController.h; sourceTree = "<group>"; };
 		EA755CA315AAB12A00BBEA72 /* MEFindingTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEFindingTitleViewController.m; sourceTree = "<group>"; };
 		EA755CA415AAB12A00BBEA72 /* MEFindingTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEFindingTitleViewController.xib; sourceTree = "<group>"; };
@@ -1685,6 +1902,115 @@
 			isa = PBXGroup;
 			children = (
 				6370F45315A755D400988BC6 /* me.learning.goal.detail.1.m4a */,
+				EA593CD215BD958A00F5EB72 /* me.learning.goal.detail.2.m4a */,
+				EA593BFA15BD93EB00F5EB72 /* me.ask.button.no.0.1.m4a */,
+				EA593BFB15BD93EB00F5EB72 /* me.ask.button.no.0.2.m4a */,
+				EA593BFC15BD93EB00F5EB72 /* me.ask.button.yes.0.1.m4a */,
+				EA593BFD15BD93EB00F5EB72 /* me.ask.button.yes.0.2.m4a */,
+				EA593BFE15BD93EB00F5EB72 /* me.computing.ask.answer.0.1.m4a */,
+				EA593BFF15BD93EB00F5EB72 /* me.computing.ask.answer.0.2.m4a */,
+				EA593C0015BD93EB00F5EB72 /* me.computing.ask.answer.computed.0.1.m4a */,
+				EA593C0115BD93EB00F5EB72 /* me.computing.ask.answer.computed.0.2.m4a */,
+				EA593C0215BD93EB00F5EB72 /* me.computing.ask.answer.no.0.1.m4a */,
+				EA593C0315BD93EB00F5EB72 /* me.computing.ask.answer.no.0.2.m4a */,
+				EA593C0415BD93EB00F5EB72 /* me.computing.ask.answer.no.1.1.m4a */,
+				EA593C0515BD93EB00F5EB72 /* me.computing.ask.answer.no.1.2.m4a */,
+				EA593C0615BD93EB00F5EB72 /* me.computing.ask.answer.no.2.1.m4a */,
+				EA593C0715BD93EB00F5EB72 /* me.computing.ask.answer.no.2.2.m4a */,
+				EA593C0815BD93EB00F5EB72 /* me.computing.ask.answer.no.3.1.m4a */,
+				EA593C0915BD93EB00F5EB72 /* me.computing.ask.answer.no.3.2.m4a */,
+				EA593C0A15BD93EB00F5EB72 /* me.computing.ask.answer.no.4.1.m4a */,
+				EA593C0B15BD93EB00F5EB72 /* me.computing.ask.answer.no.4.2.m4a */,
+				EA593C0C15BD93EB00F5EB72 /* me.computing.ask.answer.yes.0.1.m4a */,
+				EA593C0D15BD93EB00F5EB72 /* me.computing.ask.answer.yes.0.2.m4a */,
+				EA593C0E15BD93EB00F5EB72 /* me.computing.ask.finish.0.1.m4a */,
+				EA593C0F15BD93EB00F5EB72 /* me.computing.ask.finish.0.2.m4a */,
+				EA593C1015BD93EB00F5EB72 /* me.computing.ask.question.0.1.m4a */,
+				EA593C1115BD93EC00F5EB72 /* me.computing.ask.question.0.2.m4a */,
+				EA593C1215BD93EC00F5EB72 /* me.computing.do.instruction.0.1.m4a */,
+				EA593C1315BD93EC00F5EB72 /* me.computing.do.instruction.0.2.m4a */,
+				EA593C1415BD93EC00F5EB72 /* me.computing.do.title.0.1.m4a */,
+				EA593C1515BD93EC00F5EB72 /* me.computing.do.title.0.2.m4a */,
+				EA593C1615BD93EC00F5EB72 /* me.computing.title.0.1.m4a */,
+				EA593C1715BD93EC00F5EB72 /* me.computing.title.0.2.m4a */,
+				EA593C1815BD93EC00F5EB72 /* me.drawing.ask.answer.0.1.m4a */,
+				EA593C1915BD93EC00F5EB72 /* me.drawing.ask.answer.0.2.m4a */,
+				EA593C1A15BD93EC00F5EB72 /* me.drawing.ask.answer.no.0.1.m4a */,
+				EA593C1B15BD93EC00F5EB72 /* me.drawing.ask.answer.no.0.2.m4a */,
+				EA593C1C15BD93EC00F5EB72 /* me.drawing.ask.answer.no.1.1.m4a */,
+				EA593C1D15BD93EC00F5EB72 /* me.drawing.ask.answer.no.1.2.m4a */,
+				EA593C1E15BD93EC00F5EB72 /* me.drawing.ask.answer.no.2.1.m4a */,
+				EA593C1F15BD93EC00F5EB72 /* me.drawing.ask.answer.no.2.2.m4a */,
+				EA593C2015BD93EC00F5EB72 /* me.drawing.ask.answer.no.3.1.m4a */,
+				EA593C2115BD93EC00F5EB72 /* me.drawing.ask.answer.no.3.2.m4a */,
+				EA593C2215BD93EC00F5EB72 /* me.drawing.ask.answer.no.4.1.m4a */,
+				EA593C2315BD93EC00F5EB72 /* me.drawing.ask.answer.no.4.2.m4a */,
+				EA593C2415BD93EC00F5EB72 /* me.drawing.ask.answer.yes.0.1.m4a */,
+				EA593C2515BD93EC00F5EB72 /* me.drawing.ask.answer.yes.0.2.m4a */,
+				EA593C2615BD93EC00F5EB72 /* me.drawing.ask.finish.0.1.m4a */,
+				EA593C2715BD93ED00F5EB72 /* me.drawing.ask.finish.0.2.m4a */,
+				EA593C2815BD93ED00F5EB72 /* me.drawing.ask.question.0.1.m4a */,
+				EA593C2915BD93ED00F5EB72 /* me.drawing.ask.question.0.2.m4a */,
+				EA593C2A15BD93ED00F5EB72 /* me.drawing.do.instruction.0.1.m4a */,
+				EA593C2B15BD93ED00F5EB72 /* me.drawing.do.instruction.0.2.m4a */,
+				EA593C2C15BD93ED00F5EB72 /* me.drawing.do.title.0.1.m4a */,
+				EA593C2D15BD93ED00F5EB72 /* me.drawing.do.title.0.2.m4a */,
+				EA593C2E15BD93ED00F5EB72 /* me.drawing.title.0.1.m4a */,
+				EA593C2F15BD93ED00F5EB72 /* me.drawing.title.0.2.m4a */,
+				EA593C3015BD93ED00F5EB72 /* me.finding.ask.answer.0.1.m4a */,
+				EA593C3115BD93ED00F5EB72 /* me.finding.ask.answer.0.2.m4a */,
+				EA593C3215BD93ED00F5EB72 /* me.finding.ask.answer.no.0.1.m4a */,
+				EA593C3315BD93ED00F5EB72 /* me.finding.ask.answer.no.0.2.m4a */,
+				EA593C3415BD93ED00F5EB72 /* me.finding.ask.answer.no.1.1.m4a */,
+				EA593C3515BD93ED00F5EB72 /* me.finding.ask.answer.no.1.2.m4a */,
+				EA593C3615BD93ED00F5EB72 /* me.finding.ask.answer.no.2.1.m4a */,
+				EA593C3715BD93ED00F5EB72 /* me.finding.ask.answer.no.2.2.m4a */,
+				EA593C3815BD93ED00F5EB72 /* me.finding.ask.answer.no.3.1.m4a */,
+				EA593C3915BD93ED00F5EB72 /* me.finding.ask.answer.no.3.2.m4a */,
+				EA593C3A15BD93ED00F5EB72 /* me.finding.ask.answer.no.4.1.m4a */,
+				EA593C3B15BD93ED00F5EB72 /* me.finding.ask.answer.no.4.2.m4a */,
+				EA593C3C15BD93ED00F5EB72 /* me.finding.ask.answer.yes.0.1.m4a */,
+				EA593C3D15BD93ED00F5EB72 /* me.finding.ask.answer.yes.0.2.m4a */,
+				EA593C3E15BD93ED00F5EB72 /* me.finding.ask.finish.0.1.m4a */,
+				EA593C3F15BD93ED00F5EB72 /* me.finding.ask.finish.0.2.m4a */,
+				EA593C4015BD93ED00F5EB72 /* me.finding.ask.question.0.1.m4a */,
+				EA593C4115BD93ED00F5EB72 /* me.finding.ask.question.0.2.m4a */,
+				EA593C4215BD93ED00F5EB72 /* me.finding.do.instruction.0.1.m4a */,
+				EA593C4315BD93ED00F5EB72 /* me.finding.do.instruction.0.2.m4a */,
+				EA593C4415BD93ED00F5EB72 /* me.finding.do.title.0.1.m4a */,
+				EA593C4515BD93ED00F5EB72 /* me.finding.do.title.0.2.m4a */,
+				EA593C4615BD93ED00F5EB72 /* me.finding.title.0.1.m4a */,
+				EA593C4715BD93ED00F5EB72 /* me.finding.title.0.2.m4a */,
+				EA593C4815BD93ED00F5EB72 /* me.learning.goal.detail.0.1.m4a */,
+				EA593C4915BD93ED00F5EB72 /* me.learning.goal.detail.0.2.m4a */,
+				EA593C4A15BD93ED00F5EB72 /* me.learning.goal.title.0.1.m4a */,
+				EA593C4B15BD93ED00F5EB72 /* me.learning.goal.title.0.2.m4a */,
+				EA593C4C15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.1.m4a */,
+				EA593C4D15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.2.m4a */,
+				EA593C4E15BD93ED00F5EB72 /* me.reading.ask.answer.no.1.1.m4a */,
+				EA593C4F15BD93ED00F5EB72 /* me.reading.ask.answer.no.1.2.m4a */,
+				EA593C5015BD93EF00F5EB72 /* me.reading.ask.answer.no.2.1.m4a */,
+				EA593C5115BD93EF00F5EB72 /* me.reading.ask.answer.no.2.2.m4a */,
+				EA593C5215BD93EF00F5EB72 /* me.reading.ask.answer.no.3.1.m4a */,
+				EA593C5315BD93EF00F5EB72 /* me.reading.ask.answer.no.3.2.m4a */,
+				EA593C5415BD93EF00F5EB72 /* me.reading.ask.answer.no.4.1.m4a */,
+				EA593C5515BD93EF00F5EB72 /* me.reading.ask.answer.no.4.2.m4a */,
+				EA593C5615BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.1.m4a */,
+				EA593C5715BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.2.m4a */,
+				EA593C5815BD93EF00F5EB72 /* me.reading.ask.finish.0.1.m4a */,
+				EA593C5915BD93EF00F5EB72 /* me.reading.ask.finish.0.2.m4a */,
+				EA593C5A15BD93EF00F5EB72 /* me.reading.ask.question.0.1.m4a */,
+				EA593C5B15BD93EF00F5EB72 /* me.reading.ask.question.0.2.m4a */,
+				EA593C5C15BD93EF00F5EB72 /* me.reading.do.instruction.0.1.m4a */,
+				EA593C5D15BD93EF00F5EB72 /* me.reading.do.instruction.0.2.m4a */,
+				EA593C5E15BD93EF00F5EB72 /* me.reading.do.title.0.1.m4a */,
+				EA593C5F15BD93EF00F5EB72 /* me.reading.do.title.0.2.m4a */,
+				EA593C6015BD93EF00F5EB72 /* me.reading.title.0.1.m4a */,
+				EA593C6115BD93EF00F5EB72 /* me.reading.title.0.2.m4a */,
+				EA593C6215BD93EF00F5EB72 /* me.subtitle.0.1.m4a */,
+				EA593C6315BD93EF00F5EB72 /* me.subtitle.0.2.m4a */,
+				EA593C6415BD93EF00F5EB72 /* me.title.0.1.m4a */,
+				EA593C6515BD93EF00F5EB72 /* me.title.0.2.m4a */,
 			);
 			name = "General Texts";
 			sourceTree = "<group>";
@@ -3313,6 +3639,114 @@
 				EA186D6015BC8E1D003B611C /* example.computing.en.1.m4v in Resources */,
 				EA186D6115BC8E1D003B611C /* example.drawing.en.1.m4v in Resources */,
 				EA186D6215BC8E1D003B611C /* example.finding.en.1.m4v in Resources */,
+				EA593C6615BD93EF00F5EB72 /* me.ask.button.no.0.1.m4a in Resources */,
+				EA593C6715BD93EF00F5EB72 /* me.ask.button.no.0.2.m4a in Resources */,
+				EA593C6815BD93EF00F5EB72 /* me.ask.button.yes.0.1.m4a in Resources */,
+				EA593C6915BD93EF00F5EB72 /* me.ask.button.yes.0.2.m4a in Resources */,
+				EA593C6A15BD93EF00F5EB72 /* me.computing.ask.answer.0.1.m4a in Resources */,
+				EA593C6B15BD93EF00F5EB72 /* me.computing.ask.answer.0.2.m4a in Resources */,
+				EA593C6C15BD93EF00F5EB72 /* me.computing.ask.answer.computed.0.1.m4a in Resources */,
+				EA593C6D15BD93EF00F5EB72 /* me.computing.ask.answer.computed.0.2.m4a in Resources */,
+				EA593C6E15BD93EF00F5EB72 /* me.computing.ask.answer.no.0.1.m4a in Resources */,
+				EA593C6F15BD93EF00F5EB72 /* me.computing.ask.answer.no.0.2.m4a in Resources */,
+				EA593C7015BD93EF00F5EB72 /* me.computing.ask.answer.no.1.1.m4a in Resources */,
+				EA593C7115BD93EF00F5EB72 /* me.computing.ask.answer.no.1.2.m4a in Resources */,
+				EA593C7215BD93EF00F5EB72 /* me.computing.ask.answer.no.2.1.m4a in Resources */,
+				EA593C7315BD93EF00F5EB72 /* me.computing.ask.answer.no.2.2.m4a in Resources */,
+				EA593C7415BD93EF00F5EB72 /* me.computing.ask.answer.no.3.1.m4a in Resources */,
+				EA593C7515BD93EF00F5EB72 /* me.computing.ask.answer.no.3.2.m4a in Resources */,
+				EA593C7615BD93EF00F5EB72 /* me.computing.ask.answer.no.4.1.m4a in Resources */,
+				EA593C7715BD93EF00F5EB72 /* me.computing.ask.answer.no.4.2.m4a in Resources */,
+				EA593C7815BD93EF00F5EB72 /* me.computing.ask.answer.yes.0.1.m4a in Resources */,
+				EA593C7915BD93EF00F5EB72 /* me.computing.ask.answer.yes.0.2.m4a in Resources */,
+				EA593C7A15BD93EF00F5EB72 /* me.computing.ask.finish.0.1.m4a in Resources */,
+				EA593C7B15BD93EF00F5EB72 /* me.computing.ask.finish.0.2.m4a in Resources */,
+				EA593C7C15BD93EF00F5EB72 /* me.computing.ask.question.0.1.m4a in Resources */,
+				EA593C7D15BD93EF00F5EB72 /* me.computing.ask.question.0.2.m4a in Resources */,
+				EA593C7E15BD93EF00F5EB72 /* me.computing.do.instruction.0.1.m4a in Resources */,
+				EA593C7F15BD93EF00F5EB72 /* me.computing.do.instruction.0.2.m4a in Resources */,
+				EA593C8015BD93EF00F5EB72 /* me.computing.do.title.0.1.m4a in Resources */,
+				EA593C8115BD93EF00F5EB72 /* me.computing.do.title.0.2.m4a in Resources */,
+				EA593C8215BD93EF00F5EB72 /* me.computing.title.0.1.m4a in Resources */,
+				EA593C8315BD93EF00F5EB72 /* me.computing.title.0.2.m4a in Resources */,
+				EA593C8415BD93EF00F5EB72 /* me.drawing.ask.answer.0.1.m4a in Resources */,
+				EA593C8515BD93EF00F5EB72 /* me.drawing.ask.answer.0.2.m4a in Resources */,
+				EA593C8615BD93EF00F5EB72 /* me.drawing.ask.answer.no.0.1.m4a in Resources */,
+				EA593C8715BD93EF00F5EB72 /* me.drawing.ask.answer.no.0.2.m4a in Resources */,
+				EA593C8815BD93EF00F5EB72 /* me.drawing.ask.answer.no.1.1.m4a in Resources */,
+				EA593C8915BD93EF00F5EB72 /* me.drawing.ask.answer.no.1.2.m4a in Resources */,
+				EA593C8A15BD93EF00F5EB72 /* me.drawing.ask.answer.no.2.1.m4a in Resources */,
+				EA593C8B15BD93EF00F5EB72 /* me.drawing.ask.answer.no.2.2.m4a in Resources */,
+				EA593C8C15BD93EF00F5EB72 /* me.drawing.ask.answer.no.3.1.m4a in Resources */,
+				EA593C8D15BD93EF00F5EB72 /* me.drawing.ask.answer.no.3.2.m4a in Resources */,
+				EA593C8E15BD93EF00F5EB72 /* me.drawing.ask.answer.no.4.1.m4a in Resources */,
+				EA593C8F15BD93EF00F5EB72 /* me.drawing.ask.answer.no.4.2.m4a in Resources */,
+				EA593C9015BD93EF00F5EB72 /* me.drawing.ask.answer.yes.0.1.m4a in Resources */,
+				EA593C9115BD93EF00F5EB72 /* me.drawing.ask.answer.yes.0.2.m4a in Resources */,
+				EA593C9215BD93EF00F5EB72 /* me.drawing.ask.finish.0.1.m4a in Resources */,
+				EA593C9315BD93EF00F5EB72 /* me.drawing.ask.finish.0.2.m4a in Resources */,
+				EA593C9415BD93EF00F5EB72 /* me.drawing.ask.question.0.1.m4a in Resources */,
+				EA593C9515BD93EF00F5EB72 /* me.drawing.ask.question.0.2.m4a in Resources */,
+				EA593C9615BD93EF00F5EB72 /* me.drawing.do.instruction.0.1.m4a in Resources */,
+				EA593C9715BD93EF00F5EB72 /* me.drawing.do.instruction.0.2.m4a in Resources */,
+				EA593C9815BD93EF00F5EB72 /* me.drawing.do.title.0.1.m4a in Resources */,
+				EA593C9915BD93EF00F5EB72 /* me.drawing.do.title.0.2.m4a in Resources */,
+				EA593C9A15BD93EF00F5EB72 /* me.drawing.title.0.1.m4a in Resources */,
+				EA593C9B15BD93EF00F5EB72 /* me.drawing.title.0.2.m4a in Resources */,
+				EA593C9C15BD93EF00F5EB72 /* me.finding.ask.answer.0.1.m4a in Resources */,
+				EA593C9D15BD93EF00F5EB72 /* me.finding.ask.answer.0.2.m4a in Resources */,
+				EA593C9E15BD93EF00F5EB72 /* me.finding.ask.answer.no.0.1.m4a in Resources */,
+				EA593C9F15BD93EF00F5EB72 /* me.finding.ask.answer.no.0.2.m4a in Resources */,
+				EA593CA015BD93EF00F5EB72 /* me.finding.ask.answer.no.1.1.m4a in Resources */,
+				EA593CA115BD93EF00F5EB72 /* me.finding.ask.answer.no.1.2.m4a in Resources */,
+				EA593CA215BD93EF00F5EB72 /* me.finding.ask.answer.no.2.1.m4a in Resources */,
+				EA593CA315BD93EF00F5EB72 /* me.finding.ask.answer.no.2.2.m4a in Resources */,
+				EA593CA415BD93EF00F5EB72 /* me.finding.ask.answer.no.3.1.m4a in Resources */,
+				EA593CA515BD93EF00F5EB72 /* me.finding.ask.answer.no.3.2.m4a in Resources */,
+				EA593CA615BD93EF00F5EB72 /* me.finding.ask.answer.no.4.1.m4a in Resources */,
+				EA593CA715BD93EF00F5EB72 /* me.finding.ask.answer.no.4.2.m4a in Resources */,
+				EA593CA815BD93EF00F5EB72 /* me.finding.ask.answer.yes.0.1.m4a in Resources */,
+				EA593CA915BD93EF00F5EB72 /* me.finding.ask.answer.yes.0.2.m4a in Resources */,
+				EA593CAA15BD93EF00F5EB72 /* me.finding.ask.finish.0.1.m4a in Resources */,
+				EA593CAB15BD93EF00F5EB72 /* me.finding.ask.finish.0.2.m4a in Resources */,
+				EA593CAC15BD93EF00F5EB72 /* me.finding.ask.question.0.1.m4a in Resources */,
+				EA593CAD15BD93EF00F5EB72 /* me.finding.ask.question.0.2.m4a in Resources */,
+				EA593CAE15BD93EF00F5EB72 /* me.finding.do.instruction.0.1.m4a in Resources */,
+				EA593CAF15BD93EF00F5EB72 /* me.finding.do.instruction.0.2.m4a in Resources */,
+				EA593CB015BD93EF00F5EB72 /* me.finding.do.title.0.1.m4a in Resources */,
+				EA593CB115BD93EF00F5EB72 /* me.finding.do.title.0.2.m4a in Resources */,
+				EA593CB215BD93EF00F5EB72 /* me.finding.title.0.1.m4a in Resources */,
+				EA593CB315BD93EF00F5EB72 /* me.finding.title.0.2.m4a in Resources */,
+				EA593CB415BD93EF00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */,
+				EA593CB515BD93EF00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */,
+				EA593CB615BD93EF00F5EB72 /* me.learning.goal.title.0.1.m4a in Resources */,
+				EA593CB715BD93EF00F5EB72 /* me.learning.goal.title.0.2.m4a in Resources */,
+				EA593CB815BD93EF00F5EB72 /* me.reading.ask.answer.no.0.1.m4a in Resources */,
+				EA593CB915BD93EF00F5EB72 /* me.reading.ask.answer.no.0.2.m4a in Resources */,
+				EA593CBA15BD93EF00F5EB72 /* me.reading.ask.answer.no.1.1.m4a in Resources */,
+				EA593CBB15BD93EF00F5EB72 /* me.reading.ask.answer.no.1.2.m4a in Resources */,
+				EA593CBC15BD93EF00F5EB72 /* me.reading.ask.answer.no.2.1.m4a in Resources */,
+				EA593CBD15BD93EF00F5EB72 /* me.reading.ask.answer.no.2.2.m4a in Resources */,
+				EA593CBE15BD93EF00F5EB72 /* me.reading.ask.answer.no.3.1.m4a in Resources */,
+				EA593CBF15BD93EF00F5EB72 /* me.reading.ask.answer.no.3.2.m4a in Resources */,
+				EA593CC015BD93EF00F5EB72 /* me.reading.ask.answer.no.4.1.m4a in Resources */,
+				EA593CC115BD93EF00F5EB72 /* me.reading.ask.answer.no.4.2.m4a in Resources */,
+				EA593CC215BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.1.m4a in Resources */,
+				EA593CC315BD93EF00F5EB72 /* me.reading.ask.answer.yes.0.2.m4a in Resources */,
+				EA593CC415BD93EF00F5EB72 /* me.reading.ask.finish.0.1.m4a in Resources */,
+				EA593CC515BD93EF00F5EB72 /* me.reading.ask.finish.0.2.m4a in Resources */,
+				EA593CC615BD93EF00F5EB72 /* me.reading.ask.question.0.1.m4a in Resources */,
+				EA593CC715BD93EF00F5EB72 /* me.reading.ask.question.0.2.m4a in Resources */,
+				EA593CC815BD93EF00F5EB72 /* me.reading.do.instruction.0.1.m4a in Resources */,
+				EA593CC915BD93EF00F5EB72 /* me.reading.do.instruction.0.2.m4a in Resources */,
+				EA593CCA15BD93EF00F5EB72 /* me.reading.do.title.0.1.m4a in Resources */,
+				EA593CCB15BD93EF00F5EB72 /* me.reading.do.title.0.2.m4a in Resources */,
+				EA593CCC15BD93EF00F5EB72 /* me.reading.title.0.1.m4a in Resources */,
+				EA593CCD15BD93EF00F5EB72 /* me.reading.title.0.2.m4a in Resources */,
+				EA593CCE15BD93EF00F5EB72 /* me.subtitle.0.1.m4a in Resources */,
+				EA593CCF15BD93EF00F5EB72 /* me.subtitle.0.2.m4a in Resources */,
+				EA593CD015BD93EF00F5EB72 /* me.title.0.1.m4a in Resources */,
+				EA593CD115BD93EF00F5EB72 /* me.title.0.2.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
