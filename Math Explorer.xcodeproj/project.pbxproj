@@ -27,7 +27,6 @@
 		6322AE0E15A5F33D0068EC3D /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6322AE0D15A5F33D0068EC3D /* Background@2x.png */; };
 		6370F44815A7379500988BC6 /* MELearningGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370F44615A7379500988BC6 /* MELearningGoalViewController.m */; };
 		6370F44915A7379500988BC6 /* MELearningGoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6370F44715A7379500988BC6 /* MELearningGoalViewController.xib */; };
-		6370F45415A755D400988BC6 /* me.learning.goal.detail.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45315A755D400988BC6 /* me.learning.goal.detail.1.m4a */; };
 		6370F45615A75ECE00988BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370F45515A75ECE00988BC6 /* AVFoundation.framework */; };
 		6370F45915A772D800988BC6 /* UtilSay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45715A772D800988BC6 /* UtilSay@2x.png */; };
 		6370F45A15A772D800988BC6 /* UtilSay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6370F45815A772D800988BC6 /* UtilSay.png */; };
@@ -716,8 +715,6 @@
 		EA593CB115BD93EF00F5EB72 /* me.finding.do.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4515BD93ED00F5EB72 /* me.finding.do.title.0.2.m4a */; };
 		EA593CB215BD93EF00F5EB72 /* me.finding.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4615BD93ED00F5EB72 /* me.finding.title.0.1.m4a */; };
 		EA593CB315BD93EF00F5EB72 /* me.finding.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4715BD93ED00F5EB72 /* me.finding.title.0.2.m4a */; };
-		EA593CB415BD93EF00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4815BD93ED00F5EB72 /* me.learning.goal.detail.0.1.m4a */; };
-		EA593CB515BD93EF00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4915BD93ED00F5EB72 /* me.learning.goal.detail.0.2.m4a */; };
 		EA593CB615BD93EF00F5EB72 /* me.learning.goal.title.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4A15BD93ED00F5EB72 /* me.learning.goal.title.0.1.m4a */; };
 		EA593CB715BD93EF00F5EB72 /* me.learning.goal.title.0.2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4B15BD93ED00F5EB72 /* me.learning.goal.title.0.2.m4a */; };
 		EA593CB815BD93EF00F5EB72 /* me.reading.ask.answer.no.0.1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EA593C4C15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.1.m4a */; };
@@ -863,7 +860,6 @@
 		6370F44515A7379500988BC6 /* MELearningGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MELearningGoalViewController.h; sourceTree = "<group>"; };
 		6370F44615A7379500988BC6 /* MELearningGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MELearningGoalViewController.m; sourceTree = "<group>"; };
 		6370F44715A7379500988BC6 /* MELearningGoalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MELearningGoalViewController.xib; sourceTree = "<group>"; };
-		6370F45315A755D400988BC6 /* me.learning.goal.detail.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.1.m4a; path = narrations/general/me.learning.goal.detail.1.m4a; sourceTree = "<group>"; };
 		6370F45515A75ECE00988BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6370F45715A772D800988BC6 /* UtilSay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UtilSay@2x.png"; sourceTree = "<group>"; };
 		6370F45815A772D800988BC6 /* UtilSay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UtilSay.png; sourceTree = "<group>"; };
@@ -1556,8 +1552,6 @@
 		EA593C4515BD93ED00F5EB72 /* me.finding.do.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.do.title.0.2.m4a; path = narrations/general/me.finding.do.title.0.2.m4a; sourceTree = "<group>"; };
 		EA593C4615BD93ED00F5EB72 /* me.finding.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.title.0.1.m4a; path = narrations/general/me.finding.title.0.1.m4a; sourceTree = "<group>"; };
 		EA593C4715BD93ED00F5EB72 /* me.finding.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.finding.title.0.2.m4a; path = narrations/general/me.finding.title.0.2.m4a; sourceTree = "<group>"; };
-		EA593C4815BD93ED00F5EB72 /* me.learning.goal.detail.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.0.1.m4a; path = narrations/general/me.learning.goal.detail.0.1.m4a; sourceTree = "<group>"; };
-		EA593C4915BD93ED00F5EB72 /* me.learning.goal.detail.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.detail.0.2.m4a; path = narrations/general/me.learning.goal.detail.0.2.m4a; sourceTree = "<group>"; };
 		EA593C4A15BD93ED00F5EB72 /* me.learning.goal.title.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.title.0.1.m4a; path = narrations/general/me.learning.goal.title.0.1.m4a; sourceTree = "<group>"; };
 		EA593C4B15BD93ED00F5EB72 /* me.learning.goal.title.0.2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.learning.goal.title.0.2.m4a; path = narrations/general/me.learning.goal.title.0.2.m4a; sourceTree = "<group>"; };
 		EA593C4C15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = me.reading.ask.answer.no.0.1.m4a; path = narrations/general/me.reading.ask.answer.no.0.1.m4a; sourceTree = "<group>"; };
@@ -1901,7 +1895,6 @@
 		6370F45015A7553300988BC6 /* General Texts */ = {
 			isa = PBXGroup;
 			children = (
-				6370F45315A755D400988BC6 /* me.learning.goal.detail.1.m4a */,
 				EA593CD215BD958A00F5EB72 /* me.learning.goal.detail.2.m4a */,
 				EA593BFA15BD93EB00F5EB72 /* me.ask.button.no.0.1.m4a */,
 				EA593BFB15BD93EB00F5EB72 /* me.ask.button.no.0.2.m4a */,
@@ -1981,8 +1974,6 @@
 				EA593C4515BD93ED00F5EB72 /* me.finding.do.title.0.2.m4a */,
 				EA593C4615BD93ED00F5EB72 /* me.finding.title.0.1.m4a */,
 				EA593C4715BD93ED00F5EB72 /* me.finding.title.0.2.m4a */,
-				EA593C4815BD93ED00F5EB72 /* me.learning.goal.detail.0.1.m4a */,
-				EA593C4915BD93ED00F5EB72 /* me.learning.goal.detail.0.2.m4a */,
 				EA593C4A15BD93ED00F5EB72 /* me.learning.goal.title.0.1.m4a */,
 				EA593C4B15BD93ED00F5EB72 /* me.learning.goal.title.0.2.m4a */,
 				EA593C4C15BD93ED00F5EB72 /* me.reading.ask.answer.no.0.1.m4a */,
@@ -2969,7 +2960,6 @@
 				63B81B2315A6D21C00A583F9 /* MEAI.png in Resources */,
 				63B81B2415A6D21C00A583F9 /* MEAI@2x.png in Resources */,
 				6370F44915A7379500988BC6 /* MELearningGoalViewController.xib in Resources */,
-				6370F45415A755D400988BC6 /* me.learning.goal.detail.1.m4a in Resources */,
 				6370F45915A772D800988BC6 /* UtilSay@2x.png in Resources */,
 				6370F45A15A772D800988BC6 /* UtilSay.png in Resources */,
 				6370F46015A7751C00988BC6 /* MEReadingTitleViewController.xib in Resources */,
@@ -3717,8 +3707,6 @@
 				EA593CB115BD93EF00F5EB72 /* me.finding.do.title.0.2.m4a in Resources */,
 				EA593CB215BD93EF00F5EB72 /* me.finding.title.0.1.m4a in Resources */,
 				EA593CB315BD93EF00F5EB72 /* me.finding.title.0.2.m4a in Resources */,
-				EA593CB415BD93EF00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */,
-				EA593CB515BD93EF00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */,
 				EA593CB615BD93EF00F5EB72 /* me.learning.goal.title.0.1.m4a in Resources */,
 				EA593CB715BD93EF00F5EB72 /* me.learning.goal.title.0.2.m4a in Resources */,
 				EA593CB815BD93EF00F5EB72 /* me.reading.ask.answer.no.0.1.m4a in Resources */,

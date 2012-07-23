@@ -20,7 +20,7 @@
 	[self setButton:MEButtonSay hidden:NO];
 	
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
-		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3_stmt *localizer=NULL;
 	
 	sqlite3_prepare_v2(dbo, [@"SELECT value FROM general_strings WHERE key=:keystring AND lang=:langnum" UTF8String], -1, &localizer, NULL);
@@ -42,7 +42,6 @@
 	NSError *err=nil;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	
-#warning langCode 2's resource require.
 	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:@"me.learning.goal.detail.%d.m4a",langCode]] error:&err];
 	[avp setVolume:1.0f];
 	[avp prepareToPlay];
