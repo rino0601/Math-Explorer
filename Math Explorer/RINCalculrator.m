@@ -7,6 +7,7 @@
 //
 
 #import "RINCalculrator.h"
+#import "MEAppDelegate.h"
 
 @implementation RINCalculrator
 @synthesize nv1,nv2,correct;
@@ -108,7 +109,7 @@
 	NSNumber *ng1=[[NSNumber alloc] initWithInt:[[nv11 currentTitle] intValue]*10+[[nv12 currentTitle] intValue]*1];
 	NSNumber *ng2=[[NSNumber alloc] initWithInt:[[nv21 currentTitle] intValue]*10+[[nv22 currentTitle] intValue]*1];
 	NSNumber *ng3=[[NSNumber alloc] initWithInt:[[na1 currentTitle] intValue]*10+[[na2 currentTitle] intValue]*1];
-	NSNumber *nsign=[[NSNumber alloc] initWithInt:([(UIButton *)[self viewWithTag:12] currentTitle]==@" "?-1:([(UIButton *)[self viewWithTag:12] currentTitle]==@"+"?0:1))];
+	NSNumber *nsign=[[NSNumber alloc] initWithInt:([[(UIButton *)[self viewWithTag:12] currentTitle] isEqualToString:@" "]?-1:([[(UIButton *)[self viewWithTag:12] currentTitle] isEqualToString:@"+"]?0:1))];
 	if([viewController respondsToSelector:@selector(submitUserAnswerWithValues:)]) {
 		[viewController submitUserAnswerWithValues:[[NSArray alloc] initWithObjects:ng1,ng2,ng3,nsign,nil]];
 	}
@@ -284,6 +285,11 @@
 			@"1", @"2", @"3", @"-", @"###", @"##", @"#",
 			@"0", @"=", @"SUBMIT!!!"
 		};
+		NSUInteger langcode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
+		if(langcode==2) {
+			titles[4]=@"예제";
+			titles[23]=@"계산";
+		}
 		for (int i=0 ; i<7 ; i++) {
 			for(int j=0 ; j<3 ; j++) {
 				[self addSubview:[self addButton:titles[j*7+i] parrentBound:CGRectMake(GAP+(RIN_WIDTH+GAP)*i,GAP+(RIN_HEIGHT+GAP)*j,RIN_WIDTH,RIN_HEIGHT) Tag:j*7+i+1]];

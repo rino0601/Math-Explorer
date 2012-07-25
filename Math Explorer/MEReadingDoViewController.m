@@ -102,6 +102,7 @@
 	//remove notification observer.
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
 	
+	return ;
 	//load DB.
 	NSError *err=nil;
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];

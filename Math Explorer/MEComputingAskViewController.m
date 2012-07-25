@@ -148,7 +148,7 @@
 		current=next[current];
 	}
 }
--(void)setAnswer:(NSString *)ans {
+-(void)setAnswer:(NSString *)ans correct:(NSString *)correct {
 	static NSString *format=@"null";
 	if([format isEqualToString:@"null"]) {
 		NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
@@ -161,7 +161,7 @@
 		format=[NSString stringWithUTF8String:(const char *)sqlite3_column_text(localizer, 0)];
 		sqlite3_finalize(localizer);
 	}
-	string[10]=[NSString stringWithFormat:format,ans];
+	string[10]=[NSString stringWithFormat:format,correct,ans];
 }
 
 -(void)sayButtonAction:(id)sender {

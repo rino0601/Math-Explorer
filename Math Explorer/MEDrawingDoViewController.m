@@ -91,7 +91,7 @@
 	}
 	
 	canvas=[[CIHCanvasView alloc] initWithFrame:CGRectMake(20, 300, 984, 280)];
-	[canvas setAlpha:0.5];
+	[canvas setAlpha:0.9];
 	[canvas changeColor:[UIColor blueColor]];
 	[[self view] insertSubview:canvas atIndex:1];
 	
@@ -117,6 +117,15 @@
     tapRecon.numberOfTapsRequired = 1;
 	[[self.navigationController.navigationBar.subviews objectAtIndex:0] setUserInteractionEnabled:YES];
     [[self.navigationController.navigationBar.subviews objectAtIndex:0] addGestureRecognizer:tapRecon];
+	
+	if(langCode==2) {
+		[DRColor setTitle:@"검은색" forSegmentAtIndex:0];
+		[DRColor setTitle:@"빨간색" forSegmentAtIndex:1];
+		[DRColor setTitle:@"파란색" forSegmentAtIndex:2];
+		[DRThick setTitle:@"굵게" forSegmentAtIndex:0];
+		[DRThick setTitle:@"보통" forSegmentAtIndex:1];
+		[DRThick setTitle:@"얇게" forSegmentAtIndex:2];
+	}
 }
 
 -(void)navigationBarTap:(UIGestureRecognizer *)recognizer {
@@ -169,6 +178,7 @@
 	//remove notification observer.
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
 	
+	return ;
 	//load DB.
 	NSError *err=nil;
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];

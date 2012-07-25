@@ -20,6 +20,7 @@
 	CIHCanvasView *canvas;
 	MEDrawingAskViewController *meDrawingAskActivity;
 	IBOutlet UILabel *meDrawingDoInstruction;
+	IBOutlet UISegmentedControl *DRColor, *DRThick;
 	NSMutableArray *mArray;
 	CIHDraggableImageView *item1, *item2;
 }

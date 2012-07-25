@@ -32,14 +32,28 @@
 	NSUInteger langCode = [(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	NSUInteger problemID = [(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
 	problemID=(langCode==2?problemID-288:problemID);
-	problemID+=12;
+	
+	if([(MEAppDelegate *)[[UIApplication sharedApplication] delegate] GONEXT]== YES ) {
+		problemID+=1;
+	} else {
+		NSUInteger stepProblemID=((problemID-1)/12)*12+1;
+		problemID+=4;
+		if(problemID>stepProblemID+11){
+			problemID-=11;
+			if(problemID>stepProblemID+11)
+				problemID=stepProblemID;
+		}
+	}
+//	problemID+=12;
 	if(problemID>288)
 		problemID=1;
 	[problemSelecter setValue:problemID];
 	
+	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setGONEXT:NO];
+	
 	switch (langCode) {
 		case 1:
-			[BTFtitle setText:@"WELDONE!!!"];
+			[BTFtitle setText:@"WELLDONE!!!"];
 			[BTFcoment setText:@"learn more?"];
 			[problemMeter setText:[NSString stringWithFormat:@"Let's learn problem number %3.0f",[problemSelecter value]]];
 			break;
@@ -66,7 +80,6 @@
 	NSUInteger next=[problemSelecter value];
 	if(langCode==2)
 		next+=288;
-	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setProblemID:next];
 	NSMutableArray *goingNext=[NSMutableArray arrayWithObject:[[MEReadingTitleViewController alloc] initWithNibName:@"MEReadingTitleViewController" bundle:nil]];
 	[goingNext addObject:self];
 	[[self navigationController] setViewControllers:goingNext animated:NO];

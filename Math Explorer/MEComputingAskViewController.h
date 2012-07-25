@@ -15,5 +15,5 @@
 	NSUInteger current;
 	IBOutlet UITextView *meComputingAsk;
 }
--(void)setAnswer:(NSString *)ans;
+-(void)setAnswer:(NSString *)ans correct:(NSString *)correct;
 @end
