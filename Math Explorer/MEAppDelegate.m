@@ -19,6 +19,8 @@
 	sqlite3_open_v2([[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"MEDatabase.sqlite3"] UTF8String], &_dbo, SQLITE_OPEN_READONLY, NULL);
 	_problemID=0;
 	
+	sleep(5);
+	
 	MELangSelectViewController *startViewController=[[MELangSelectViewController alloc] initWithNibName:@"MELangSelectViewController" bundle:nil];
 	navController=[[UINavigationController alloc] initWithRootViewController:startViewController];
 	[navController setNavigationBarHidden:YES];

@@ -9,10 +9,15 @@
 #import "MEPageTemplateViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
+
 @interface METitleViewController:MEPageTemplateViewController {
 	@private
-	IBOutlet UILabel *meTitle, *meSubtitle;
-	AVAudioPlayer *avp;
+	IBOutlet UIButton *meTitle, *meSubtitle;
+	AVAudioPlayer *playerSubtitle, *playerTitle;
 }
+
+-(IBAction)saySubtitle:(id)sender;
+-(IBAction)sayTitle:(id)sender;
+
 
 @end

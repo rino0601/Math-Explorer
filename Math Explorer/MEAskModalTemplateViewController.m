@@ -11,7 +11,6 @@
 
 
 NSString *const MEAskActivityConfirmed=@"Nothing interesting here.";
-NSString *const MEAskActivityDismissed=@"Oh, Seriously?";
 
 @implementation MEAskModalTemplateViewController
 

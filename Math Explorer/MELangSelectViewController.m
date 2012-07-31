@@ -11,6 +11,7 @@
 #import "METitleViewController.h"
 #import "RINFindAct.h"
 
+
 @implementation MELangSelectViewController
 
 -(void)viewDidLoad {
@@ -26,15 +27,12 @@
 	
 	[d setLangCode:[sender tag]];
 	
-	switch ([d langCode]) {
+	switch([d langCode]) {
 		case 1:
 			[d setProblemID:1];
 			break;
 		case 2:
 			[d setProblemID:289];
-			break;
-		default:
-			NSLog(@"lancode ERR");
 			break;
 	}
 	[RINFindAct removeFoundWord];

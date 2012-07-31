@@ -125,7 +125,7 @@
 -(void)nextButtonAction:(id)sender {
 	if(isGoodToContinue==NO) {
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(readyToContinue:) name:MEAskActivityConfirmed object:nil];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(problemChange:) name:MEAskActivityDismissed object:nil];
+
 		[meComputingAskActivity setModalPresentationStyle:UIModalPresentationFormSheet];
 		
 		[self presentModalViewController:meComputingAskActivity animated:YES];
@@ -140,7 +140,7 @@
 }
 -(void)problemChange:(NSNotification *)notif {
 	//remove notification observer.
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
+	//[[NSNotificationCenter defaultCenter] removeObserver:self name:MEAskActivityDismissed object:nil];
 	return ;
 	//load DB.
 	NSError *err=nil;

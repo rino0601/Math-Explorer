@@ -19,6 +19,7 @@ typedef enum {
 @interface MEPageTemplateViewController:UIViewController {
 	@protected
 	UIButton *utilSay, *navHome, *navPrev, *navNext;
+	UIImageView *backgroundImage;
 }
 
 -(void)sayButtonAction:(id)sender;

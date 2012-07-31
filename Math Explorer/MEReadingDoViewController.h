@@ -14,11 +14,13 @@
 
 @interface MEReadingDoViewController:MEPageTemplateViewController {
 	@private
-	AVAudioPlayer *avp;
+	AVAudioPlayer *playerProblem, *playerTitle;
 	BOOL isGoodToContinue;
 	MEReadingAskViewController *meReadingAskActivity;
-	IBOutlet UILabel *meReadingDoInstruction;
+	IBOutlet UIButton *meReadingDoInstruction;
 	IBOutlet UITextView *meReadingDoProblem;
 }
+
+-(IBAction)sayTitle:(id)sender;
 
 @end

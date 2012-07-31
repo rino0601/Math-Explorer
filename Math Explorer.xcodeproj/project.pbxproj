@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		630A0CE815A6329200557C19 /* METitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A0CE615A6329200557C19 /* METitleViewController.m */; };
+		631CB85C15C7785B0002C018 /* MEProblemSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631CB85A15C7785B0002C018 /* MEProblemSelectionViewController.m */; };
+		631CB85D15C7785B0002C018 /* MEProblemSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631CB85B15C7785B0002C018 /* MEProblemSelectionViewController.xib */; };
+		631CB86015C7924C0002C018 /* Background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 631CB85E15C7924C0002C018 /* Background2.png */; };
+		631CB86115C7924C0002C018 /* Background2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 631CB85F15C7924C0002C018 /* Background2@2x.png */; };
 		6322ADCD15A473BF0068EC3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6322ADCC15A473BF0068EC3D /* UIKit.framework */; };
 		6322ADCF15A473BF0068EC3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6322ADCE15A473BF0068EC3D /* Foundation.framework */; };
 		6322ADD115A473BF0068EC3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6322ADD015A473BF0068EC3D /* CoreGraphics.framework */; };
@@ -836,6 +840,11 @@
 /* Begin PBXFileReference section */
 		630A0CE515A6329200557C19 /* METitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METitleViewController.h; sourceTree = "<group>"; };
 		630A0CE615A6329200557C19 /* METitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METitleViewController.m; sourceTree = "<group>"; };
+		631CB85915C7785B0002C018 /* MEProblemSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEProblemSelectionViewController.h; sourceTree = "<group>"; };
+		631CB85A15C7785B0002C018 /* MEProblemSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEProblemSelectionViewController.m; sourceTree = "<group>"; };
+		631CB85B15C7785B0002C018 /* MEProblemSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MEProblemSelectionViewController.xib; sourceTree = "<group>"; };
+		631CB85E15C7924C0002C018 /* Background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background2.png; sourceTree = "<group>"; };
+		631CB85F15C7924C0002C018 /* Background2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background2@2x.png"; sourceTree = "<group>"; };
 		6322ADC815A473BF0068EC3D /* Math Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6322ADCC15A473BF0068EC3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6322ADCE15A473BF0068EC3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1706,6 +1715,8 @@
 		630A0CD915A623E400557C19 /* App Icons & Background Images */ = {
 			isa = PBXGroup;
 			children = (
+				631CB85E15C7924C0002C018 /* Background2.png */,
+				631CB85F15C7924C0002C018 /* Background2@2x.png */,
 				6322ADE815A585DC0068EC3D /* Background.png */,
 				6322AE0D15A5F33D0068EC3D /* Background@2x.png */,
 				63B81B1D15A6D21C00A583F9 /* Default-Landscape@2x~ipad.png */,
@@ -1724,6 +1735,16 @@
 				63B81AF815A63A1800A583F9 /* METitleViewController.xib */,
 			);
 			name = "Stage 1: Title";
+			sourceTree = "<group>";
+		};
+		631CB85715C778290002C018 /* Problem Selection */ = {
+			isa = PBXGroup;
+			children = (
+				631CB85915C7785B0002C018 /* MEProblemSelectionViewController.h */,
+				631CB85A15C7785B0002C018 /* MEProblemSelectionViewController.m */,
+				631CB85B15C7785B0002C018 /* MEProblemSelectionViewController.xib */,
+			);
+			name = "Problem Selection";
 			sourceTree = "<group>";
 		};
 		6322ADBD15A473BF0068EC3D = {
@@ -1870,6 +1891,7 @@
 		6370F44315A7377700988BC6 /* Stage 2: Learning Goal */ = {
 			isa = PBXGroup;
 			children = (
+				631CB85715C778290002C018 /* Problem Selection */,
 				6370F44515A7379500988BC6 /* MELearningGoalViewController.h */,
 				6370F44615A7379500988BC6 /* MELearningGoalViewController.m */,
 				6370F44715A7379500988BC6 /* MELearningGoalViewController.xib */,
@@ -3741,6 +3763,9 @@
 				EA593CD115BD93EF00F5EB72 /* me.title.0.2.m4a in Resources */,
 				EA593CD715BD9E7C00F5EB72 /* me.learning.goal.detail.0.1.m4a in Resources */,
 				EA593CD815BD9E7C00F5EB72 /* me.learning.goal.detail.0.2.m4a in Resources */,
+				631CB85D15C7785B0002C018 /* MEProblemSelectionViewController.xib in Resources */,
+				631CB86015C7924C0002C018 /* Background2.png in Resources */,
+				631CB86115C7924C0002C018 /* Background2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3775,6 +3800,7 @@
 				EA9DB2AB15ACFBC2000ADA87 /* MEBTFViewController.m in Sources */,
 				EABC2F6215B2A9A400EAF994 /* RINFindAct.m in Sources */,
 				EA9E3A9215B43ECE003EE631 /* RINCalculrator.m in Sources */,
+				631CB85C15C7785B0002C018 /* MEProblemSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

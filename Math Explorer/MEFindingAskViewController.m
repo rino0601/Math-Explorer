@@ -141,7 +141,6 @@
 			[super approveButtonAction:sender];
 		} else {
 			[[self presentingViewController] dismissModalViewControllerAnimated:YES];
-			[[NSNotificationCenter defaultCenter] postNotificationName:MEAskActivityDismissed object:self userInfo:nil];
 		}
 	}
 	else {
@@ -165,15 +164,15 @@
 	}
 	NSError *err=nil;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
-	avp=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:fileFormat, langCode,current]] error:&err];
-	[avp setVolume:1.0f];
-	[avp prepareToPlay];
+	playerAux=[[AVAudioPlayer alloc] initWithContentsOfURL:[[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:[NSString stringWithFormat:fileFormat, langCode,current]] error:&err];
+	[playerAux setVolume:1.0f];
+	[playerAux prepareToPlay];
 	
-	if([avp isPlaying]==NO) {
-		[avp setCurrentTime:0.0];
-		[avp play];
+	if([playerAux isPlaying]==NO) {
+		[playerAux setCurrentTime:0.0];
+		[playerAux play];
 	} else
-		[avp stop];
+		[playerAux stop];
 }
 
 @end

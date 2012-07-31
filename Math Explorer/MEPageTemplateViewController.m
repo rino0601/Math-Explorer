@@ -22,7 +22,7 @@
 	[[[self navigationController] navigationBar] setBarStyle:UIBarStyleBlackTranslucent];
 	
 	// Background
-	UIImageView *backgroundImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+	backgroundImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
 	[backgroundImage setImage:[UIImage imageNamed:@"Background.png"]];
 	[[self view] addSubview:backgroundImage];
 	[[self view] sendSubviewToBack:backgroundImage];

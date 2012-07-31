@@ -12,9 +12,12 @@
 
 @interface MELearningGoalViewController:MEPageTemplateViewController {
 	@private
-	AVAudioPlayer *avp;
-	IBOutlet UILabel *meLearningGoalTitle;
+	AVAudioPlayer *playerDetail, *playerTitle;
+	IBOutlet UIButton *meLearningGoalTitle;
 	IBOutlet UIWebView *meLearningGoalDetail;
 }
+
+-(IBAction)sayTitle:(id)sender;
+-(IBAction)trigerProblemSelection:(id)sender;
 
 @end

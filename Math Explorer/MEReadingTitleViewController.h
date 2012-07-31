@@ -9,10 +9,13 @@
 #import "MEPageTemplateViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
+
 @interface MEReadingTitleViewController:MEPageTemplateViewController {
 	@private
-	IBOutlet UILabel *meReadingTitle;
-	AVAudioPlayer *avp;
+	IBOutlet UIButton *meReadingTitle;
+	AVAudioPlayer *playerTitle;
 }
+
+-(IBAction)sayTitle:(id)sender;
 
 @end

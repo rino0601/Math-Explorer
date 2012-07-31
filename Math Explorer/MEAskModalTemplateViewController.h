@@ -10,15 +10,15 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
 
+
 extern NSString *const MEAskActivityConfirmed;
-extern NSString *const MEAskActivityDismissed;
 
 @interface MEAskModalTemplateViewController:UIViewController {
 	@protected
 	NSUInteger noCount;
 	UIButton *utilSay, *chkNo, *chkYes, *chkAprv;
 	MPMoviePlayerController *moviePlayer;
-	AVAudioPlayer *avp;
+	AVAudioPlayer *playerAux;
 }
 
 -(void)sayButtonAction:(id)sender;
