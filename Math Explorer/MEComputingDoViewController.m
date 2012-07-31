@@ -249,10 +249,10 @@
 		}
 	} else {
 		if(nv3==(nv1+nv2)&&nsn==0 && ((nv1==cnv1&&nv2==cnv2)||(nv1==cnv2&&nv2==cnv1))) {
-			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"O : %d+%d=%d",nv1,nv2,nv3] correct:[NSString stringWithFormat:@"O : %d-%d=%d",cnv1,cnv2,cnv1+cnv2]];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"O : %d+%d=%d",nv1,nv2,nv3] correct:[NSString stringWithFormat:@"O : %d+%d=%d",cnv1,cnv2,cnv1+cnv2]];
 			[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setGONEXT:YES];
 		} else {
-			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"X : %d%c%d=%d",nv1,(nsn==0?'+':(nsn==1?'-':' ')),nv2,nv3] correct:[NSString stringWithFormat:@"O : %d-%d=%d",cnv1,cnv2,cnv1+cnv2]];
+			[meComputingAskActivity setAnswer:[NSString stringWithFormat:@"X : %d%c%d=%d",nv1,(nsn==0?'+':(nsn==1?'-':' ')),nv2,nv3] correct:[NSString stringWithFormat:@"O : %d+%d=%d",cnv1,cnv2,cnv1+cnv2]];
 			[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setGONEXT:NO];
 		}
 	}
