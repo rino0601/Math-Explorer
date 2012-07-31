@@ -17,6 +17,8 @@
 -(void)viewDidLoad {
 	[super viewDidLoad];
 	
+	[backgroundImage setImage:[UIImage imageNamed:@"Background2.png"]];
+	
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	sqlite3 *dbo=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] dbo];
 	sqlite3_stmt *localizer=NULL;

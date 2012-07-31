@@ -20,7 +20,7 @@
 @property(nonatomic) NSUInteger problemID;
 @property(nonatomic, readonly) sqlite3 *dbo;
 @property(strong, nonatomic) UIWindow *mainWindow;
-@property BOOL GONEXT;
+@property(nonatomic) BOOL GONEXT;
 
 -(NSUInteger)nextProblem;
 
