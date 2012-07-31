@@ -27,7 +27,7 @@
 	NSUInteger problemID = [(MEAppDelegate *)[[UIApplication sharedApplication] delegate] problemID];
 	problemID=((problemID-1)%288)+1;
 	
-	if([(MEAppDelegate *)[[UIApplication sharedApplication] delegate] GONEXT]== YES ) {
+	if([(MEAppDelegate *)[[UIApplication sharedApplication] delegate] isGoodToGo]== YES ) {
 		if(problemID%4==0)
 			problemID=problemID-((problemID-1)%12)+12;
 		else
@@ -52,7 +52,7 @@
 	
 	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setProblemID:problemID];
 	
-	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setGONEXT:NO];
+	[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] setGoodToGo:NO];
 	
 	switch (langCode) {
 		case 1:
