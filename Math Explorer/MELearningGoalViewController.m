@@ -20,6 +20,8 @@
 	[self setButton:MEButtonHome hidden:YES];
 	[self setButton:MEButtonSay hidden:NO];
 	
+	[[meLearningGoalDetail scrollView] setScrollEnabled:NO];
+	
 	NSError *err=nil;
 	NSUInteger langCode=[(MEAppDelegate *)[[UIApplication sharedApplication] delegate] langCode];
 	
